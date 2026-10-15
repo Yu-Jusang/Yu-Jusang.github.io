@@ -31,7 +31,7 @@ renderDemo();
 const owner='Yu-Jusang',repo='Yu-Jusang.github.io';
 const api=`https://api.github.com/repos/${owner}/${repo}`;
 const headers={'Accept':'application/vnd.github+json'};
-let previousRunId=null,refreshTimer=null;
+let previousRunId=null,previousRunStatus=null,refreshTimer=null;
 const timeText=value=>value?new Date(value).toLocaleString('ko-KR',{dateStyle:'medium',timeStyle:'short'}):'시간 정보 없음';
 function setRealState(title,description,state){$('realTitle').textContent=title;$('realDescription').textContent=description;$('realBadge').textContent=state==='running'?'진행 중':state==='success'?'완료':state==='failed'?'실패':'확인 중';$('realBadge').className='state-badge '+state}
 function renderRealSteps(steps){const list=$('realSteps');list.replaceChildren(...steps.map(step=>{const li=document.createElement('li');li.className=step.state;const icon=document.createElement('span');icon.className='step-icon';icon.textContent=step.state==='done'?'✓':step.state==='failed'?'!':step.state==='running'?'●':'·';const name=document.createElement('span');name.textContent=step.name;li.append(icon,name);if(step.time){const em=document.createElement('em');em.textContent=step.time;li.append(em)}return li}))}
@@ -42,21 +42,23 @@ async function refreshReal(){
     const runs=result.workflow_runs||[];
     const run=runs.find(item=>/pages|deploy/i.test(`${item.name||''} ${item.path||''}`))||runs[0];
     if(!run){setRealState('아직 배포 기록이 없습니다','새 변경 사항을 GitHub에 올리면 이곳에 표시됩니다.','idle');renderRealSteps([{name:'작업 대기 중',state:'idle'}]);$('apiNote').textContent='새 배포가 시작되면 자동으로 확인합니다.';return}
-    previousRunId=run.id;
+    const alreadyShownComplete=previousRunId===run.id&&previousRunStatus==='completed';
+    previousRunId=run.id;previousRunStatus=run.status;
     const running=run.status!=='completed';const failed=run.conclusion&&run.conclusion!=='success';
     const state=running?'running':failed?'failed':'success';
     setRealState(running?'공개 페이지를 만드는 중입니다':failed?'배포 중 문제가 생겼습니다':'최근 배포가 완료됐습니다',running?'아래 목록에서 현재 진행 단계를 확인할 수 있습니다.':failed?'GitHub에서 오류 내용을 확인해 주세요.':'웹사이트가 공개된 상태입니다.',state);
     $('runTime').textContent=`${timeText(run.run_started_at||run.created_at)} 시작 · #${run.run_number||run.id}`;
     $('runLink').href=run.html_url||`https://github.com/${owner}/${repo}/actions`;
+    if(alreadyShownComplete){$('apiNote').textContent='새 배포가 시작되는지 약 2분마다 자동으로 확인합니다.';return}
     const jobs=await getJson(`${api}/actions/runs/${run.id}/jobs?per_page=30&_=${Date.now()}`);
     const steps=(jobs.jobs||[]).flatMap(job=>{
       if(job.steps?.length)return job.steps.map(step=>({name:step.name,state:step.status==='in_progress'?'running':step.status==='queued'?'idle':step.conclusion==='success'?'done':step.conclusion==='failure'?'failed':'idle',time:step.status==='in_progress'?'현재 단계':''}));
       return [{name:job.name||'배포 준비',state:job.status==='in_progress'?'running':job.conclusion==='success'?'done':job.conclusion==='failure'?'failed':'idle',time:''}]
     });
     renderRealSteps(steps.length?steps:[{name:running?'GitHub에서 작업을 준비하고 있습니다':'배포 기록을 확인했습니다',state:running?'running':'done'}]);
-    $('apiNote').textContent=running?'배포 중에는 약 25초마다 자동으로 확인합니다.':'새 배포가 시작되는지 약 1분마다 자동으로 확인합니다.';
+    $('apiNote').textContent=running?'배포 중에는 약 25초마다 자동으로 확인합니다.':'새 배포가 시작되는지 약 2분마다 자동으로 확인합니다.';
   }catch(error){setRealState('배포 상태를 읽을 수 없습니다','잠시 후 자동으로 다시 확인합니다.','idle');renderRealSteps([{name:'GitHub 연결 확인 중',state:'idle'}]);$('apiNote').textContent=`연결 상태: ${error.message}. GitHub 작업 기록 링크에서 직접 확인할 수 있습니다.`}
-  finally{$('lastChecked').textContent=`마지막 확인 ${new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit',second:'2-digit'})}`;clearTimeout(refreshTimer);refreshTimer=setTimeout(refreshReal,$('realBadge').classList.contains('running')?25000:60000)}
+  finally{$('lastChecked').textContent=`마지막 확인 ${new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit',second:'2-digit'})}`;clearTimeout(refreshTimer);refreshTimer=setTimeout(refreshReal,$('realBadge').classList.contains('running')?25000:120000)}
 }
 document.addEventListener('visibilitychange',()=>{if(!document.hidden){clearTimeout(refreshTimer);refreshReal()}});
 refreshReal();
