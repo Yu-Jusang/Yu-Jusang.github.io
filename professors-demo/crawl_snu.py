@@ -63,7 +63,9 @@ def parse_page(html: str) -> tuple[int, list[dict]]:
                              if "학점" in span.get_text(" ", strip=True)), None)
         if len(basic) < 3 or credits_node is None:
             raise ValueError("교수·학과·학점 항목이 없습니다.")
-        course_time = hidden.get("ltTimeForTT", "").strip()
+        course_time = next((span.get_text(" ", strip=True)
+                            for span in info[1].find_all("span", recursive=False)
+                            if re.search(r"[월화수목금토일]\s*\(", span.get_text(" ", strip=True))), "")
         row = {
             "course": hidden.get("sbjtNm", "").strip(),
             "code": hidden.get("sbjtCd", "").strip(),
