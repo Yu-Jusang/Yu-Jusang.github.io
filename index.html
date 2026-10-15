@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17231f">
+  <meta name="description" content="GitHub Pages로 공개하는 첫 번째 웹 실험">
+  <title>첫 번째 웹 실험 · Yu-Jusang</title>
+  <style>
+    :root { color-scheme: light; --ink:#17231f; --muted:#52635b; --paper:#f5f3e9; --card:#fffef8; --line:#d5dcd0; --accent:#b9ed72; --accent-ink:#21380f; --spot:#d6e9db; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.55; }
+    button { font:inherit; cursor:pointer; }
+    a { color:inherit; }
+    .wrap { max-width:1120px; padding:0 24px; margin:auto; }
+    header { border-bottom:1px solid var(--line); }
+    .topbar { min-height:74px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { font-weight:800; letter-spacing:-.04em; font-size:1.15rem; text-decoration:none; }
+    .topbar nav { display:flex; gap:24px; font-size:.92rem; font-weight:650; }
+    .topbar nav a { text-decoration:none; }
+    .topbar nav a:hover { text-decoration:underline; }
+    .hero { padding:92px 0 76px; display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center; }
+    .eyebrow { display:inline-flex; border:1px solid #93ab88; border-radius:99px; padding:6px 13px; color:#39522f; font-size:.75rem; font-weight:800; letter-spacing:.11em; text-transform:uppercase; }
+    h1 { margin:23px 0 20px; font-size:clamp(3rem,7vw,6.3rem); letter-spacing:-.08em; line-height:1.04; }
+    .hero p { max-width:570px; color:var(--muted); font-size:1.15rem; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+    .button { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:0 21px; border-radius:12px; border:1px solid var(--ink); background:var(--ink); color:white; text-decoration:none; font-weight:750; }
+    .button.secondary { background:transparent; color:var(--ink); }
+    .art { aspect-ratio:1; border-radius:35px; background:var(--spot); position:relative; overflow:hidden; box-shadow:inset 0 0 0 1px #bcd2c2; }
+    .orbit { position:absolute; width:72%; aspect-ratio:1; border:2px solid #678c77; border-radius:50%; left:14%; top:14%; }
+    .orbit.two { width:52%; left:24%; top:24%; border-style:dashed; opacity:.7; }
+    .planet { position:absolute; width:40%; aspect-ratio:1; left:30%; top:30%; border-radius:50%; background:var(--accent); box-shadow:inset -16px -18px 0 #94c953, 0 20px 45px #5c806c70; }
+    .spark { position:absolute; background:var(--ink); border-radius:50%; }
+    .spark.a { width:14px; height:14px; top:18%; left:17%; }.spark.b { width:10px; height:10px; right:18%; bottom:18%; }
+    .art-label { position:absolute; right:23px; bottom:22px; font-weight:850; font-size:.8rem; letter-spacing:.1em; }
+    section { padding:70px 0; }
+    .section-head { max-width:680px; margin-bottom:28px; }
+    .kicker { margin:0 0 10px; color:#638347; font-weight:850; letter-spacing:.13em; font-size:.76rem; }
+    h2 { margin:0 0 12px; font-size:clamp(2rem,4vw,3rem); letter-spacing:-.055em; line-height:1.14; }
+    .section-head p { margin:0; color:var(--muted); }
+    .demo { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .panel { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:30px; }
+    .panel h3 { margin:0 0 8px; font-size:1.3rem; letter-spacing:-.03em; }
+    .panel p { color:var(--muted); margin:0 0 22px; }
+    .counter { font-size:clamp(4rem,9vw,7rem); line-height:1; font-weight:850; letter-spacing:-.08em; margin:20px 0 25px; font-variant-numeric:tabular-nums; }
+    .panel button { border:0; background:var(--accent); color:var(--accent-ink); padding:13px 19px; border-radius:11px; font-weight:800; }
+    .panel button:hover { filter:brightness(.94); }
+    .panel button:focus-visible, a:focus-visible { outline:3px solid #487d2d; outline-offset:3px; }
+    .color-stage { height:180px; border-radius:15px; background:#e4eecd; display:grid; place-items:center; margin:22px 0 20px; transition:background .25s ease; }
+    .color-stage span { font-weight:800; color:#21380f; }
+    .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; counter-reset:step; }
+    .step { border-top:2px solid var(--ink); padding-top:20px; }
+    .step::before { counter-increment:step; content:"0" counter(step); display:block; color:#638347; font-weight:850; margin-bottom:22px; }
+    .step h3 { margin:0 0 7px; font-size:1.18rem; }
+    .step p { margin:0; color:var(--muted); }
+    footer { border-top:1px solid var(--line); padding:30px 0 38px; color:var(--muted); font-size:.9rem; }
+    footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+    @media (max-width:760px) { .hero { grid-template-columns:1fr; padding:64px 0 48px; } .art { max-width:450px; width:100%; } .demo { grid-template-columns:1fr; } .steps { grid-template-columns:1fr; } .topbar nav { gap:12px; font-size:.82rem; } section { padding:52px 0; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .color-stage { transition:none; } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap topbar"><a class="brand" href="#top">Yu-Jusang / 첫 웹 실험</a><nav aria-label="페이지 메뉴"><a href="#try">직접 해보기</a><a href="#how">어떻게 공개되나요?</a></nav></div></header>
+  <main id="top">
+    <div class="wrap hero">
+      <div><span class="eyebrow">My first GitHub Pages site</span><h1>아이디어가<br>웹이 되는 순간.</h1><p>이 페이지는 GitHub에 파일을 올려 누구나 열 수 있는 웹사이트로 공개하는 작은 실험입니다. 아래 버튼을 눌러 직접 움직여 보세요.</p><div class="hero-actions"><a class="button" href="#try">사이트 체험하기 ↘</a><a class="button secondary" href="#how">만드는 과정 보기</a></div></div>
+      <div class="art" role="img" aria-label="연두색 행성과 원형 궤도로 그린 첫 웹 실험 일러스트"><div class="orbit"></div><div class="orbit two"></div><div class="planet"></div><div class="spark a"></div><div class="spark b"></div><div class="art-label">HELLO, WEB ✳</div></div>
+    </div>
+    <section id="try"><div class="wrap"><div class="section-head"><p class="kicker">01 / 직접 해보기</p><h2>코드를 몰라도, 작동하는 페이지부터.</h2><p>이 버튼들은 HTML, CSS, JavaScript라는 웹의 기본 재료만으로 만들었습니다.</p></div><div class="demo"><article class="panel"><h3>클릭 카운터</h3><p>버튼을 누르면 숫자가 올라갑니다.</p><div class="counter" id="count" aria-live="polite">0</div><button id="count-button" type="button">한 번 눌러보기 +</button></article><article class="panel"><h3>색 바꾸기</h3><p>웹사이트의 색과 분위기도 바꿀 수 있어요.</p><div class="color-stage" id="color-stage"><span id="color-name">라임 그린</span></div><button id="color-button" type="button">다른 색 보기 ↗</button></article></div></div></section>
+    <section id="how"><div class="wrap"><div class="section-head"><p class="kicker">02 / 공개 과정</p><h2>GitHub는 파일을 보관하고,<br>Pages는 웹주소를 만듭니다.</h2><p>내용을 고치고 다시 올리면 같은 주소에서 새 버전을 볼 수 있습니다.</p></div><div class="steps"><div class="step"><h3>페이지 만들기</h3><p>문구, 디자인, 버튼 동작을 웹 파일로 작성합니다.</p></div><div class="step"><h3>GitHub에 올리기</h3><p>저장소에 파일을 넣으면 변경 기록도 함께 남습니다.</p></div><div class="step"><h3>Pages 켜기</h3><p>공개 주소가 생겨 휴대폰이나 친구의 컴퓨터에서도 볼 수 있습니다.</p></div></div></div></section>
+  </main>
+  <footer><div class="wrap"><span>© 2026 Yu-Jusang · 첫 번째 웹 실험</span><span>Made with GPT, published with GitHub Pages</span></div></footer>
+  <script>
+    const count = document.querySelector('#count');
+    document.querySelector('#count-button').addEventListener('click', () => { count.textContent = String(Number(count.textContent) + 1); });
+    const colors = [
+      { name:'라임 그린', background:'#e4eecd', foreground:'#21380f' },
+      { name:'코랄 핑크', background:'#f7cfca', foreground:'#6e2c29' },
+      { name:'스카이 블루', background:'#cce8f5', foreground:'#173d54' },
+      { name:'라벤더', background:'#e6dcfa', foreground:'#49306d' }
+    ];
+    let colorIndex = 0;
+    document.querySelector('#color-button').addEventListener('click', () => {
+      colorIndex = (colorIndex + 1) % colors.length;
+      const color = colors[colorIndex];
+      document.querySelector('#color-stage').style.background = color.background;
+      const label = document.querySelector('#color-name');
+      label.textContent = color.name;
+      label.style.color = color.foreground;
+    });
+  </script>
+</body>
+</html>
+
