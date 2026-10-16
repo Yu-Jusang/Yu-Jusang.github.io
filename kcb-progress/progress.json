@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-17T00:04:00+09:00",
-  "state_label": "Mac CPU·GPU 병렬 학습 시작 · 최종 모델 2/8 완료",
-  "headline": "64GB Mac에서 세 모델의 병렬 학습을 시작했습니다",
-  "summary": "Apple Silicon Mac의 64GB 메모리와 GPU 동작을 확인했습니다. Random Forest(CPU 6), xRFM(CPU 8), TabM(Apple GPU·CPU 4)을 원래 고정 설정으로 병렬 학습 중입니다. Windows에서 완료한 XGBoost·HistGradientBoosting은 보존하고 CatBoost는 세 번째 seed를 마무리합니다. SSH 연결과 무관하게 원격 학습이 유지되도록 분리했으며, 완료 모델의 무결성 확인·다운로드를 자동화했습니다. 최종 단일 제출 파일은 아직 미완성입니다.",
+  "updated_at": "2026-10-17T01:18:00+09:00",
+  "state_label": "최종 기본 모델 7/8 확보 · xRFM 학습 중",
+  "headline": "CatBoost와 Mac 학습 모델들이 완료돼 7개를 확보했습니다",
+  "summary": "최종 XGBoost·HistGradientBoosting·CatBoost·Random Forest·LightGBM·Elastic Net·TabM을 저장했습니다. 원격 모델은 고정 파라미터·행 수·해시 확인 후 다운로드했습니다. xRFM은 원래 설정으로 Mac에서 학습 중입니다. 검증용 첫 9개월 모델도 별도 생성 중이며, TabM은 Windows 새 프로세스에서 실제 재로드·2,000행 예측까지 통과했습니다. 최종 앙상블 재학습 성능 평가와 단일 파일 통합 검사는 아직 남아 있습니다.",
   "steps": [
     {
       "title": "자료·실행 구성 확인",
@@ -24,9 +24,9 @@
     },
     {
       "title": "최종 기본 모델 학습",
-      "detail": "완료 모델 2/8 보존, CatBoost 세 번째 seed 진행. 64GB Mac에서 RF·xRFM·TabM 병렬 학습을 시작했습니다. xRFM leaf=40000 등 원래 설정을 유지하며 메모리를 감시합니다.",
+      "detail": "최종 모델 7/8 확보. xRFM만 Mac에서 학습 중입니다. 검증용 모델은 별도 생성 중이며, 이미 완료된 모델은 재학습하지 않습니다.",
       "status": "pending",
-      "label": "병렬 실행"
+      "label": "7/8 완료"
     },
     {
       "title": "Python 한 파일로 패키징",
@@ -62,6 +62,11 @@
     }
   ],
   "events": [
+    {
+      "at": "2026-10-17T01:18:00+09:00",
+      "title": "최종 7개 모델 확보·TabM 플랫폼 간 실행 검사",
+      "detail": "CatBoost 3seed 전체 학습·CPU 재로드 검사 완료. Mac에서 final TabM·RF·LightGBM·Elastic Net 및 검증용 TabM·XGB·HistGB도 완료해 다운로드했습니다. TabM의 Mac CPU와 Windows CPU 2,000행 예측 최대 차이는 약7.75e-7이고 0.5 기준 분류 불일치는 0건입니다. 전체 앙상블 평가나 미래 성능 검증과는 구별합니다."
+    },
     {
       "at": "2026-10-17T00:04:00+09:00",
       "title": "Mac 원격 CPU·GPU 병렬 학습과 자동 동기화",
