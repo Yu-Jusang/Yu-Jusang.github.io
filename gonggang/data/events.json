@@ -1,0 +1,496 @@
+{
+  "events": [
+    {
+      "id": "doosanday-lunch-20260917",
+      "title": "두산DAY with 서울대 · 런치 채용설명회",
+      "date": "2026-09-17",
+      "start": "12:30",
+      "end": "14:00",
+      "location": "301동 118호 대형강의실",
+      "benefit": "기프티콘 2만원권 + 쉐이크쉑 버거",
+      "category": "food",
+      "rule": "설명회 참석자 전원 · 상담회 중복 참여 시 중복 지급",
+      "eligibility": "참가 자격은 원문에서 추가 확인",
+      "registration": "required",
+      "registrationUrl": "https://bit.ly/doosanday-snu-mail",
+      "source": "notice",
+      "sourceUrl": "https://snuti.snu.ac.kr/17820/",
+      "evidence": "채용설명회 — 기프티콘 2만원권 + 쉐이크쉑 버거 증정",
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "사전신청 조기 마감 가능"
+      ],
+      "publicVerified": true
+    },
+    {
+      "id": "doosanday-consult-20260917",
+      "title": "두산DAY with 서울대 · 계열사 채용상담회",
+      "date": "2026-09-17",
+      "start": "10:00",
+      "end": "17:00",
+      "location": "301동 로비",
+      "benefit": "기프티콘 2만원권",
+      "category": "gift",
+      "rule": "상담회 참석자 전원 · 신청 없이 방문 가능",
+      "eligibility": "참가 자격은 원문에서 추가 확인",
+      "registration": "none",
+      "source": "notice",
+      "sourceUrl": "https://snuti.snu.ac.kr/17820/",
+      "evidence": "계열사별 채용상담회 10:00~17:00 | 301동 로비 (신청 없이 방문 가능)",
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "10~17시는 운영 시간 · 개인 참여 소요시간 미기재"
+      ],
+      "duration": null,
+      "publicVerified": true
+    },
+    {
+      "source": "instagram",
+      "publicVerified": true,
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "종료시간 미기재 · 소진 시 종료"
+      ],
+      "id": "ig-eng-lg-20261020",
+      "title": "공대 × LG사이언스파크 간식행사",
+      "date": "2026-10-20",
+      "start": "11:00",
+      "end": null,
+      "location": "301동 1층 118호 앞",
+      "benefit": "피자설기 + LG사이언스파크 브랜드북",
+      "category": "food",
+      "rule": "선착순 250명 · 수량 소진 시 조기 종료",
+      "eligibility": "서울대학교 공과대학 학우",
+      "registration": "none",
+      "sourceUrl": "https://www.instagram.com/snu.eng_official/p/DeifkqplOt8/",
+      "evidence": "피자설기 + LG사이언스파크 브랜드북"
+    },
+    {
+      "source": "instagram",
+      "publicVerified": true,
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "종료시간 미기재 · 소진 시 종료",
+        "두 차수를 모두 수령할 수 있다는 뜻이 아님"
+      ],
+      "id": "ig-human-snack-20261020-1",
+      "title": "인문대 중간고사 간식행사 · 1차 배부",
+      "date": "2026-10-20",
+      "start": "12:30",
+      "end": null,
+      "location": "인문대학 5동 앞 해방터",
+      "benefit": "크라이치즈버거 또는 서브웨이 베지 + 비타파워",
+      "category": "food",
+      "rule": "각 차수 55세트 · 1인 1세트 · 학생증 필수 · 대리 줄서기 불가",
+      "eligibility": "인문대학 주전공 학부생만",
+      "registration": "none",
+      "sourceUrl": "https://www.instagram.com/humanities_snu/p/DeeCNi6mr9e/",
+      "evidence": "크라이치즈버거 또는 서브웨이 베지 + 비타파워"
+    },
+    {
+      "source": "instagram",
+      "publicVerified": true,
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "종료시간 미기재 · 소진 시 종료",
+        "두 차수를 모두 수령할 수 있다는 뜻이 아님"
+      ],
+      "id": "ig-human-snack-20261020-2",
+      "title": "인문대 중간고사 간식행사 · 2차 배부",
+      "date": "2026-10-20",
+      "start": "13:50",
+      "end": null,
+      "location": "인문대학 5동 앞 해방터",
+      "benefit": "크라이치즈버거 또는 서브웨이 베지 + 비타파워",
+      "category": "food",
+      "rule": "각 차수 55세트 · 1인 1세트 · 학생증 필수 · 대리 줄서기 불가",
+      "eligibility": "인문대학 주전공 학부생만",
+      "registration": "none",
+      "sourceUrl": "https://www.instagram.com/humanities_snu/p/DeeCNi6mr9e/",
+      "evidence": "크라이치즈버거 또는 서브웨이 베지 + 비타파워"
+    },
+    {
+      "source": "instagram",
+      "publicVerified": true,
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "소요시간·마감시간 미기재",
+        "11월 4일 교육공청회와 설문 마감은 별도"
+      ],
+      "id": "ig-cals-survey-20261021",
+      "title": "농생대 하반기 교육환경총조사",
+      "date": null,
+      "start": null,
+      "end": null,
+      "location": "온라인 설문",
+      "benefit": "배민 3만원권 1명 · 올리브영 1만원권 2명 · 더벤티 5천원권 10명",
+      "category": "gift",
+      "rule": "설문 참여자 중 추첨 · 전원 지급 아님",
+      "eligibility": "농업생명과학대학 학우",
+      "registration": "none",
+      "sourceUrl": "https://www.instagram.com/snucals_stuco/p/DeeAAj7qQ5q/",
+      "evidence": "배민 3만원권 1명 · 올리브영 1만원권 2명 · 더벤티 5천원권 10명",
+      "registrationUrl": "https://bit.ly/2026하반기교육환경총조사",
+      "deadline": "2026-10-21"
+    },
+    {
+      "source": "instagram",
+      "publicVerified": true,
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "메뉴·장소·신청 링크·신청 마감 미공지",
+        "가수요조사의 후보일이 아닌 확정 일정 반영"
+      ],
+      "id": "ig-cns-career-20261113",
+      "title": "자연대 맞춤형 진로행사",
+      "date": "2026-11-13",
+      "start": "17:30",
+      "end": "20:20",
+      "location": "장소 미공지",
+      "benefit": "식사 제공 예정",
+      "category": "food",
+      "rule": "동문 강연·패널 토크·소그룹 멘토링 및 네트워킹 참여",
+      "eligibility": "자연과학대학 구성원 · 복수·부전공 및 자유전공 포함",
+      "registration": "unknown",
+      "sourceUrl": "https://www.instagram.com/snu_cns/p/DeN0H2fGKkU/",
+      "evidence": "식사 제공 예정"
+    },
+    {
+      "source": "instagram",
+      "publicVerified": true,
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "전원 식사 제공이 아님 · 우승팀에만 식사권",
+        "10월 29일부터 2차 신청 예정 · 종료일 미공지"
+      ],
+      "id": "ig-cns-goldenbell-20261118",
+      "title": "자연대 골든벨",
+      "date": "2026-11-18",
+      "start": "18:30",
+      "end": "20:30",
+      "location": "자연과학대학 28동 · 상세 호실 미기재",
+      "benefit": "우승팀에 애슐리 1인 식사권 3매",
+      "category": "gift",
+      "rule": "서로 다른 과 3인 1조 · 개인 신청 시 팀 편성 · 우승팀 상품",
+      "eligibility": "자연대 학부생·복수전공생·자유전공 진입생",
+      "registration": "required",
+      "sourceUrl": "https://www.instagram.com/snu_cns/p/DegMXiDGJEG/",
+      "evidence": "우승팀에 애슐리 1인 식사권 3매",
+      "registrationUrl": "https://bit.ly/자연대골든벨",
+      "deadline": "2026-10-22"
+    },
+    {
+      "source": "instagram",
+      "publicVerified": true,
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "본문의 10월 31일 요일 표기가 달력과 다름 · 날짜를 기준으로 기록",
+        "소요시간·선정 기준 세부 미기재"
+      ],
+      "id": "ig-cns-labbook-beta-20261031",
+      "title": "랩인턴 백서 베타테스트 의견 제보",
+      "date": null,
+      "start": null,
+      "end": null,
+      "location": "랩인턴 백서 홈페이지 · 온라인",
+      "benefit": "1만원 상당 기프티콘 · 선정 10명",
+      "category": "gift",
+      "rule": "개선에 도움을 준 의견 10명 선정 · 전원 지급이나 단순 무작위 추첨으로 단정하지 않음",
+      "eligibility": "서울대학교 학부생",
+      "registration": "none",
+      "sourceUrl": "https://www.instagram.com/snu_cns/p/DeQiDNKGOCu/",
+      "evidence": "1만원 상당 기프티콘 · 선정 10명",
+      "registrationUrl": "https://bit.ly/랩인턴백서베타",
+      "deadline": "2026-10-31"
+    },
+    {
+      "source": "instagram",
+      "publicVerified": true,
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "종료시간 미기재 · 소진 시 종료"
+      ],
+      "id": "ig-cns-snack-20261013",
+      "title": "자연대 중간고사 간식행사 · 샤캉이를 잡아라!",
+      "date": "2026-10-13",
+      "start": "17:30",
+      "end": null,
+      "location": "28동·26동 앞 공터",
+      "benefit": "크라이치즈버거 + 음료 / 비건 베이글",
+      "category": "food",
+      "rule": "일 50인분 버거 + 일 4인분 비건식 · 선착순 · 학생증 필수",
+      "eligibility": "자연과학대학 학부생",
+      "registration": "none",
+      "sourceUrl": "https://www.instagram.com/snu_cns/p/DeL4yFJGIuD/",
+      "evidence": "크라이치즈버거 + 음료 / 비건 베이글"
+    },
+    {
+      "source": "instagram",
+      "publicVerified": true,
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "종료시간 미기재 · 소진 시 종료"
+      ],
+      "id": "ig-cns-snack-20261014",
+      "title": "자연대 중간고사 간식행사 · 샤캉이를 잡아라!",
+      "date": "2026-10-14",
+      "start": "17:30",
+      "end": null,
+      "location": "28동·26동 앞 공터",
+      "benefit": "크라이치즈버거 + 음료 / 비건 베이글",
+      "category": "food",
+      "rule": "일 50인분 버거 + 일 4인분 비건식 · 선착순 · 학생증 필수",
+      "eligibility": "자연과학대학 학부생",
+      "registration": "none",
+      "sourceUrl": "https://www.instagram.com/snu_cns/p/DeL4yFJGIuD/",
+      "evidence": "크라이치즈버거 + 음료 / 비건 베이글"
+    },
+    {
+      "source": "instagram",
+      "publicVerified": true,
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "종료시간 미기재"
+      ],
+      "id": "ig-eng-snack-20261013",
+      "title": "공대 중간고사 간식행사",
+      "date": "2026-10-13",
+      "start": "12:00",
+      "end": null,
+      "location": "붉은광장 / 301동 118호 옆",
+      "benefit": "크라이치즈버거 + 코카콜라",
+      "category": "food",
+      "rule": "각 장소 200인분 · 학생증 인증 후 수령 · 선착순 소진 시 종료",
+      "eligibility": "공과대학 학부생",
+      "registration": "none",
+      "sourceUrl": "https://www.instagram.com/snu.eng_official/p/DeTqoXnFOc_/",
+      "evidence": "크라이치즈버거 + 코카콜라"
+    },
+    {
+      "source": "instagram",
+      "publicVerified": true,
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "예상 3~5분 · 선정 방식 미기재"
+      ],
+      "id": "ig-edu-library-survey-20261016",
+      "title": "교육정보도서관 이용 실태 및 개선 요구 조사",
+      "date": null,
+      "start": null,
+      "end": null,
+      "location": "온라인 설문",
+      "benefit": "배민 2만원권 1명·1만원권 2명 / CU 5천원권 12명",
+      "category": "gift",
+      "rule": "설문 상품 · 전원 지급 아님 · 선정 방식 본문 미기재",
+      "eligibility": "사범대학 학우",
+      "registration": "none",
+      "sourceUrl": "https://www.instagram.com/ed_u_snu/p/DeWyklLvZIh/",
+      "evidence": "배민 2만원권 1명·1만원권 2명 / CU 5천원권 12명",
+      "registrationUrl": "https://forms.gle/jzJDAMFti4Fcfgzf9",
+      "deadline": "2026-10-16",
+      "duration": 5
+    },
+    {
+      "source": "notice",
+      "publicVerified": true,
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "일반 참가 신청은 원문 포스터 QR (~12/8) · 직접 신청 URL 미확인",
+        "인기상 투표 참여자 경품: 스타벅스 2만원권 5명 · 전원 지급 아님"
+      ],
+      "id": "physics-undergrad-research-2026",
+      "title": "물리천문학부 학부생 연구발표회",
+      "date": "2026-12-16",
+      "start": "11:30",
+      "end": "13:10",
+      "location": "56동 105호 및 해동홀",
+      "benefit": "피자·치킨·음료 제공 예정",
+      "category": "food",
+      "rule": "12:00~13:00 해동홀 포스터 발표 중 점심 제공 · 음식은 상황에 따라 변경 가능",
+      "eligibility": "서울대학교 전체 학부생 · 학과 제한 없음",
+      "registration": "required",
+      "sourceUrl": "https://physics.snu.ac.kr/boards/notice?md=v&bbsidx=15541",
+      "evidence": "포스터 확인: 2026년 12월 16일 11:30~13:10 / 포스터 발표 12:00~13:00 (해동홀, 점심 제공)",
+      "deadline": "2026-12-08"
+    },
+    {
+      "source": "notice",
+      "publicVerified": true,
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "기프티콘 금액·지급일 미기재"
+      ],
+      "id": "biosci-integrity-20260917",
+      "title": "재학생 대상 반부패 법령 특강",
+      "date": "2026-09-17",
+      "start": "14:00",
+      "end": "16:00",
+      "location": "비대면 Zoom",
+      "benefit": "모바일 기프티콘 지급 예정",
+      "category": "gift",
+      "rule": "교육시간 80% 이상 참석한 이수자 대상",
+      "eligibility": "서울대 학부·대학원 재학생",
+      "registration": "unknown",
+      "registrationUrl": "https://cleanweek.snu.ac.kr/",
+      "sourceUrl": "https://biosci.snu.ac.kr/board/notice?bm=v&bbsidx=25547&page=1",
+      "evidence": "이수자에게 소정의 기념품(모바일 기프티콘) 지급 예정"
+    },
+    {
+      "source": "instagram",
+      "publicVerified": true,
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "수량·종료시간 미기재"
+      ],
+      "id": "ig-social-snack-20261012",
+      "title": "사회대 중간고사 간식행사 · 아무리 바뻐도 밥버거는 먹고가",
+      "date": "2026-10-12",
+      "start": "11:00",
+      "end": null,
+      "location": "사회과학대학 16동 출입구 앞",
+      "benefit": "봉구스 밥버거 + 몬스터 · 비건 메뉴 별도",
+      "category": "food",
+      "rule": "학생증·모바일 S-CARD 지참 · 1·2일차 중복 수령 불가 · 소진 시 종료",
+      "eligibility": "사회과학대학 소속 학부생",
+      "registration": "none",
+      "sourceUrl": "https://www.instagram.com/snucss_official/p/DeTfqaejypW/",
+      "evidence": "봉구스 밥버거 + 몬스터 · 비건 메뉴 별도"
+    },
+    {
+      "source": "instagram",
+      "publicVerified": true,
+      "verifiedAt": "2026-10-17",
+      "uncertain": [
+        "수량·종료시간 미기재"
+      ],
+      "id": "ig-social-snack-20261013",
+      "title": "사회대 중간고사 간식행사 · 아무리 바뻐도 밥버거는 먹고가",
+      "date": "2026-10-13",
+      "start": "11:00",
+      "end": null,
+      "location": "사회과학대학 16동 출입구 앞",
+      "benefit": "봉구스 밥버거 + 몬스터 · 비건 메뉴 별도",
+      "category": "food",
+      "rule": "학생증·모바일 S-CARD 지참 · 1·2일차 중복 수령 불가 · 소진 시 종료",
+      "eligibility": "사회과학대학 소속 학부생",
+      "registration": "none",
+      "sourceUrl": "https://www.instagram.com/snucss_official/p/DeTfqaejypW/",
+      "evidence": "봉구스 밥버거 + 몬스터 · 비건 메뉴 별도"
+    }
+  ],
+  "status": {
+    "updatedAt": "2026-10-16T17:21:09.640Z",
+    "notice": "공식 공지 12곳 접근 확인",
+    "sourceChecks": [
+      {
+        "key": "physics",
+        "state": "ok",
+        "checkedAt": "2026-10-16T17:14:37.049Z",
+        "detail": "공식 공지 본문·목록 접근 확인"
+      },
+      {
+        "key": "engineering",
+        "state": "ok",
+        "checkedAt": "2026-10-16T17:14:37.055Z",
+        "detail": "공식 공지 본문·목록 접근 확인"
+      },
+      {
+        "key": "biosci",
+        "state": "ok",
+        "checkedAt": "2026-10-16T17:14:36.814Z",
+        "detail": "공식 공지 본문·목록 접근 확인"
+      },
+      {
+        "key": "science",
+        "state": "ok",
+        "checkedAt": "2026-10-16T17:14:37.053Z",
+        "detail": "공식 공지 본문·목록 접근 확인"
+      },
+      {
+        "key": "cals",
+        "state": "ok",
+        "checkedAt": "2026-10-16T17:14:37.400Z",
+        "detail": "공식 공지 본문·목록 접근 확인"
+      },
+      {
+        "key": "humanities",
+        "state": "ok",
+        "checkedAt": "2026-10-16T17:14:37.404Z",
+        "detail": "공식 공지 본문·목록 접근 확인"
+      },
+      {
+        "key": "social",
+        "state": "ok",
+        "checkedAt": "2026-10-16T17:14:37.405Z",
+        "detail": "공식 공지 본문·목록 접근 확인"
+      },
+      {
+        "key": "education",
+        "state": "ok",
+        "checkedAt": "2026-10-16T17:14:37.402Z",
+        "detail": "공식 공지 본문·목록 접근 확인"
+      },
+      {
+        "key": "general",
+        "state": "ok",
+        "checkedAt": "2026-10-16T17:14:38.018Z",
+        "detail": "공식 공지 본문·목록 접근 확인"
+      },
+      {
+        "key": "snuti",
+        "state": "ok",
+        "checkedAt": "2026-10-16T17:14:38.016Z",
+        "detail": "공식 공지 본문·목록 접근 확인"
+      },
+      {
+        "key": "college",
+        "state": "ok",
+        "checkedAt": "2026-10-16T17:14:38.019Z",
+        "detail": "공식 공지 본문·목록 접근 확인"
+      },
+      {
+        "key": "statistics",
+        "state": "ok",
+        "checkedAt": "2026-10-16T17:14:38.014Z",
+        "detail": "공식 공지 본문·목록 접근 확인"
+      },
+      {
+        "key": "ig_snu_eng_official",
+        "state": "browser_only",
+        "checkedAt": "2026-10-16T17:14:38.713Z",
+        "detail": "로그인된 브라우저에서 초기 피드 확인 · 서버 자동수집은 제한됨"
+      },
+      {
+        "key": "ig_ed_u_snu",
+        "state": "browser_only",
+        "checkedAt": "2026-10-16T17:14:38.715Z",
+        "detail": "로그인된 브라우저에서 초기 피드 확인 · 서버 자동수집은 제한됨"
+      },
+      {
+        "key": "ig_snu_cns",
+        "state": "browser_only",
+        "checkedAt": "2026-10-16T17:14:38.711Z",
+        "detail": "로그인된 브라우저에서 초기 피드 확인 · 서버 자동수집은 제한됨"
+      },
+      {
+        "key": "ig_snucals_stuco",
+        "state": "browser_only",
+        "checkedAt": "2026-10-16T17:14:38.714Z",
+        "detail": "로그인된 브라우저에서 초기 피드 확인 · 서버 자동수집은 제한됨"
+      },
+      {
+        "key": "ig_humanities_snu",
+        "state": "browser_only",
+        "checkedAt": "2026-10-16T17:14:39.256Z",
+        "detail": "로그인된 브라우저에서 초기 피드 확인 · 서버 자동수집은 제한됨"
+      },
+      {
+        "key": "ig_snucss_official",
+        "state": "browser_only",
+        "checkedAt": "2026-10-16T17:14:39.256Z",
+        "detail": "로그인된 브라우저에서 초기 피드 확인 · 서버 자동수집은 제한됨"
+      }
+    ]
+  },
+  "revision": 1
+}
