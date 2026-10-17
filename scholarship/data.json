@@ -1,0 +1,53 @@
+{
+  "verifiedAt": "2026-10-18",
+  "mode": "manually-verified",
+  "scholarships": [
+    {
+      "id": "cces-language-2026", "title": "이슬람권 언어연수 지원", "organization": "서울대 중앙유라시아연구소", "type": "해외연수", "published": "2026-10-01", "start": "2026-10-01", "deadline": "2026-10-20", "deadlineTime": null,
+      "amount": "200–350만 원", "audience": "서울대 학부·대학원", "description": "왕복 항공료와 체재비 일부를 지원하는 어학연수 장학금. 최소 4주 연수 대상입니다.", "sourceUrl": "https://newkaku.snu.ac.kr/snunow/events?bbsidx=176795&md=v", "applicationUrl": "https://cces.snu.ac.kr/", "method": "연구소 이메일 제출 · 원문 참조",
+      "rules": [{"field":"degree","allowed":["undergrad","master","doctor","integrated"],"label":"서울대 학부·대학원생","evidence":"교내 학부 및 대학원 재학생이 지원 대상이며 수료생도 가능합니다."},{"field":"training","allowed":["yes"],"label":"이슬람권 언어 학습 및 연수 계획","evidence":"아랍어·페르시아어·튀르크어 등을 대상으로 언어 학습 경력과 연수 목적을 심사합니다."}],
+      "unknowns": ["최소 4주 연수 계획, 언어 학습 경력 및 수준", "휴학생의 휴학 사유와 수혜 횟수 제한", "연수 후 발표 의무와 반납 조건", "마감일의 정확한 접수 시각"],
+      "steps": ["원문에서 지원 조건·반납 조건 확인", "연구소 공지에서 신청서 내려받기", "성적증명서 준비", "학업계획서 작성 (A4 1매 이내)", "연구소 이메일로 신청 서류 제출"], "note": "선발 인원 3–4명. 중복 수혜 가능 여부는 담당 기관에 확인하세요. 날짜만 공개되어 마감 시각은 표시하지 않습니다."
+    },
+    {
+      "id": "snu-custom-guide", "title": "서울대 교내 맞춤형장학금", "organization": "서울대 · 소속 단과대학", "type": "등록금", "published": null, "guide": true, "start": null, "deadline": null, "deadlineTime": null,
+      "amount": "소속 대학별 확인", "audience": "학부·대학원 등록대상자", "description": "성적과 경제상황 등을 고려하는 교내 장학 제도. 실제 선발 기준과 추가 서류는 소속 대학에 확인해야 합니다.", "sourceUrl": "https://student.snu.ac.kr/소식·알림/faq/장학/", "applicationUrl": "https://my.snu.ac.kr/", "method": "마이스누 신청 + 소속별 추가 절차",
+      "rules": [{"field":"status","allowed":["enrolled","returning"],"blocked":["freshman"],"label":"재학·복학 예정 등록대상자","evidence":"복학예정자도 기간 내 신청이 필요합니다. 학부 신입생은 맞춤형장학금 선발 대상이 아닙니다."}],
+      "unknowns": ["해당 학기 신청 기간과 소속 대학별 선발 기준", "성적·경제상황 및 지원 금액", "소속 학과 추가 서류와 제출 마감"],
+      "steps": ["소속 대학·학과의 해당 학기 공지 확인", "마이스누에서 교내장학금 신청", "마이스누 신청 완료 상태 확인", "학과에서 요구한 추가 서류 제출"], "note": "이 항목은 제도 안내입니다. 현재 모집 중이라는 뜻이 아닙니다. 다음 학기 일정이 확정되기 전에는 과거 일정을 마감일로 사용하지 않습니다."
+    },
+    {
+      "id": "munju-ai-2026-fall", "title": "문주장학재단 AI·ICT 인재 장학금", "organization": "문주장학재단 · 서울대 학생처 안내", "type": "요강 확인", "published": "2026-09-21", "start": null, "deadline": null, "deadlineTime": null,
+      "amount": "선발 요강 확인", "audience": "AI·ICT 분야 · 세부 요강 확인", "description": "서울대 학생처에 게시된 AI·ICT 분야 인재 장학생 선발 공고. 조건과 일정은 첨부 선발 요강 확인이 필요합니다.", "sourceUrl": "https://student.snu.ac.kr/?kboard_content_redirect=390", "applicationUrl": null, "method": "첨부 공고문·지원서식 확인",
+      "rules": [], "unknowns": ["학위과정·전공 및 성적·소득 기준", "접수 기간과 현재 모집 여부", "장학금액·지급 성격과 중복 수혜 제한", "신청서식 및 제출 방법"],
+      "steps": ["원문에서 첨부 선발 공고문 열기", "신청 기간·자격·지원 성격 확인", "장학생 지원서식 작성", "공고문에 명시된 방법으로 제출"], "note": "공개 웹 본문만 확인한 항목입니다. 첨부 요강의 세부 조건은 아직 구조화하지 않았으며, 현재 접수 가능한 공고로 분류하지 않습니다. 지급 성격도 첨부 요강에서 확인해야 합니다."
+    },
+    {
+      "id": "ilun-2026-fall", "title": "일운과학기술재단 희망·나눔 장학생", "organization": "일운과학기술재단", "type": "학업·생활", "published": "2026-09-22", "start": "2026-09-16", "deadline": "2026-09-27", "deadlineTime": null,
+      "amount": "최대 2,000만 원 / 3년 총합", "audience": "석사과정 이상 재학생", "description": "전공 제한 없이 석사과정 이상 재학생을 모집한 희망·나눔 장학생 선발 공고입니다.", "sourceUrl": "https://student.snu.ac.kr/?kboard_content_redirect=392", "applicationUrl": "https://www.ilun.or.kr/", "method": "재단 홈페이지의 선발 공고 확인",
+      "rules": [{"field":"degree","allowed":["master","doctor","integrated"],"label":"석사과정 이상","evidence":"국내·외 석사과정 이상 재학생 (전공 무관)."},{"field":"status","allowed":["enrolled"],"blocked":["leave","completed"],"label":"재학생","evidence":"지원 자격에 재학생으로 명시되어 있습니다."}],
+      "unknowns": ["통합과정의 세부 인정 기준", "희망·나눔 부문별 선발 요건과 지급 조건", "중복 수혜 제한 및 정확한 접수 시각"],
+      "steps": ["재단 선발 공고와 부문별 요건 확인", "재단에서 요구하는 서류 준비", "재단이 안내한 방법으로 신청"], "note": "초기 확인 당시 접수가 끝난 공고입니다. 최대 2,000만 원은 연간 지급액이 아닌 3년 총합입니다."
+    },
+    {
+      "id": "mirae-36-2027", "title": "제36기 미래에셋 해외교환 장학생", "organization": "미래에셋박현주재단", "type": "해외연수", "published": "2026-09-08", "start": "2026-09-30", "deadline": "2026-10-06", "deadlineTime": "15:00",
+      "amount": "650만 원 또는 850만 원", "audience": "2027년 봄 해외파견 학부생", "description": "2027년 봄학기 해외파견 예정 학부생 대상. 지역별 지원 금액과 재단 선발 기준이 적용됩니다.", "sourceUrl": "https://student.snu.ac.kr/?kboard_content_redirect=365", "applicationUrl": "https://foundation.miraeasset.com/ko/news/notice/view.do?listCnt=6&pageIndex=1&ctgry=&detailsKey=547&tq=&q=", "method": "재단 선발 요강에 따라 신청",
+      "rules": [{"field":"degree","allowed":["undergrad"],"label":"국내 4년제 정규대학 학부생","evidence":"대한민국 국적의 국내 정규대학 재학 학부생이 대상입니다."},{"field":"exchange","allowed":["yes"],"label":"2027년 봄학기 해외파견 예정","evidence":"2027년 봄학기 해외파견 예정자로 명시되어 있습니다."}],
+      "unknowns": ["대한민국 국적과 세부 학적 요건", "성적·경제적 기준과 파견 유형", "재단 첨부 요강의 서류 및 중복 수혜 조건"],
+      "steps": ["재단 원문·선발 요강 확인", "파견 예정 및 성적·경제 요건 확인", "재단 요구 서류 준비", "재단 접수 완료 확인"], "note": "미주·유럽·기타 지역 850만 원, 아시아 650만 원. 2026년 10월 6일 15시에 접수가 마감된 공고입니다."
+    },
+    {
+      "id": "bomnae-2026-fall", "title": "춘천인재육성장학재단 봄내장학생", "organization": "춘천인재육성장학재단", "type": "등록금", "published": "2026-09-21", "start": "2026-09-28", "deadline": "2026-10-07", "deadlineTime": null,
+      "amount": "일반 대학생 최대 100만 원", "audience": "춘천 거주 요건 등 해당 대학생", "description": "춘천 거주 요건과 유형별 선발 기준이 있는 지역 장학금. 서울대 재학 여부만으로는 지원 자격을 판단할 수 없습니다.", "sourceUrl": "https://student.snu.ac.kr/?kboard_content_redirect=391", "applicationUrl": null, "method": "유형별 방문·우편 등 절차 상이",
+      "rules": [{"field":"status","allowed":["enrolled"],"blocked":["leave"],"label":"재학생 (휴학생 제외)","evidence":"대학생은 휴학생과 정규학기 초과등록 학생이 신청할 수 없습니다."}],
+      "unknowns": ["신청 유형과 춘천 거주 기간·가족 요건", "유형별 성적·이수학점·추천 요건", "등록금 실납부액·기존 수혜 및 중복신청 제한"],
+      "steps": ["해당 유형과 거주 요건 확인", "유형별 성적·추천 서류 준비", "방문·우편 등 유형에 맞는 접수 절차 이행", "우편 도착 및 추가 제출 여부 확인"], "note": "일반 대학생은 등록금 실납부액 범위에서 지급됩니다. 유형별 온라인 신청 여부가 다르며 우편은 마감일까지 도착해야 합니다."
+    },
+    {
+      "id": "highway-2026", "title": "고속도로장학재단 장학생", "organization": "고속도로장학재단 · 서울대 학생처 안내", "type": "요강 확인", "published": "2026-09-16", "start": null, "deadline": null, "deadlineTime": null,
+      "amount": "선발 요강 확인", "audience": "재단 선발 대상 확인", "description": "서울대 학생처에 게시된 2026년 장학생 선발 안내. 세부 자격과 신청 일정은 원문에서 확인하세요.", "sourceUrl": "https://student.snu.ac.kr/?kboard_content_redirect=389", "applicationUrl": null, "method": "공식 공지에서 요강 확인",
+      "rules": [], "unknowns": ["재단의 지원 대상 및 증빙 요건", "접수 기간과 현재 모집 여부", "지원 금액·지급 성격·중복 수혜 및 제출 방법"],
+      "steps": ["원문 선발 안내 확인", "지원 자격과 접수 기간 확인", "재단 요구 서류 준비", "공고에 명시된 방법으로 신청"], "note": "공고의 존재를 확인한 항목으로 세부 요건과 지급 성격 확인이 필요합니다."
+    }
+  ]
+}
