@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-17T15:08:00+09:00",
-  "state_label": "진행 중 · AutoGluon 최종 제출로 전환",
-  "headline": "원본 AutoGluon을 찾아 검증·최종 학습을 시작했습니다",
-  "summary": "사용자가 최종 제출 모델을 AutoGluon best_quality 단독으로 변경했습니다. 원본 Mac 프로젝트에서 F5–F9/A 학습 모델과 원시 예측을 발견했습니다. 기존 OOF threshold 0.435와 A/B를 재검산하고 전체 12개월 제출 모델을 별도로 학습합니다. 저예산 보조 AutoGluon(0.425)과 구분하며 기존 8개 모델은 보존합니다. 새 단일 파일과 상세 한국어 LaTeX/PDF는 아직 미완료입니다.",
+  "updated_at": "2026-10-17T16:00:00+09:00",
+  "state_label": "학습 중 · 원본 AutoGluon 성능 재현 확인",
+  "headline": "원본 AutoGluon의 보고서 점수를 실제 모델로 재현했습니다",
+  "summary": "원본 best_quality A 모델을 새로 로드해 41,772행을 예측했고 저장 확률과 최대 차이 0을 확인했습니다. A 16.5063%, 수정 B 17.4901%, OOF threshold 0.435를 재계산했습니다. 맥북에서 원본 Preset과 데이터당 시간 예산을 유지한 전체 12개월 학습이 진행 중입니다. 학습 완료 후 자동 다운로드·Windows 호환성·단일 파일 실행 시험을 이어갑니다. 114쪽 상세 보고서 초안을 조판했지만 아직 최종본이 아닙니다.",
   "steps": [
     {
       "title": "원본 AutoGluon 복원",
@@ -12,15 +12,15 @@
     },
     {
       "title": "OOF·실제 Test 검증",
-      "detail": "F7–F9 임계값 재계산과 원본 A 모델 재로드 예측을 실행 중입니다. 새 탐색이 아닙니다.",
-      "status": "running",
-      "label": "진행"
+      "detail": "F7–F9에서 threshold0.435 재확인. 원본 A 모델 재로드 실제 41,772행 확률 최대차이0, A16.5063%, B17.4901%.",
+      "status": "done",
+      "label": "통과"
     },
     {
       "title": "전체 12개월 최종 학습",
-      "detail": "원본 best_quality 설정, 동일한 데이터당 시간 예산. Test 점수로 새 설정을 선택하지 않습니다.",
-      "status": "pending",
-      "label": "대기"
+      "detail": "Mac 원본 AutoGluon1.6.3 best_quality로 학습 중. 8-fold Bagging·Stacking 유지. 완료 모델은 별도 배포 복제로 보존.",
+      "status": "running",
+      "label": "학습 중"
     },
     {
       "title": "단일 Python 패키징·실행",
@@ -30,17 +30,17 @@
     },
     {
       "title": "상세 LaTeX·PDF 보고서",
-      "detail": "기존 전 실험과 AutoGluon 선정 변경·검증·한계·재현성·발표/Q&A를 담고 조판 검수합니다.",
-      "status": "pending",
-      "label": "준비"
+      "detail": "새 본문·읽기용 소스와 Claude 원문82쪽 전체 보존으로 총114쪽 초안 조판. 최종 학습·실행 증거 반영과 검수가 남음.",
+      "status": "running",
+      "label": "초안"
     }
   ],
   "metrics": [
     {
-      "name": "원 보고서 AutoGluon 단독",
-      "a": 0.1651,
-      "b": 0.1749,
-      "source": "Claude 최종 보고서 표 VIII · 현재 재검증 중"
+      "name": "원본 AutoGluon 단독 재로드",
+      "a": 0.16506272144019918,
+      "b": 0.1749012548498402,
+      "source": "41,772행 실제 예측 · 원본 확률 최대차이0"
     },
     {
       "name": "현재 실제 재학습 앙상블",
@@ -68,6 +68,11 @@
     }
   ],
   "events": [
+    {
+      "at": "2026-10-17T16:00:00+09:00",
+      "title": "원본 AutoGluon 실제 예측 재현·전체 학습·상세 보고서 초안",
+      "detail": "LOMO OOF13.5988%, threshold0.435 확인. 동일 Test 행의 paired bootstrap도 재계산했습니다. 초기 OpenMP 교착은 학습 전 import순서를 수정해 해결했고 원본은 보존했습니다. 전체12개월 모델·단일파일은 아직 완료 전입니다."
+    },
     {
       "at": "2026-10-17T15:08:00+09:00",
       "title": "AutoGluon 제출 전환·원본 학습 모델 발견",
