@@ -1,38 +1,38 @@
 {
-  "updated_at": "2026-10-17T08:18:36Z",
-  "state_label": "검증 중 · 전체 학습·단일 파일 생성 완료",
-  "headline": "AutoGluon 전체 학습과 플랫폼 간 예측 검사를 마쳤습니다",
-  "summary": "전체162,355행 best_quality 학습이 3,689초에 완료됐습니다. 선택된 WeightedEnsemble_L3와 의존 모델19개를 배포 복제했고 학습 캐시는 제외했습니다. Mac/Windows 96행 확률 최대차이 약1.14e-7, 판정 불일치0건입니다. 약1.13GB 단일 Python을 생성해 외부 모델 없는 새 프로세스 통합 시험을 진행 중입니다. 상세 보고서는 실제 내부 구성·가중치와 최종 시험 결과를 반영하고 있습니다.",
+  "updated_at": "2026-10-17T08:38:13Z",
+  "state_label": "완료 · AutoGluon 단일 제출물·상세 보고서",
+  "headline": "AutoGluon 최종 제출 파일과 118쪽 보고서를 완성했습니다",
+  "summary": "전체162,355행으로 학습한 AutoGluon best_quality와 고정 threshold0.435를 약1.13GB Python 파일에 내장했습니다. 외부 모델 없는 Windows 새 프로세스에서 합성 미래96행의 API·CSV 결과 일치, 결측·새 범주·행/열 순서·분할 입력·TARGET 미사용·입력 오류 검사를 통과했습니다. 원본9개월 모델의 실제 외부 검증 A16.5063%, 수정 B17.4901%를 정확히 재현했으며, 이는 전체12개월 제출 모델의 미래 정확도 측정이 아닙니다. 118쪽 한국어 LaTeX/PDF·소스 묶음도 완성했고 자동 이어가기를 종료했습니다.",
   "steps": [
     {
       "title": "원본 AutoGluon 복원",
-      "detail": "원본 best_quality 6개 fold 모델·코드·로그 발견. 1.6.3, 558개 입력 변수, A 학습 120,583행.",
+      "detail": "원본 best_quality 코드·F5–F9/A 모델과 예측 발견. 이전 저예산 보조 모델과 분리했습니다.",
       "status": "done",
-      "label": "발견 완료"
+      "label": "완료"
     },
     {
       "title": "OOF·실제 Test 검증",
-      "detail": "F7–F9에서 threshold0.435 재확인. 원본 A 모델 재로드 실제 41,772행 확률 최대차이0, A16.5063%, B17.4901%.",
+      "detail": "OOF threshold0.435, LOMO13.5988%. 원본9개월 모델 실제41,772행 재로드 확률 최대차이0. A16.5063%, 수정B17.4901%.",
       "status": "done",
       "label": "통과"
     },
     {
       "title": "전체 12개월 최종 학습",
-      "detail": "162,355행, best_quality, 3,689초. WeightedEnsemble_L3 선택. 원본을 보존한 배포 복제에서 확률 차이0과 학습 캐시 제외 확인.",
+      "detail": "전체162,355행 best_quality 학습3,689초. WeightedEnsemble_L3와 의존19개노드·117개하위객체. 모델복제전후확률차이0, 학습캐시제외.",
       "status": "done",
       "label": "완료"
     },
     {
-      "title": "단일 Python 패키징·실행",
-      "detail": "약1.13GB 파일 생성. Mac/Windows 96행 확률 최대차이1.14e-7·판정 불일치0. 미래 형식·API·CSV 독립 실행 시험 진행.",
-      "status": "running",
-      "label": "시험 중"
+      "title": "단일 Python 독립 실행",
+      "detail": "약1.13GB 내장모델파일 완성. Mac/Windows96행판정불일치0. 미래형식·API/CSV·행열/Batch·TARGET미사용검사통과. 확률오차와합성시험한계명시.",
+      "status": "done",
+      "label": "통과"
     },
     {
       "title": "상세 LaTeX·PDF 보고서",
-      "detail": "새 본문·읽기용 소스와 Claude 원문82쪽 전체 보존으로 총114쪽 초안 조판. 최종 학습·실행 증거 반영과 검수가 남음.",
-      "status": "running",
-      "label": "초안"
+      "detail": "총118쪽. 새본문·실제내부구성/가중치/설정·검증·선택편향·재현성·발표/Q&A와기존82쪽역사원문보존. 최종표·페이지시각검수완료.",
+      "status": "done",
+      "label": "완료"
     }
   ],
   "metrics": [
@@ -68,6 +68,11 @@
     }
   ],
   "events": [
+    {
+      "at": "2026-10-17T08:38:13Z",
+      "title": "AutoGluon 최종 제출물·독립 시험·118쪽 보고서 완성",
+      "detail": "단일 .py 크기1,129,180,268bytes, SHA256 8932608966606734f7b13e0b2b293d8af95a084f1da7473c35b835a8500e9e63. 외부모델없이새프로세스API·CSV0/1일치,96합성미래입력검사통과. 읽기용코드·LaTeX·필수패키지·보고서ZIP도제공했습니다. Test를본뒤모델을채택한한계와실제미래정답부재를명시. 자동화종료. 원자료·모델·개별예측·인증정보는공개하지않습니다."
+    },
     {
       "at": "2026-10-17T08:18:36Z",
       "title": "전체 학습 완료·플랫폼 경로 호환·단일 파일 생성",
