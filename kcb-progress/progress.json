@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-17T16:00:00+09:00",
-  "state_label": "학습 중 · 원본 AutoGluon 성능 재현 확인",
-  "headline": "원본 AutoGluon의 보고서 점수를 실제 모델로 재현했습니다",
-  "summary": "원본 best_quality A 모델을 새로 로드해 41,772행을 예측했고 저장 확률과 최대 차이 0을 확인했습니다. A 16.5063%, 수정 B 17.4901%, OOF threshold 0.435를 재계산했습니다. 맥북에서 원본 Preset과 데이터당 시간 예산을 유지한 전체 12개월 학습이 진행 중입니다. 학습 완료 후 자동 다운로드·Windows 호환성·단일 파일 실행 시험을 이어갑니다. 114쪽 상세 보고서 초안을 조판했지만 아직 최종본이 아닙니다.",
+  "updated_at": "2026-10-17T08:18:36Z",
+  "state_label": "검증 중 · 전체 학습·단일 파일 생성 완료",
+  "headline": "AutoGluon 전체 학습과 플랫폼 간 예측 검사를 마쳤습니다",
+  "summary": "전체162,355행 best_quality 학습이 3,689초에 완료됐습니다. 선택된 WeightedEnsemble_L3와 의존 모델19개를 배포 복제했고 학습 캐시는 제외했습니다. Mac/Windows 96행 확률 최대차이 약1.14e-7, 판정 불일치0건입니다. 약1.13GB 단일 Python을 생성해 외부 모델 없는 새 프로세스 통합 시험을 진행 중입니다. 상세 보고서는 실제 내부 구성·가중치와 최종 시험 결과를 반영하고 있습니다.",
   "steps": [
     {
       "title": "원본 AutoGluon 복원",
@@ -18,15 +18,15 @@
     },
     {
       "title": "전체 12개월 최종 학습",
-      "detail": "Mac 원본 AutoGluon1.6.3 best_quality로 학습 중. 8-fold Bagging·Stacking 유지. 완료 모델은 별도 배포 복제로 보존.",
-      "status": "running",
-      "label": "학습 중"
+      "detail": "162,355행, best_quality, 3,689초. WeightedEnsemble_L3 선택. 원본을 보존한 배포 복제에서 확률 차이0과 학습 캐시 제외 확인.",
+      "status": "done",
+      "label": "완료"
     },
     {
       "title": "단일 Python 패키징·실행",
-      "detail": "실제 학습 모델 내장, 학습 캐시 제외, 새 프로세스 API·CSV·결측·새 범주 검사.",
-      "status": "pending",
-      "label": "대기"
+      "detail": "약1.13GB 파일 생성. Mac/Windows 96행 확률 최대차이1.14e-7·판정 불일치0. 미래 형식·API·CSV 독립 실행 시험 진행.",
+      "status": "running",
+      "label": "시험 중"
     },
     {
       "title": "상세 LaTeX·PDF 보고서",
@@ -68,6 +68,11 @@
     }
   ],
   "events": [
+    {
+      "at": "2026-10-17T08:18:36Z",
+      "title": "전체 학습 완료·플랫폼 경로 호환·단일 파일 생성",
+      "detail": "배포용 압축 약847MB, 실제 모델 약3.44GB. Mac FastAI의 PosixPath를 Windows에서 읽는 호환 계층을 추가했으며 가중치를 바꾸지 않았습니다. 원본9개월 평가와 전체12개월 제출 객체의 성능 범위를 구분합니다."
+    },
     {
       "at": "2026-10-17T16:00:00+09:00",
       "title": "원본 AutoGluon 실제 예측 재현·전체 학습·상세 보고서 초안",
