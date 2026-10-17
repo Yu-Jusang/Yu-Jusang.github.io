@@ -5,10 +5,13 @@ const line=(text:string,names:string)=>text.match(new RegExp('(?:'+names+')\\s*[
 const dateParts=(s:string)=>[...s.matchAll(/(?:(20\d{2})\s*[.\/년-]\s*)?(\d{1,2})\s*[.\/월-]\s*(\d{1,2})(?:\s*일)?/g)];
 const validDate=(year:number,month:number,day:number)=>{const s=`${year}-${String(month).padStart(2,'0')}-${String(day).padStart(2,'0')}`;const d=new Date(s+'T12:00:00Z');if(d.getUTCFullYear()!==year||d.getUTCMonth()+1!==month||d.getUTCDate()!==day)throw Error('공지의 날짜를 확인해 주세요.');return s};
 export function parseNotice(text:string,year:number):Event {
+ text=text.replace(/일\s+시/g,'일시').replace(/장\s+소/g,'장소').replace(/대\s+상/g,'대상').replace(/품\s+목/g,'품목').replace(/혜\s+택/g,'혜택').replace(/메\s+뉴/g,'메뉴').replace(/[：]/g,':');
+ for(const word of ['학생증','학생회원','중복수령','소진','선착순','간식','중간고사','학기','과방','배부'])text=text.replace(new RegExp([...word].join('[ \\t]*'),'g'),word);
+ text=text.replace(/소진[ \t]*시[ \t]*까[ \t]*지/g,'소진 시까지').replace(/(\d)[ \t]+(동|호|인)/g,'$1$2');
  if(text.length>16000)throw Error('공지문은 16,000자 이내로 붙여넣어 주세요.');
  const lines=text.trim().split(/\r?\n/).map(s=>s.trim()).filter(Boolean);if(!lines.length)throw Error('공지문을 붙여넣어 주세요.');
  const title=clean(lines[0]).replace(/^\[(.*)\]$/,'$1').slice(0,150);
- const schedule=line(text,'일시|행사 일시|행사일|일자|날짜');const dates=dateParts(schedule);
+ let schedule=line(text,'일시|행사 일시|행사일|일자|날짜');if(!schedule){const at=lines.findIndex(s=>dateParts(s).length&&!/신청|마감|학기/.test(s));if(at>=0)schedule=lines[at]+(lines[at+1]&&/\d{1,2}[:시]/.test(lines[at+1])?' '+lines[at+1]:'')}const dates=dateParts(schedule);
  if(dates.length>1)throw Error('여러 날짜가 있는 공지는 날짜별로 나누어 추가해 주세요.');
  const explicitYear=Number(text.match(/\b(20\d{2})\b/)?.[1]||year);
  const date=dates[0]?validDate(Number(dates[0][1]||explicitYear),Number(dates[0][2]),Number(dates[0][3])):null;
@@ -18,9 +21,9 @@ export function parseNotice(text:string,year:number):Event {
  const eligibility=clean(line(text,'대상|참여 대상|참가 대상'));
  const benefitIndex=lines.findIndex(s=>/(?:품목|메뉴|혜택|제공 품목|제공 메뉴|간식)\s*[:：]/.test(s));
  const benefits:string[]=[];
- if(benefitIndex>=0){const first=lines[benefitIndex].split(/[:：]/).slice(1).join(':').trim();if(first)benefits.push(first);for(let i=benefitIndex+1;i<lines.length&&benefits.length<6;i++){if(!/^[•·*-]|🍱|🍔|🥤|☕|🍕/.test(lines[i]))break;benefits.push(lines[i]);}}
+ if(benefitIndex>=0){const first=lines[benefitIndex].split(/[:：]/).slice(1).join(':').trim();if(first)benefits.push(first);for(let i=benefitIndex+1;i<lines.length&&benefits.length<6;i++){if(/안녕|감사|문의|담당|일시|장소|대상|신청|주의|학생증|우선|후순위|중복|\[/.test(lines[i]))break;benefits.push(lines[i]);}}
  const benefit=benefits.map(clean).filter(Boolean).join(' · ')||'';
- const conditions=lines.filter(s=>/^\*/.test(s)||/선착순|소진 시|추첨|중복수령|중복 수령/.test(s)).map(clean);
+ const conditions=lines.filter(s=>/^\*/.test(s)||/선착순|소진 시|추첨|학생증|우선|후순위|중복수령|중복 수령/.test(s)).map(clean);
  const rule=conditions.join(' · ').slice(0,1200)||'지급 조건 미기재';
  const deadlineLine=line(text,'신청 마감|마감일|마감|신청 기간|신청기간');const dl=dateParts(deadlineLine).at(-1);const deadline=dl?validDate(Number(dl[1]||explicitYear),Number(dl[2]),Number(dl[3])):undefined;
  const registrationUrl=text.match(/(?:신청\s*링크|신청\s*주소)\s*[:：]\s*(https:\/\/[^\s<>]+)/)?.[1];
