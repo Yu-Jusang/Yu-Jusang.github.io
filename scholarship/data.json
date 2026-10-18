@@ -1,53 +1,3165 @@
 {
+  "version": 2,
   "verifiedAt": "2026-10-18",
   "mode": "manually-verified",
+  "coverage": "국가 주요 14개 제도, 지역별 15개 장학제도·공고, 민간·교내 프로그램을 공식 공개 자료로 확인했습니다. 17개 시도 경로는 장학 건수와 별도로 제공합니다.",
+  "directory": [
+    {
+      "region": "서울",
+      "organization": "서울미래인재재단",
+      "url": "https://www.seoul.go.kr/news/news_report.do?nttNo=455067",
+      "note": "서울인재대학장학금·교환학생, 서울소재대학 OR 시민/자녀 유형 구분",
+      "kind": "directory",
+      "countAsScholarship": false
+    },
+    {
+      "region": "경기",
+      "organization": "경기도민회장학회",
+      "url": "https://ggdm.co.kr/",
+      "note": "대학소재지보다 부모/본인 거주이력, 기관 공고문 확인",
+      "kind": "directory",
+      "countAsScholarship": false
+    },
+    {
+      "region": "인천",
+      "organization": "인천인재평생교육진흥원",
+      "url": "https://itle.or.kr/user/scholarship/service/view.do?sq=747",
+      "note": "희망드림·관외거주비 등 프로그램별 주소 OR 학교조건 상이",
+      "kind": "directory",
+      "countAsScholarship": false
+    },
+    {
+      "region": "부산",
+      "organization": "부산청년플랫폼",
+      "url": "https://young.busan.go.kr/index.nm?menuCd=164",
+      "note": "IT·상경계열 지역인재 장학금",
+      "kind": "directory",
+      "countAsScholarship": false
+    },
+    {
+      "region": "대구",
+      "organization": "대구광역시교육청 인재육성장학재단",
+      "url": "https://www.dge.go.kr/nurture/na/ntt/selectNttList.do?bbsId=1417&mi=6093",
+      "note": "대상 학교급 확인, 대학생 포함 여부 공고별 상이",
+      "kind": "directory",
+      "countAsScholarship": false
+    },
+    {
+      "region": "광주",
+      "organization": "빛고을장학재단",
+      "url": "https://www.gwangju.go.kr/welfare/contentsView.do?pageId=welfare112",
+      "note": "광주거주 AND 광주학교, 대학·자치구 추천제",
+      "kind": "directory",
+      "countAsScholarship": false
+    },
+    {
+      "region": "대전",
+      "organization": "대전청년내일재단",
+      "url": "https://www.daejeonyouthportal.kr/content/CT_000000000501/cntPage.do?commonMenuNo=497_499",
+      "note": "과학·성취·꿈돌이·유학생 등 공고별 분리",
+      "kind": "directory",
+      "countAsScholarship": false
+    },
+    {
+      "region": "울산",
+      "organization": "울산연구원 평생교육연구실",
+      "url": "https://uill.uri.re.kr/",
+      "note": "2026 울산인재·우수·다자녀·AI수도울산·만학도·생활 등, 정확 공고확인",
+      "kind": "directory",
+      "countAsScholarship": false
+    },
+    {
+      "region": "세종",
+      "organization": "세종연구원",
+      "url": "https://www.sri.re.kr/dms/contents/dms/header/04/community.02.01.motion?bmode=detail&bbsId=BBSMSTR_000000000311&nttId=3999",
+      "note": "2026 세종이도인재장학금. 특기적성은 거주 OR 학교, 분야별 조건 상이",
+      "kind": "directory",
+      "countAsScholarship": false
+    },
+    {
+      "region": "강원",
+      "organization": "강원인재원",
+      "url": "https://injae.gwd.go.kr/injae",
+      "note": "등록금·생활비·주거비 개별 장학 조건 상이",
+      "kind": "directory",
+      "countAsScholarship": false
+    },
+    {
+      "region": "충북",
+      "organization": "충북인재평생교육진흥원",
+      "url": "https://www.cbitle.or.kr/www/selectBbsNttView.do?bbsNo=45&key=30&nttNo=8779",
+      "note": "성적·특기·곰두리 등 모집공고 및 첨부파일",
+      "kind": "directory",
+      "countAsScholarship": false
+    },
+    {
+      "region": "충남",
+      "organization": "충남평생교육진흥원",
+      "url": "https://www.clehrd.or.kr/prog/bbsArticle/BBSMSTR_000000000040/list.do?kind=02",
+      "note": "충남사랑·재능키움·거주비 등",
+      "kind": "directory",
+      "countAsScholarship": false
+    },
+    {
+      "region": "전북",
+      "organization": "전북특별자치도평생교육장학진흥원",
+      "url": "https://www.jbiles.or.kr/sub05_01/1505",
+      "note": "향토인재·장학숙 제외조건 등 확인",
+      "kind": "directory",
+      "countAsScholarship": false
+    },
+    {
+      "region": "전남",
+      "organization": "전남인재평생교육진흥원",
+      "url": "https://www.jntle.kr/main/board/4/1/read/2657",
+      "note": "2026 하반기 10/23 마감, 전남인재·정착·특별지정 세부별",
+      "kind": "directory",
+      "countAsScholarship": false
+    },
+    {
+      "region": "경북",
+      "organization": "경상북도인재평생교육재단",
+      "url": "https://gtlef.or.kr/main/page.do?mnu_code=MAIN020201",
+      "note": "지역인재주거비·학숙인재키움·영호남상생; 안내계획≠모집중",
+      "kind": "directory",
+      "countAsScholarship": false
+    },
+    {
+      "region": "경남",
+      "organization": "경상남도장학회",
+      "url": "https://youth.gyeongnam.go.kr/youth/menu.es?mid=a11203000000",
+      "note": "대학입학생·재학생 등 구분, 경남바로서비스 공고",
+      "kind": "directory",
+      "countAsScholarship": false
+    },
+    {
+      "region": "제주",
+      "organization": "제주평생교육장학진흥원",
+      "url": "https://www.jiles.or.kr/community/notice/notice.htm?act=index",
+      "note": "성취·희망·재능·전략산업·특별지정 등",
+      "kind": "directory",
+      "countAsScholarship": false
+    }
+  ],
   "scholarships": [
     {
-      "id": "cces-language-2026", "title": "이슬람권 언어연수 지원", "organization": "서울대 중앙유라시아연구소", "type": "해외연수", "published": "2026-10-01", "start": "2026-10-01", "deadline": "2026-10-20", "deadlineTime": null,
-      "amount": "200–350만 원", "audience": "서울대 학부·대학원", "description": "왕복 항공료와 체재비 일부를 지원하는 어학연수 장학금. 최소 4주 연수 대상입니다.", "sourceUrl": "https://newkaku.snu.ac.kr/snunow/events?bbsidx=176795&md=v", "applicationUrl": "https://cces.snu.ac.kr/", "method": "연구소 이메일 제출 · 원문 참조",
-      "rules": [{"field":"degree","allowed":["undergrad","master","doctor","integrated"],"label":"서울대 학부·대학원생","evidence":"교내 학부 및 대학원 재학생이 지원 대상이며 수료생도 가능합니다."},{"field":"training","allowed":["yes"],"label":"이슬람권 언어 학습 및 연수 계획","evidence":"아랍어·페르시아어·튀르크어 등을 대상으로 언어 학습 경력과 연수 목적을 심사합니다."}],
-      "unknowns": ["최소 4주 연수 계획, 언어 학습 경력 및 수준", "휴학생의 휴학 사유와 수혜 횟수 제한", "연수 후 발표 의무와 반납 조건", "마감일의 정확한 접수 시각"],
-      "steps": ["원문에서 지원 조건·반납 조건 확인", "연구소 공지에서 신청서 내려받기", "성적증명서 준비", "학업계획서 작성 (A4 1매 이내)", "연구소 이메일로 신청 서류 제출"], "note": "선발 인원 3–4명. 중복 수혜 가능 여부는 담당 기관에 확인하세요. 날짜만 공개되어 마감 시각은 표시하지 않습니다."
+      "id": "national-i",
+      "title": "국가장학금 Ⅰ유형",
+      "organization": "한국장학재단",
+      "category": "국가",
+      "type": "등록금",
+      "amount": "2026 연 최대 100–600만 원·전액",
+      "description": "등록금 범위 지원. 2026년 연간 최대: 기초·차상위 전액 / 1~3구간 600만원 / 4~6구간 440만원 / 7~8구간 360만원 / 9구간 100만원.",
+      "sourceUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_01",
+      "applicationUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_01",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "associate",
+            "undergrad"
+          ],
+          "label": "학위과정",
+          "evidence": "해당 제도는 학부 또는 전문학사 과정이 대상이며 대학원은 별도 확인합니다."
+        },
+        {
+          "field": "nationality",
+          "allowed": [
+            "kr"
+          ],
+          "label": "대한민국 국적",
+          "evidence": "공식 지원 자격에 대한민국 국적이 명시되어 있습니다."
+        },
+        {
+          "field": "income",
+          "max": 9,
+          "year": 2026,
+          "soft": false,
+          "label": "2026 지원 9구간 이하",
+          "evidence": "통지 연도와 해당 학기 지원구간을 확인하세요. 예외가 있는 사업은 소득만으로 제외하지 않습니다."
+        },
+        {
+          "any": [
+            {
+              "field": "firstSemester",
+              "allowed": [
+                "yes"
+              ]
+            },
+            {
+              "field": "disability",
+              "allowed": [
+                "yes"
+              ]
+            },
+            {
+              "field": "care",
+              "allowed": [
+                "yes"
+              ]
+            },
+            {
+              "field": "percentile",
+              "min": 80
+            },
+            {
+              "all": [
+                {
+                  "field": "income",
+                  "year": 2026,
+                  "allowed": [
+                    "basic",
+                    "near"
+                  ]
+                },
+                {
+                  "field": "percentile",
+                  "min": 70
+                }
+              ]
+            }
+          ],
+          "soft": true,
+          "label": "성적 일반 기준·면제 조건",
+          "evidence": "일반 기준은 직전학기 80점. 기초·차상위 70점, 장애·자립준비·첫학기 예외와 1~3구간 C학점 경고제 등을 별도 확인해야 합니다."
+        },
+        {
+          "any": [
+            {
+              "field": "firstSemester",
+              "allowed": [
+                "yes"
+              ]
+            },
+            {
+              "field": "disability",
+              "allowed": [
+                "yes"
+              ]
+            },
+            {
+              "field": "finalSemester",
+              "allowed": [
+                "yes"
+              ]
+            },
+            {
+              "field": "credits",
+              "min": 12
+            }
+          ],
+          "soft": true,
+          "label": "이수학점 일반 기준·예외",
+          "evidence": "일반 기준은 직전학기 12학점이며 대학 최소학점·졸업학기·장애 등 예외가 있습니다."
+        }
+      ],
+      "unknowns": [
+        "성적 예외·수혜횟수·구제신청 여부는 개별 심사",
+        "사업 참여대학·수혜횟수·최신 학기 신청 일정"
+      ],
+      "requirements": [
+        "대한민국 국적",
+        "국내 지원 가능 대학 학부생",
+        "학자금 지원 9구간 이하",
+        "가구원 동의·서류 제출 완료",
+        "재학생 성적·이수학점 심사"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "등록금 범위 지원. 2026년 연간 최대: 기초·차상위 전액 / 1~3구간 600만원 / 4~6구간 440만원 / 7~8구간 360만원 / 9구간 100만원. 제도 안내이며 실제 지원은 세부 선발 및 계속지원 요건 심사를 거칩니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
     },
     {
-      "id": "snu-custom-guide", "title": "서울대 교내 맞춤형장학금", "organization": "서울대 · 소속 단과대학", "type": "등록금", "published": null, "guide": true, "start": null, "deadline": null, "deadlineTime": null,
-      "amount": "소속 대학별 확인", "audience": "학부·대학원 등록대상자", "description": "성적과 경제상황 등을 고려하는 교내 장학 제도. 실제 선발 기준과 추가 서류는 소속 대학에 확인해야 합니다.", "sourceUrl": "https://student.snu.ac.kr/소식·알림/faq/장학/", "applicationUrl": "https://my.snu.ac.kr/", "method": "마이스누 신청 + 소속별 추가 절차",
-      "rules": [{"field":"status","allowed":["enrolled","returning"],"blocked":["freshman"],"label":"재학·복학 예정 등록대상자","evidence":"복학예정자도 기간 내 신청이 필요합니다. 학부 신입생은 맞춤형장학금 선발 대상이 아닙니다."}],
-      "unknowns": ["해당 학기 신청 기간과 소속 대학별 선발 기준", "성적·경제상황 및 지원 금액", "소속 학과 추가 서류와 제출 마감"],
-      "steps": ["소속 대학·학과의 해당 학기 공지 확인", "마이스누에서 교내장학금 신청", "마이스누 신청 완료 상태 확인", "학과에서 요구한 추가 서류 제출"], "note": "이 항목은 제도 안내입니다. 현재 모집 중이라는 뜻이 아닙니다. 다음 학기 일정이 확정되기 전에는 과거 일정을 마감일로 사용하지 않습니다."
+      "id": "seoul-talent-university",
+      "title": "서울인재대학장학금",
+      "organization": "서울미래인재재단",
+      "category": "지역",
+      "type": "생활비",
+      "amount": "연 400만원(학기별 200만원), 1학년 하반기 별도 200만원 선발 계획",
+      "description": "서울 소재 대학교 재학 또는 (서울 시민 또는 그 자녀 그리고 비서울 소재 대학교 재학)",
+      "sourceUrl": "https://www.seoul.go.kr/news/news_report.do?nttNo=455067",
+      "applicationUrl": "https://www.seoul.go.kr/news/news_report.do?nttNo=455067",
+      "regions": [
+        "서울"
+      ],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad",
+            "associate"
+          ],
+          "label": "대상 학위과정",
+          "evidence": "학부·대학원 포함 여부는 해당 유형의 세부 공고를 확인합니다."
+        },
+        {
+          "any": [
+            {
+              "field": "schoolRegion",
+              "allowed": [
+                "서울"
+              ]
+            },
+            {
+              "field": "residence",
+              "allowed": [
+                "서울"
+              ]
+            },
+            {
+              "field": "parentRegion",
+              "allowed": [
+                "서울"
+              ]
+            }
+          ],
+          "label": "지역·거주 조건",
+          "evidence": "서울 소재 대학교 재학 또는 (서울 시민 또는 그 자녀 그리고 비서울 소재 대학교 재학)"
+        },
+        {
+          "field": "income",
+          "max": 4,
+          "year": 2026,
+          "soft": false,
+          "label": "지원구간 4 이하 또는 해당 유형 조건",
+          "evidence": "유형별 소득·복지자격 및 인정 통지 학기를 확인하세요. 숫자구간 이외의 예외는 자동 제외하지 않습니다."
+        },
+        {
+          "field": "cumulativePercentile",
+          "min": 90,
+          "label": "상반기 전체학기 90점 이상",
+          "evidence": "2026 상반기 기준이며 하반기 1학년 선발의 별도 공고는 추가 확인합니다."
+        }
+      ],
+      "unknowns": [
+        "하반기 1학년 추가선발 실제 마감은 별도 공고 필요",
+        "발견되었다고 자격 충족 또는 선발 확정 아님",
+        "주소변동 이력·기준일·추천·중복 수혜 및 첨부 서류"
+      ],
+      "requirements": [
+        "상반기: 2학년 이상, 2026년 두 학기 모두 정규 등록·재학 가능",
+        "기초생활수급/법정차상위 OR 학자금지원 4구간 이하(2026-1 또는 2025-2)",
+        "전체학기 백분위 90 이상, 진로역량 요건"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "서울 소재 대학교 재학 또는 (서울 시민 또는 그 자녀 그리고 비서울 소재 대학교 재학) / 연 400만원(학기별 200만원), 1학년 하반기 별도 200만원 선발 계획. 해당 연도 유형별 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요.",
+      "sources": [
+        {
+          "url": "https://www.seoul.go.kr/news/news_report.do?nttNo=455067",
+          "evidenceDate": "2026-03-27",
+          "label": "서울시 공식 보도자료"
+        }
+      ]
     },
     {
-      "id": "munju-ai-2026-fall", "title": "문주장학재단 AI·ICT 인재 장학금", "organization": "문주장학재단 · 서울대 학생처 안내", "type": "요강 확인", "published": "2026-09-21", "start": null, "deadline": null, "deadlineTime": null,
-      "amount": "선발 요강 확인", "audience": "AI·ICT 분야 · 세부 요강 확인", "description": "서울대 학생처에 게시된 AI·ICT 분야 인재 장학생 선발 공고. 조건과 일정은 첨부 선발 요강 확인이 필요합니다.", "sourceUrl": "https://student.snu.ac.kr/?kboard_content_redirect=390", "applicationUrl": null, "method": "첨부 공고문·지원서식 확인",
-      "rules": [], "unknowns": ["학위과정·전공 및 성적·소득 기준", "접수 기간과 현재 모집 여부", "장학금액·지급 성격과 중복 수혜 제한", "신청서식 및 제출 방법"],
-      "steps": ["원문에서 첨부 선발 공고문 열기", "신청 기간·자격·지원 성격 확인", "장학생 지원서식 작성", "공고문에 명시된 방법으로 제출"], "note": "공개 웹 본문만 확인한 항목입니다. 첨부 요강의 세부 조건은 아직 구조화하지 않았으며, 현재 접수 가능한 공고로 분류하지 않습니다. 지급 성격도 첨부 요강에서 확인해야 합니다."
+      "id": "national-work",
+      "title": "국가근로장학금",
+      "organization": "한국장학재단",
+      "category": "국가",
+      "type": "근로",
+      "amount": "교내 10,320원·교외 12,790원/시간",
+      "description": "2026 시급: 교내 10,320원 / 교외 12,790원. 실제 근로시간에 따라 지급.",
+      "sourceUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_04_01",
+      "applicationUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_04_01",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "associate",
+            "undergrad"
+          ],
+          "label": "학위과정",
+          "evidence": "해당 제도는 학부 또는 전문학사 과정이 대상이며 대학원은 별도 확인합니다."
+        },
+        {
+          "field": "nationality",
+          "allowed": [
+            "kr"
+          ],
+          "label": "대한민국 국적",
+          "evidence": "공식 지원 자격에 대한민국 국적이 명시되어 있습니다."
+        },
+        {
+          "field": "income",
+          "max": 9,
+          "year": 2026,
+          "soft": true,
+          "label": "2026 지원 9구간 이하",
+          "evidence": "통지 연도와 해당 학기 지원구간을 확인하세요. 예외가 있는 사업은 소득만으로 제외하지 않습니다."
+        }
+      ],
+      "unknowns": [
+        "장애·자립준비청년 성적 예외, 긴급위기·특수 근로유형 소득 예외 가능. 시간 한도 별도.",
+        "사업 참여대학·수혜횟수·최신 학기 신청 일정"
+      ],
+      "requirements": [
+        "대한민국 국적",
+        "사업 대상 대학 재학생(입학예정자 포함)",
+        "학자금 지원 9구간 이하",
+        "직전학기 백분위 70점 이상",
+        "대학 자체 선발 및 근로지 배정"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "2026 시급: 교내 10,320원 / 교외 12,790원. 실제 근로시간에 따라 지급. 제도 안내이며 실제 지원은 세부 선발 및 계속지원 요건 심사를 거칩니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
     },
     {
-      "id": "ilun-2026-fall", "title": "일운과학기술재단 희망·나눔 장학생", "organization": "일운과학기술재단", "type": "학업·생활", "published": "2026-09-22", "start": "2026-09-16", "deadline": "2026-09-27", "deadlineTime": null,
-      "amount": "최대 2,000만 원 / 3년 총합", "audience": "석사과정 이상 재학생", "description": "전공 제한 없이 석사과정 이상 재학생을 모집한 희망·나눔 장학생 선발 공고입니다.", "sourceUrl": "https://student.snu.ac.kr/?kboard_content_redirect=392", "applicationUrl": "https://www.ilun.or.kr/", "method": "재단 홈페이지의 선발 공고 확인",
-      "rules": [{"field":"degree","allowed":["master","doctor","integrated"],"label":"석사과정 이상","evidence":"국내·외 석사과정 이상 재학생 (전공 무관)."},{"field":"status","allowed":["enrolled"],"blocked":["leave","completed"],"label":"재학생","evidence":"지원 자격에 재학생으로 명시되어 있습니다."}],
-      "unknowns": ["통합과정의 세부 인정 기준", "희망·나눔 부문별 선발 요건과 지급 조건", "중복 수혜 제한 및 정확한 접수 시각"],
-      "steps": ["재단 선발 공고와 부문별 요건 확인", "재단에서 요구하는 서류 준비", "재단이 안내한 방법으로 신청"], "note": "초기 확인 당시 접수가 끝난 공고입니다. 최대 2,000만 원은 연간 지급액이 아닌 3년 총합입니다."
+      "id": "incheon-hope",
+      "title": "인천인희망드림 장학금(대학생)",
+      "organization": "인천인재평생교육진흥원",
+      "category": "지역",
+      "type": "생활비",
+      "amount": "100만원",
+      "description": "본인 또는 부모 인천 주민등록 또는 인천 관내 대학 재학",
+      "sourceUrl": "https://itle.or.kr/user/scholarship/service/view.do?sq=747",
+      "applicationUrl": "https://itle.or.kr/user/scholarship/service/view.do?sq=747",
+      "regions": [
+        "인천"
+      ],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad",
+            "associate"
+          ],
+          "label": "대상 학위과정",
+          "evidence": "학부·대학원 포함 여부는 해당 유형의 세부 공고를 확인합니다."
+        },
+        {
+          "any": [
+            {
+              "field": "residence",
+              "allowed": [
+                "인천"
+              ]
+            },
+            {
+              "field": "parentRegion",
+              "allowed": [
+                "인천"
+              ]
+            },
+            {
+              "field": "schoolRegion",
+              "allowed": [
+                "인천"
+              ]
+            }
+          ],
+          "label": "지역·거주 조건",
+          "evidence": "본인 또는 부모 인천 주민등록 또는 인천 관내 대학 재학"
+        },
+        {
+          "field": "income",
+          "max": 6,
+          "year": 2026,
+          "soft": true,
+          "label": "지원구간 6 이하 또는 해당 유형 조건",
+          "evidence": "유형별 소득·복지자격 및 인정 통지 학기를 확인하세요. 숫자구간 이외의 예외는 자동 제외하지 않습니다."
+        },
+        {
+          "any": [
+            {
+              "all": [
+                {
+                  "field": "gpaScale",
+                  "allowed": [
+                    "4.5"
+                  ]
+                },
+                {
+                  "field": "gpa",
+                  "min": 2.8
+                }
+              ]
+            },
+            {
+              "all": [
+                {
+                  "field": "gpaScale",
+                  "allowed": [
+                    "4.3"
+                  ]
+                },
+                {
+                  "field": "gpa",
+                  "min": 2.6
+                }
+              ]
+            }
+          ],
+          "label": "직전학기 평점",
+          "evidence": "4.5 만점 2.8 또는 4.3 만점 2.6 이상. 편입 첫학기 기준 별도 확인."
+        }
+      ],
+      "unknowns": [
+        "선발시기 9~10월 안내만으로 현재 접수중 단정 불가",
+        "주소변동 이력·기준일·추천·중복 수혜 및 첨부 서류"
+      ],
+      "requirements": [
+        "정규학기 재학",
+        "본인 또는 부모 기초수급/차상위/한부모/중증장애 OR 학자금지원 6구간 이내",
+        "직전학기 2.8/4.5 또는 2.6/4.3 이상; 편입 첫학기는 이전학교"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "본인 또는 부모 인천 주민등록 또는 인천 관내 대학 재학 / 100만원. 해당 연도 유형별 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요.",
+      "sources": [
+        {
+          "url": "https://itle.or.kr/user/scholarship/service/view.do?sq=747",
+          "label": "2026 장학사업 상세 안내"
+        }
+      ]
     },
     {
-      "id": "mirae-36-2027", "title": "제36기 미래에셋 해외교환 장학생", "organization": "미래에셋박현주재단", "type": "해외연수", "published": "2026-09-08", "start": "2026-09-30", "deadline": "2026-10-06", "deadlineTime": "15:00",
-      "amount": "650만 원 또는 850만 원", "audience": "2027년 봄 해외파견 학부생", "description": "2027년 봄학기 해외파견 예정 학부생 대상. 지역별 지원 금액과 재단 선발 기준이 적용됩니다.", "sourceUrl": "https://student.snu.ac.kr/?kboard_content_redirect=365", "applicationUrl": "https://foundation.miraeasset.com/ko/news/notice/view.do?listCnt=6&pageIndex=1&ctgry=&detailsKey=547&tq=&q=", "method": "재단 선발 요강에 따라 신청",
-      "rules": [{"field":"degree","allowed":["undergrad"],"label":"국내 4년제 정규대학 학부생","evidence":"대한민국 국적의 국내 정규대학 재학 학부생이 대상입니다."},{"field":"exchange","allowed":["yes"],"label":"2027년 봄학기 해외파견 예정","evidence":"2027년 봄학기 해외파견 예정자로 명시되어 있습니다."}],
-      "unknowns": ["대한민국 국적과 세부 학적 요건", "성적·경제적 기준과 파견 유형", "재단 첨부 요강의 서류 및 중복 수혜 조건"],
-      "steps": ["재단 원문·선발 요강 확인", "파견 예정 및 성적·경제 요건 확인", "재단 요구 서류 준비", "재단 접수 완료 확인"], "note": "미주·유럽·기타 지역 850만 원, 아시아 650만 원. 2026년 10월 6일 15시에 접수가 마감된 공고입니다."
+      "id": "national-blue",
+      "title": "푸른등대 기부장학금",
+      "organization": "한국장학재단",
+      "category": "국가",
+      "type": "생활비",
+      "amount": "기부처별 생활비 지원",
+      "description": "기부처별 생활비성 장학금. 금액·학기·선발인원이 각각 다름.",
+      "sourceUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_11_01",
+      "applicationUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_11_01",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "associate",
+            "undergrad"
+          ],
+          "label": "학위과정",
+          "evidence": "해당 제도는 학부 또는 전문학사 과정이 대상이며 대학원은 별도 확인합니다."
+        }
+      ],
+      "unknowns": [
+        "통합 소득 상한으로 판단하면 안 됨. 2026-2 윤하:6구간 이하 물리·천문 학과(의료·보건 제외), 250만원1학기. 공수김용호:6구간 이하 및 프로그램 참여,250만원 최대6학기.",
+        "사업 참여대학·수혜횟수·최신 학기 신청 일정"
+      ],
+      "requirements": [
+        "기부처별 지원구간·지역·전공·가구특성 기준",
+        "매학기 사업계획 확인 필요"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "기부처별 생활비성 장학금. 금액·학기·선발인원이 각각 다름. 제도 안내이며 실제 지원은 세부 선발 및 계속지원 요건 심사를 거칩니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
     },
     {
-      "id": "bomnae-2026-fall", "title": "춘천인재육성장학재단 봄내장학생", "organization": "춘천인재육성장학재단", "type": "등록금", "published": "2026-09-21", "start": "2026-09-28", "deadline": "2026-10-07", "deadlineTime": null,
-      "amount": "일반 대학생 최대 100만 원", "audience": "춘천 거주 요건 등 해당 대학생", "description": "춘천 거주 요건과 유형별 선발 기준이 있는 지역 장학금. 서울대 재학 여부만으로는 지원 자격을 판단할 수 없습니다.", "sourceUrl": "https://student.snu.ac.kr/?kboard_content_redirect=391", "applicationUrl": null, "method": "유형별 방문·우편 등 절차 상이",
-      "rules": [{"field":"status","allowed":["enrolled"],"blocked":["leave"],"label":"재학생 (휴학생 제외)","evidence":"대학생은 휴학생과 정규학기 초과등록 학생이 신청할 수 없습니다."}],
-      "unknowns": ["신청 유형과 춘천 거주 기간·가족 요건", "유형별 성적·이수학점·추천 요건", "등록금 실납부액·기존 수혜 및 중복신청 제한"],
-      "steps": ["해당 유형과 거주 요건 확인", "유형별 성적·추천 서류 준비", "방문·우편 등 유형에 맞는 접수 절차 이행", "우편 도착 및 추가 제출 여부 확인"], "note": "일반 대학생은 등록금 실납부액 범위에서 지급됩니다. 유형별 온라인 신청 여부가 다르며 우편은 마감일까지 도착해야 합니다."
+      "id": "national-multi",
+      "title": "다자녀 국가장학금",
+      "organization": "한국장학재단",
+      "category": "국가",
+      "type": "등록금",
+      "amount": "지원구간·출생순위별 차등",
+      "description": "출생순위·지원구간별 등록금 차등 지원.",
+      "sourceUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_10",
+      "applicationUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_10",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "associate",
+            "undergrad"
+          ],
+          "label": "학위과정",
+          "evidence": "해당 제도는 학부 또는 전문학사 과정이 대상이며 대학원은 별도 확인합니다."
+        },
+        {
+          "field": "nationality",
+          "allowed": [
+            "kr"
+          ],
+          "label": "대한민국 국적",
+          "evidence": "공식 지원 자격에 대한민국 국적이 명시되어 있습니다."
+        },
+        {
+          "field": "income",
+          "max": 9,
+          "year": 2026,
+          "soft": false,
+          "label": "2026 지원 9구간 이하",
+          "evidence": "통지 연도와 해당 학기 지원구간을 확인하세요. 예외가 있는 사업은 소득만으로 제외하지 않습니다."
+        },
+        {
+          "field": "familyChildren",
+          "min": 3,
+          "label": "자녀 3명 이상 가구",
+          "evidence": "대한민국 국적 자녀 3명 이상 가구의 미혼 대학생. 국적·혼인·입학 나이 등은 별도 심사합니다."
+        }
+      ],
+      "unknowns": [
+        "자녀 수·출생순위·입학 당시 나이 증빙 필요",
+        "사업 참여대학·수혜횟수·최신 학기 신청 일정"
+      ],
+      "requirements": [
+        "대한민국 국적 자녀 3명 이상 가구의 미혼 대학생",
+        "대한민국 국적·국내 대학",
+        "학자금 지원 9구간 이하",
+        "2023-2 이후 신·편입자는 입학 당시 만 39세 이하",
+        "국가장학금Ⅰ유형 심사기준 적용"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "출생순위·지원구간별 등록금 차등 지원. 제도 안내이며 실제 지원은 세부 선발 및 계속지원 요건 심사를 거칩니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
     },
     {
-      "id": "highway-2026", "title": "고속도로장학재단 장학생", "organization": "고속도로장학재단 · 서울대 학생처 안내", "type": "요강 확인", "published": "2026-09-16", "start": null, "deadline": null, "deadlineTime": null,
-      "amount": "선발 요강 확인", "audience": "재단 선발 대상 확인", "description": "서울대 학생처에 게시된 2026년 장학생 선발 안내. 세부 자격과 신청 일정은 원문에서 확인하세요.", "sourceUrl": "https://student.snu.ac.kr/?kboard_content_redirect=389", "applicationUrl": null, "method": "공식 공지에서 요강 확인",
-      "rules": [], "unknowns": ["재단의 지원 대상 및 증빙 요건", "접수 기간과 현재 모집 여부", "지원 금액·지급 성격·중복 수혜 및 제출 방법"],
-      "steps": ["원문 선발 안내 확인", "지원 자격과 접수 기간 확인", "재단 요구 서류 준비", "공고에 명시된 방법으로 신청"], "note": "공고의 존재를 확인한 항목으로 세부 요건과 지급 성격 확인이 필요합니다."
+      "id": "national-ii",
+      "title": "국가장학금 Ⅱ유형",
+      "organization": "한국장학재단",
+      "category": "국가",
+      "type": "등록금",
+      "amount": "대학 자체 기준",
+      "description": "대학 자체 선발기준에 따른 등록금 지원.",
+      "sourceUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_02",
+      "applicationUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01_02",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "associate",
+            "undergrad"
+          ],
+          "label": "학위과정",
+          "evidence": "해당 제도는 학부 또는 전문학사 과정이 대상이며 대학원은 별도 확인합니다."
+        },
+        {
+          "field": "nationality",
+          "allowed": [
+            "kr"
+          ],
+          "label": "대한민국 국적",
+          "evidence": "공식 지원 자격에 대한민국 국적이 명시되어 있습니다."
+        },
+        {
+          "field": "income",
+          "max": 9,
+          "year": 2026,
+          "soft": true,
+          "label": "2026 지원 9구간 이하",
+          "evidence": "통지 연도와 해당 학기 지원구간을 확인하세요. 예외가 있는 사업은 소득만으로 제외하지 않습니다."
+        }
+      ],
+      "unknowns": [
+        "대학 참여 여부와 대학별 선발기준 재확인 필요. 서울대는 2026-06-15 참여대학 명단 포함.",
+        "사업 참여대학·수혜횟수·최신 학기 신청 일정"
+      ],
+      "requirements": [
+        "대한민국 국적",
+        "Ⅱ유형 참여대학 재학생",
+        "원칙적으로 학자금 지원 1~9구간",
+        "경제사정 긴급 악화 등 대학이 인정하는 경우 10구간 가능"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "대학 자체 선발기준에 따른 등록금 지원. 제도 안내이며 실제 지원은 세부 선발 및 계속지원 요건 심사를 거칩니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "national-local",
+      "title": "지역인재장학금",
+      "organization": "한국장학재단",
+      "category": "국가",
+      "type": "등록금",
+      "amount": "유형별 등록금 지원",
+      "description": "지원기간 내 등록금 필수경비 전액.2026 신규는 기초~중위소득130% 전학기, 그 초과~9구간1년(2학기).",
+      "sourceUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_11",
+      "applicationUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_11",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "associate",
+            "undergrad"
+          ],
+          "label": "학위과정",
+          "evidence": "해당 제도는 학부 또는 전문학사 과정이 대상이며 대학원은 별도 확인합니다."
+        },
+        {
+          "field": "income",
+          "max": 9,
+          "year": 2026,
+          "soft": false,
+          "label": "2026 지원 9구간 이하",
+          "evidence": "통지 연도와 해당 학기 지원구간을 확인하세요. 예외가 있는 사업은 소득만으로 제외하지 않습니다."
+        },
+        {
+          "field": "schoolRegion",
+          "allowed": [
+            "부산",
+            "대구",
+            "광주",
+            "대전",
+            "울산",
+            "세종",
+            "강원",
+            "충북",
+            "충남",
+            "전북",
+            "전남",
+            "경북",
+            "경남",
+            "제주"
+          ],
+          "label": "비수도권 대학",
+          "evidence": "신규 선발은 비수도권 고교 졸업과 비수도권 대학 입학 등 요건이 함께 필요합니다."
+        }
+      ],
+      "unknowns": [
+        "지역 거주만으로 충족되지 않음. 서울 소재 서울대는 비수도권 대학 요건 불충족.",
+        "사업 참여대학·수혜횟수·최신 학기 신청 일정"
+      ],
+      "requirements": [
+        "2026 신규: 비수도권 고교 졸업 후 2026 비수도권 대학 입학",
+        "지역인재장학금 참여대학",
+        "신규 성적우수 선발은 9구간 이하 및 일반대 내신·수능 3등급, 전문대 4등급 이내 등",
+        "재학생은 기존 선발 계속지원 확정자"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "지원기간 내 등록금 필수경비 전액.2026 신규는 기초~중위소득130% 전학기, 그 초과~9구간1년(2학기). 제도 안내이며 실제 지원은 세부 선발 및 계속지원 요건 심사를 거칩니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "national-housing",
+      "title": "주거안정장학금",
+      "organization": "한국장학재단",
+      "category": "국가",
+      "type": "주거",
+      "amount": "월 최대 20만 원 실비",
+      "description": "월 최대 20만원 실제 주거비 지원. 방학은 원칙 제외, 계절학기 수강 예외.",
+      "sourceUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_18",
+      "applicationUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_18",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "associate",
+            "undergrad"
+          ],
+          "label": "학위과정",
+          "evidence": "대한민국 국적 학부 재학생(대학원 제외)"
+        },
+        {
+          "field": "nationality",
+          "allowed": [
+            "kr"
+          ],
+          "label": "대한민국 국적",
+          "evidence": "공식 지원 자격에 대한민국 국적이 명시되어 있습니다."
+        },
+        {
+          "field": "income",
+          "year": 2026,
+          "allowed": [
+            "basic",
+            "near"
+          ],
+          "label": "기초생활수급·차상위",
+          "evidence": "기초생활수급자 또는 차상위계층이며 부모 모두의 원거리 주소 등 추가 요건이 있습니다."
+        }
+      ],
+      "unknowns": [
+        "부모 주소·실제 지출·대학별 원거리 및 타 주거지원 중복 기준 확인",
+        "사업 참여대학·수혜횟수·최신 학기 신청 일정"
+      ],
+      "requirements": [
+        "대한민국 국적 학부 재학생(대학원 제외)",
+        "당해연도 1월1일 기준 만39세 이하 미혼",
+        "기초생활수급자 또는 차상위계층",
+        "부모 모두 주소지가 대학 기준 원거리",
+        "가구원 동의·참여대학 요건"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "월 최대 20만원 실제 주거비 지원. 방학은 원칙 제외, 계절학기 수강 예외. 제도 안내이며 실제 지원은 세부 선발 및 계속지원 요건 심사를 거칩니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "national-hope1",
+      "title": "중소기업 취업연계 장학금(희망사다리 Ⅰ유형)",
+      "organization": "한국장학재단",
+      "category": "국가",
+      "type": "취업연계",
+      "amount": "등록금·취창업 지원",
+      "description": "매학기 등록금 전액 및 취·창업지원금200만원(매학기 직무기초교육 이수자).",
+      "sourceUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_14_01",
+      "applicationUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_14_01",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "associate",
+            "undergrad"
+          ],
+          "label": "학위과정",
+          "evidence": "해당 제도는 학부 또는 전문학사 과정이 대상이며 대학원은 별도 확인합니다."
+        },
+        {
+          "field": "nationality",
+          "allowed": [
+            "kr"
+          ],
+          "label": "대한민국 국적",
+          "evidence": "공식 지원 자격에 대한민국 국적이 명시되어 있습니다."
+        }
+      ],
+      "unknowns": [
+        "의무종사 미이행·학적 변동 시 환수 가능. 조기취업형 계약학과 등 예외 별도.",
+        "사업 참여대학·수혜횟수·최신 학기 신청 일정"
+      ],
+      "requirements": [
+        "대한민국 국적",
+        "사업 참여대학 재학",
+        "일반대3학년 이상 또는 전문대2학년 이상",
+        "직전학기 대학별 최소학점 및 백분위70점 이상",
+        "중소·중견기업 취업 또는 창업 의무종사",
+        "보증보험 동의"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "매학기 등록금 전액 및 취·창업지원금200만원(매학기 직무기초교육 이수자). 제도 안내이며 실제 지원은 세부 선발 및 계속지원 요건 심사를 거칩니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "national-hope2",
+      "title": "고졸 후학습자 장학금(희망사다리 Ⅱ유형)",
+      "organization": "한국장학재단",
+      "category": "국가",
+      "type": "취업연계",
+      "amount": "등록금 전액 또는 50%",
+      "description": "중소·중견기업 재직자 등록금 전액, 대기업·비영리기관 재직자 등록금50%.",
+      "sourceUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_16_01",
+      "applicationUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_16_01",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "associate",
+            "undergrad"
+          ],
+          "label": "학위과정",
+          "evidence": "해당 제도는 학부 또는 전문학사 과정이 대상이며 대학원은 별도 확인합니다."
+        },
+        {
+          "field": "nationality",
+          "allowed": [
+            "kr"
+          ],
+          "label": "대한민국 국적",
+          "evidence": "공식 지원 자격에 대한민국 국적이 명시되어 있습니다."
+        },
+        {
+          "field": "working",
+          "allowed": [
+            "yes"
+          ],
+          "label": "산업체 재직",
+          "evidence": "재직기간·인정기업·학력·의무재직 등 상세 조건이 있습니다."
+        }
+      ],
+      "unknowns": [
+        "전문학사 후 편입 예외는 재직요건 별도. 가족기업·공공기관 등 제외, 의무재직 조건 확인.",
+        "사업 참여대학·수혜횟수·최신 학기 신청 일정"
+      ],
+      "requirements": [
+        "대한민국 국적",
+        "원칙 최종학력 고졸, 대학 재학 및 백분위70점 이상",
+        "심사개시일 기준 산업체 재직2년 이상(현재 중소·중견기업이면1년 이상)",
+        "재단 인정기업 현재 재직"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "중소·중견기업 재직자 등록금 전액, 대기업·비영리기관 재직자 등록금50%. 제도 안내이며 실제 지원은 세부 선발 및 계속지원 요건 심사를 거칩니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "national-science",
+      "title": "국가우수장학금(이공계)",
+      "organization": "한국장학재단",
+      "category": "국가",
+      "type": "등록금",
+      "amount": "등록금 전액·추가 생활비 조건",
+      "description": "등록금 전액. 계속지원 기준 충족 기초생활수급자는 학기250만원 생활비 추가.",
+      "sourceUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_06_01",
+      "applicationUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_06_01",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad"
+          ],
+          "label": "학위과정",
+          "evidence": "해당 제도는 학부 또는 전문학사 과정이 대상이며 대학원은 별도 확인합니다."
+        },
+        {
+          "field": "nationality",
+          "allowed": [
+            "kr"
+          ],
+          "label": "대한민국 국적",
+          "evidence": "공식 지원 자격에 대한민국 국적이 명시되어 있습니다."
+        },
+        {
+          "field": "major",
+          "allowed": [
+            "자연",
+            "공학"
+          ],
+          "label": "지원 전공 계열",
+          "evidence": "공식 안내의 지원 전공: 자연, 공학"
+        }
+      ],
+      "unknowns": [
+        "대학별 추천·유형별 성적·계속지원·진로 관련 조건 확인",
+        "사업 참여대학·수혜횟수·최신 학기 신청 일정"
+      ],
+      "requirements": [
+        "대한민국 국적",
+        "국내4년제 자연과학·공학계열 신입생 또는3학년",
+        "신입생 성적우수형·3학년2년지원형 등 대학 추천"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "등록금 전액. 계속지원 기준 충족 기초생활수급자는 학기250만원 생활비 추가. 제도 안내이며 실제 지원은 세부 선발 및 계속지원 요건 심사를 거칩니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "national-humanities",
+      "title": "인문100년장학금",
+      "organization": "한국장학재단",
+      "category": "국가",
+      "type": "등록금·생활비",
+      "amount": "등록금·생활비 유형별",
+      "description": "2026 신규 I유형 등록금전액+생활비 학기250만원, II유형 등록금전액. 기초수급 추가지원 조건 별도.",
+      "sourceUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_07_01",
+      "applicationUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_07_01",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad"
+          ],
+          "label": "학위과정",
+          "evidence": "해당 제도는 학부 또는 전문학사 과정이 대상이며 대학원은 별도 확인합니다."
+        },
+        {
+          "field": "nationality",
+          "allowed": [
+            "kr"
+          ],
+          "label": "대한민국 국적",
+          "evidence": "공식 지원 자격에 대한민국 국적이 명시되어 있습니다."
+        },
+        {
+          "field": "major",
+          "allowed": [
+            "인문",
+            "사회"
+          ],
+          "label": "지원 전공 계열",
+          "evidence": "공식 안내의 지원 전공: 인문, 사회"
+        }
+      ],
+      "unknowns": [
+        "대학별 선발, 계속 생활비는 백분위92점 기준 등 별도 심사.",
+        "사업 참여대학·수혜횟수·최신 학기 신청 일정"
+      ],
+      "requirements": [
+        "대한민국 국적",
+        "국내4년제 인문·사회계열1학년 또는3학년",
+        "3학년 총평균90점 또는3.6/4.5(3.4/4.3), 졸업학점40% 이상 취득"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "2026 신규 I유형 등록금전액+생활비 학기250만원, II유형 등록금전액. 기초수급 추가지원 조건 별도. 제도 안내이며 실제 지원은 세부 선발 및 계속지원 요건 심사를 거칩니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "national-arts",
+      "title": "예술체육비전장학금",
+      "organization": "한국장학재단",
+      "category": "국가",
+      "type": "등록금·생활비",
+      "amount": "등록금·생활비 유형별",
+      "description": "2026 신규 I유형 등록금전액+생활비 학기250만원, II유형 등록금전액.",
+      "sourceUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_15_01",
+      "applicationUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_15_01",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad"
+          ],
+          "label": "학위과정",
+          "evidence": "해당 제도는 학부 또는 전문학사 과정이 대상이며 대학원은 별도 확인합니다."
+        },
+        {
+          "field": "nationality",
+          "allowed": [
+            "kr"
+          ],
+          "label": "대한민국 국적",
+          "evidence": "공식 지원 자격에 대한민국 국적이 명시되어 있습니다."
+        },
+        {
+          "field": "major",
+          "allowed": [
+            "예체능"
+          ],
+          "label": "지원 전공 계열",
+          "evidence": "공식 안내의 지원 전공: 예체능"
+        }
+      ],
+      "unknowns": [
+        "대학별 추천·실적 평가와 계속지원 기준 확인.",
+        "사업 참여대학·수혜횟수·최신 학기 신청 일정"
+      ],
+      "requirements": [
+        "대한민국 국적",
+        "국내4년제 예술·체육계열1학년 또는3학년",
+        "3학년 총평균90점 또는3.6/4.5(3.4/4.3), 졸업학점40% 이상 취득"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "2026 신규 I유형 등록금전액+생활비 학기250만원, II유형 등록금전액. 제도 안내이며 실제 지원은 세부 선발 및 계속지원 요건 심사를 거칩니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "national-tech",
+      "title": "전문기술인재장학금",
+      "organization": "한국장학재단",
+      "category": "국가",
+      "type": "등록금·생활비",
+      "amount": "등록금·생활비 유형별",
+      "description": "I유형 등록금전액+생활비 학기250만원, II유형 등록금전액.",
+      "sourceUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01",
+      "applicationUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_12_01",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "associate"
+          ],
+          "label": "학위과정",
+          "evidence": "해당 제도는 학부 또는 전문학사 과정이 대상이며 대학원은 별도 확인합니다."
+        },
+        {
+          "field": "nationality",
+          "allowed": [
+            "kr"
+          ],
+          "label": "대한민국 국적",
+          "evidence": "공식 지원 자격에 대한민국 국적이 명시되어 있습니다."
+        },
+        {
+          "field": "schoolType",
+          "allowed": [
+            "college"
+          ],
+          "label": "참여 전문대학",
+          "evidence": "참여 전문대학 정규과정 재학생이 대상입니다."
+        }
+      ],
+      "unknowns": [
+        "계약학과·타 재단 우수/취업연계 장학금 중복 제한 확인.",
+        "사업 참여대학·수혜횟수·최신 학기 신청 일정"
+      ],
+      "requirements": [
+        "대한민국 국적",
+        "참여 전문대학 정규과정 재학생",
+        "직전12학점(졸업학기3학점) 이상, 총평균80점 이상",
+        "신입생은 성적·이수학점 최소요건 없이 대학 기준"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "I유형 등록금전액+생활비 학기250만원, II유형 등록금전액. 제도 안내이며 실제 지원은 세부 선발 및 계속지원 요건 심사를 거칩니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "national-president",
+      "title": "대통령과학장학금",
+      "organization": "한국장학재단",
+      "category": "국가",
+      "type": "등록금·생활비",
+      "amount": "국내·해외 유형별 지원",
+      "description": "국내 등록금전액+학업장려비학기250만원, 기초수급 생활비학기250만원 추가(계속지원조건).해외 연최대미화5만달러 범위 학비·체재비.",
+      "sourceUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_05_01",
+      "applicationUrl": "https://www.kosaf.go.kr/ko/scholar.do?pg=scholarship05_05_01",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad"
+          ],
+          "label": "학위과정",
+          "evidence": "해당 제도는 학부 또는 전문학사 과정이 대상이며 대학원은 별도 확인합니다."
+        },
+        {
+          "field": "nationality",
+          "allowed": [
+            "kr"
+          ],
+          "label": "대한민국 국적",
+          "evidence": "공식 지원 자격에 대한민국 국적이 명시되어 있습니다."
+        },
+        {
+          "field": "major",
+          "allowed": [
+            "자연",
+            "공학"
+          ],
+          "label": "지원 전공 계열",
+          "evidence": "공식 안내의 지원 전공: 자연, 공학"
+        }
+      ],
+      "unknowns": [
+        "신입생·3학년·해외·지역추천별 심사 다름. 전공만으로 지원 가능 판정 불가.",
+        "사업 참여대학·수혜횟수·최신 학기 신청 일정"
+      ],
+      "requirements": [
+        "대한민국 국적",
+        "2026 국내·해외4년제 자연과학·공학계열 신입생 또는 국내3학년",
+        "유형별 고교 수학·과학 이수/성적 및 심층 평가"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "국내 등록금전액+학업장려비학기250만원, 기초수급 생활비학기250만원 추가(계속지원조건).해외 연최대미화5만달러 범위 학비·체재비. 제도 안내이며 실제 지원은 세부 선발 및 계속지원 요건 심사를 거칩니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "seoul-exchange",
+      "title": "서울 해외 교환학생 장학금",
+      "organization": "서울미래인재재단",
+      "category": "지역",
+      "type": "해외연수",
+      "amount": "아시아권 400만원 / 비아시아권 550만원 학업장려금",
+      "description": "서울 소재 대학 학부생",
+      "sourceUrl": "https://www.seoul.go.kr/news/news_report.do?nttNo=457979",
+      "applicationUrl": "https://www.seoul.go.kr/news/news_report.do?nttNo=457979",
+      "regions": [
+        "서울"
+      ],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": false,
+      "start": null,
+      "deadline": "2026-05-27",
+      "deadlineTime": "16:00",
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad",
+            "associate"
+          ],
+          "label": "대상 학위과정",
+          "evidence": "학부·대학원 포함 여부는 해당 유형의 세부 공고를 확인합니다."
+        },
+        {
+          "field": "schoolRegion",
+          "allowed": [
+            "서울"
+          ],
+          "label": "지역·거주 조건",
+          "evidence": "서울 소재 대학 학부생"
+        },
+        {
+          "field": "income",
+          "max": 4,
+          "year": 2026,
+          "soft": false,
+          "label": "지원구간 4 이하 또는 해당 유형 조건",
+          "evidence": "유형별 소득·복지자격 및 인정 통지 학기를 확인하세요. 숫자구간 이외의 예외는 자동 제외하지 않습니다."
+        }
+      ],
+      "unknowns": [
+        "정확한 공식 사업명/성적세부기준은 공고 확인",
+        "주소변동 이력·기준일·추천·중복 수혜 및 첨부 서류"
+      ],
+      "requirements": [
+        "2026년 2학기 해외교환학생 선정 또는 선정 예정",
+        "기초/차상위 또는 2025-2·2026-1 학자금지원 1~4구간",
+        "성적기준은 모집 공고 원문 추가 확인"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "서울 소재 대학 학부생 / 아시아권 400만원 / 비아시아권 550만원 학업장려금. 해당 연도 유형별 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요.",
+      "sources": [
+        {
+          "url": "https://www.seoul.go.kr/news/news_report.do?nttNo=457979",
+          "evidenceDate": "2026-05-15",
+          "label": "서울시 공식 보도자료"
+        }
+      ]
+    },
+    {
+      "id": "incheon-housing",
+      "title": "관외대학 거주비 지원 장학금",
+      "organization": "인천인재평생교육진흥원",
+      "category": "지역",
+      "type": "주거",
+      "amount": "100만원",
+      "description": "본인 또는 부모 인천 주민등록 그리고 관외대학 재학/학교인근 거주(사업명·주거요건)",
+      "sourceUrl": "https://itle.or.kr/user/scholarship/service/view.do?sq=735",
+      "applicationUrl": "https://itle.or.kr/user/scholarship/service/view.do?sq=735",
+      "regions": [
+        "인천"
+      ],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad",
+            "associate"
+          ],
+          "label": "대상 학위과정",
+          "evidence": "학부·대학원 포함 여부는 해당 유형의 세부 공고를 확인합니다."
+        },
+        {
+          "all": [
+            {
+              "any": [
+                {
+                  "field": "residence",
+                  "allowed": [
+                    "인천"
+                  ]
+                },
+                {
+                  "field": "parentRegion",
+                  "allowed": [
+                    "인천"
+                  ]
+                }
+              ]
+            },
+            {
+              "field": "schoolRegion",
+              "allowed": [
+                "서울",
+                "경기",
+                "부산",
+                "대구",
+                "광주",
+                "대전",
+                "울산",
+                "세종",
+                "강원",
+                "충북",
+                "충남",
+                "전북",
+                "전남",
+                "경북",
+                "경남",
+                "제주"
+              ]
+            }
+          ],
+          "label": "지역·거주 조건",
+          "evidence": "본인 또는 부모 인천 주민등록 그리고 관외대학 재학/학교인근 거주(사업명·주거요건)"
+        },
+        {
+          "field": "income",
+          "max": 6,
+          "year": 2026,
+          "soft": true,
+          "label": "지원구간 6 이하 또는 해당 유형 조건",
+          "evidence": "유형별 소득·복지자격 및 인정 통지 학기를 확인하세요. 숫자구간 이외의 예외는 자동 제외하지 않습니다."
+        },
+        {
+          "any": [
+            {
+              "all": [
+                {
+                  "field": "gpaScale",
+                  "allowed": [
+                    "4.5"
+                  ]
+                },
+                {
+                  "field": "gpa",
+                  "min": 2.5
+                }
+              ]
+            },
+            {
+              "all": [
+                {
+                  "field": "gpaScale",
+                  "allowed": [
+                    "4.3"
+                  ]
+                },
+                {
+                  "field": "gpa",
+                  "min": 2.3
+                }
+              ]
+            }
+          ],
+          "label": "직전학기 평점",
+          "evidence": "4.5 만점 2.5 또는 4.3 만점 2.3 이상."
+        }
+      ],
+      "unknowns": [
+        "상세페이지 학교구분 표에 고등학교 포함되어 있어 대학생 세부 공고 우선",
+        "현재 정확한 접수마감 별도 공고 확인",
+        "주소변동 이력·기준일·추천·중복 수혜 및 첨부 서류"
+      ],
+      "requirements": [
+        "정규학기 재학",
+        "기초수급/차상위/한부모/중증장애 OR 학자금지원 6구간 이내",
+        "직전 2.5/4.5 또는 2.3/4.3 이상",
+        "기숙사 또는 본인·부모 명의 학교인근 월세, 계약 3개월 이상",
+        "공공·민간 임대주택/고시텔/고시원 제외, 기간종료 계약 불인정"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "본인 또는 부모 인천 주민등록 그리고 관외대학 재학/학교인근 거주(사업명·주거요건) / 100만원. 해당 연도 유형별 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요.",
+      "sources": [
+        {
+          "url": "https://itle.or.kr/user/scholarship/service/view.do?sq=735",
+          "label": "2026 장학사업 상세 안내"
+        }
+      ]
+    },
+    {
+      "id": "gangwon-living",
+      "title": "강원인재원 생활비 장학금",
+      "organization": "강원인재원",
+      "category": "지역",
+      "type": "생활비",
+      "amount": "100만원",
+      "description": "본인 강원 주민등록 1년 이상 그리고 강원 소재 고등학교 졸업 그리고 강원 소재 대학 재학",
+      "sourceUrl": "https://injae.gwd.go.kr/injae/community/promotion/press?articleSeq=11357",
+      "applicationUrl": "https://injae.gwd.go.kr/injae/community/promotion/press?articleSeq=11357",
+      "regions": [
+        "강원"
+      ],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad",
+            "associate"
+          ],
+          "label": "대상 학위과정",
+          "evidence": "학부·대학원 포함 여부는 해당 유형의 세부 공고를 확인합니다."
+        },
+        {
+          "all": [
+            {
+              "field": "residence",
+              "allowed": [
+                "강원"
+              ]
+            },
+            {
+              "field": "residenceMonths",
+              "min": 12
+            },
+            {
+              "field": "localHighSchool",
+              "allowed": [
+                "강원"
+              ]
+            },
+            {
+              "field": "schoolRegion",
+              "allowed": [
+                "강원"
+              ]
+            }
+          ],
+          "label": "지역·거주 조건",
+          "evidence": "본인 강원 주민등록 1년 이상 그리고 강원 소재 고등학교 졸업 그리고 강원 소재 대학 재학"
+        },
+        {
+          "field": "income",
+          "max": 3,
+          "year": 2026,
+          "soft": false,
+          "label": "지원구간 3 이하 또는 해당 유형 조건",
+          "evidence": "유형별 소득·복지자격 및 인정 통지 학기를 확인하세요. 숫자구간 이외의 예외는 자동 제외하지 않습니다."
+        }
+      ],
+      "unknowns": [
+        "2026-09-02 정정공고 존재; 보도자료 이후 정정공고 우선 적용",
+        "9월1일 신청개시만 확인, 종료일 추측 금지",
+        "주소변동 이력·기준일·추천·중복 수혜 및 첨부 서류"
+      ],
+      "requirements": [
+        "기초·차상위 또는 학자금지원 1~3구간"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "본인 강원 주민등록 1년 이상 그리고 강원 소재 고등학교 졸업 그리고 강원 소재 대학 재학 / 100만원. 해당 연도 유형별 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요.",
+      "sources": [
+        {
+          "url": "https://injae.gwd.go.kr/injae/community/promotion/press?articleSeq=11357",
+          "evidenceDate": "2026-08-31",
+          "label": "운영기관 공식 보도자료"
+        },
+        {
+          "url": "https://injae.gwd.go.kr/injae",
+          "label": "정정공고 진입"
+        }
+      ]
+    },
+    {
+      "id": "chungnam-love",
+      "title": "충남사랑 장학사업",
+      "organization": "충남평생교육진흥원",
+      "category": "지역",
+      "type": "생활비",
+      "amount": "최대 360만원 생활비(180만원씩 2회)",
+      "description": "신청인 충남 연속거주 2년 이상 그리고 충남 소재 캠퍼스 대학 재학",
+      "sourceUrl": "https://youth.chungnam.go.kr/web/main/bbs/cnyouth_notice/572?baCommSelec=false&baNotice=false&baOpenDay=false&baUse=true&bcId=cnyouth_notice&cp=8&sortDirection=DESC&sortOrder=BA_REGDATE",
+      "applicationUrl": "https://youth.chungnam.go.kr/web/main/bbs/cnyouth_notice/572?baCommSelec=false&baNotice=false&baOpenDay=false&baUse=true&bcId=cnyouth_notice&cp=8&sortDirection=DESC&sortOrder=BA_REGDATE",
+      "regions": [
+        "충남"
+      ],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": false,
+      "start": null,
+      "deadline": "2026-04-29",
+      "deadlineTime": "16:00",
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad",
+            "associate"
+          ],
+          "label": "대상 학위과정",
+          "evidence": "학부·대학원 포함 여부는 해당 유형의 세부 공고를 확인합니다."
+        },
+        {
+          "all": [
+            {
+              "field": "residence",
+              "allowed": [
+                "충남"
+              ]
+            },
+            {
+              "field": "residenceMonths",
+              "min": 24
+            },
+            {
+              "field": "schoolRegion",
+              "allowed": [
+                "충남"
+              ]
+            }
+          ],
+          "label": "지역·거주 조건",
+          "evidence": "신청인 충남 연속거주 2년 이상 그리고 충남 소재 캠퍼스 대학 재학"
+        },
+        {
+          "field": "income",
+          "max": 2,
+          "year": 2026,
+          "soft": false,
+          "label": "지원구간 2 이하 또는 해당 유형 조건",
+          "evidence": "유형별 소득·복지자격 및 인정 통지 학기를 확인하세요. 숫자구간 이외의 예외는 자동 제외하지 않습니다."
+        }
+      ],
+      "unknowns": [
+        "1차 기준을 1학년 2차에 그대로 적용하지 말 것",
+        "주소변동 이력·기준일·추천·중복 수혜 및 첨부 서류"
+      ],
+      "requirements": [
+        "1차 2~4학년",
+        "학자금지원 2구간 이하",
+        "1학년 2차 모집 별도"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "신청인 충남 연속거주 2년 이상 그리고 충남 소재 캠퍼스 대학 재학 / 최대 360만원 생활비(180만원씩 2회). 해당 연도 유형별 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요.",
+      "sources": [
+        {
+          "url": "https://youth.chungnam.go.kr/web/main/bbs/cnyouth_notice/572?baCommSelec=false&baNotice=false&baOpenDay=false&baUse=true&bcId=cnyouth_notice&cp=8&sortDirection=DESC&sortOrder=BA_REGDATE",
+          "evidenceDate": "2026-04-13",
+          "label": "충남청년포털 공식 공고"
+        }
+      ]
+    },
+    {
+      "id": "jeonbuk-hometown",
+      "title": "전북 향토인재 장학금",
+      "organization": "전북특별자치도평생교육장학진흥원",
+      "category": "지역",
+      "type": "생활비",
+      "amount": "100만원 생활비",
+      "description": "보호자 전북 주민등록 6개월 이상 또는 (보호자 등록기준지 전북 그리고 학생 전북고교 졸업); 국내 2년제 이상 대학",
+      "sourceUrl": "https://www.jbiles.or.kr/bbs/content.php?co_id=sub03_06",
+      "applicationUrl": "https://www.jbiles.or.kr/bbs/content.php?co_id=sub03_06",
+      "regions": [
+        "전북"
+      ],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": false,
+      "start": null,
+      "deadline": "2026-04-12",
+      "deadlineTime": "18:00",
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad",
+            "associate"
+          ],
+          "label": "대상 학위과정",
+          "evidence": "학부·대학원 포함 여부는 해당 유형의 세부 공고를 확인합니다."
+        },
+        {
+          "any": [
+            {
+              "all": [
+                {
+                  "field": "parentRegion",
+                  "allowed": [
+                    "전북"
+                  ]
+                },
+                {
+                  "field": "parentMonths",
+                  "min": 6
+                }
+              ]
+            },
+            {
+              "field": "registeredOrigin",
+              "allowed": [
+                "전북"
+              ]
+            }
+          ],
+          "label": "지역·거주 조건",
+          "evidence": "보호자 전북 주민등록 6개월 이상 또는 (보호자 등록기준지 전북 그리고 학생 전북고교 졸업); 국내 2년제 이상 대학"
+        }
+      ],
+      "unknowns": [
+        "신입생 성적기준 서울/지방/예체능 별도",
+        "지원구간만으로 소득평가 대체 불가",
+        "주소변동 이력·기준일·추천·중복 수혜 및 첨부 서류"
+      ],
+      "requirements": [
+        "정규학기 학부 신입·재학생",
+        "재학생 전체평점 3.0/4.5 또는 2.7/4.3 이상",
+        "성적우수·저소득·일반 유형 별도; 건강보험료 생활정도 평가",
+        "전북 서울·전주장학숙 재사생 제외"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "보호자 전북 주민등록 6개월 이상 또는 (보호자 등록기준지 전북 그리고 학생 전북고교 졸업); 국내 2년제 이상 대학 / 100만원 생활비. 해당 연도 유형별 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요.",
+      "sources": [
+        {
+          "url": "https://www.jbiles.or.kr/bbs/content.php?co_id=sub03_06",
+          "label": "운영기관 2026 선발요건"
+        },
+        {
+          "url": "https://www.jbiles.or.kr/sub05_01/1505",
+          "evidenceDate": "2026-03-24",
+          "label": "2026 모집공고"
+        }
+      ]
+    },
+    {
+      "id": "gyeongnam-local-university",
+      "title": "경상남도 도내 대학 재학 장학생",
+      "organization": "경상남도장학회",
+      "category": "지역",
+      "type": "요강 확인",
+      "amount": "100만원",
+      "description": "학생 및 보호자 경남 주민등록 그리고 경남고 졸업 그리고 경남대학 재학",
+      "sourceUrl": "https://baro.gyeongnam.go.kr/baro/serviceView.es?mid=a10202000000&service_no=577",
+      "applicationUrl": "https://baro.gyeongnam.go.kr/baro/serviceView.es?mid=a10202000000&service_no=577",
+      "regions": [
+        "경남"
+      ],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": false,
+      "start": null,
+      "deadline": "2026-10-02",
+      "deadlineTime": "18:00",
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad",
+            "associate"
+          ],
+          "label": "대상 학위과정",
+          "evidence": "학부·대학원 포함 여부는 해당 유형의 세부 공고를 확인합니다."
+        },
+        {
+          "all": [
+            {
+              "field": "residence",
+              "allowed": [
+                "경남"
+              ]
+            },
+            {
+              "field": "parentRegion",
+              "allowed": [
+                "경남"
+              ]
+            },
+            {
+              "field": "schoolRegion",
+              "allowed": [
+                "경남"
+              ]
+            },
+            {
+              "field": "localHighSchool",
+              "allowed": [
+                "경남"
+              ]
+            }
+          ],
+          "label": "지역·거주 조건",
+          "evidence": "학생 및 보호자 경남 주민등록 그리고 경남고 졸업 그리고 경남대학 재학"
+        },
+        {
+          "field": "income",
+          "max": 3,
+          "year": 2026,
+          "soft": true,
+          "label": "지원구간 3 이하 또는 해당 유형 조건",
+          "evidence": "유형별 소득·복지자격 및 인정 통지 학기를 확인하세요. 숫자구간 이외의 예외는 자동 제외하지 않습니다."
+        }
+      ],
+      "unknowns": [
+        "페이지 상단 모집인원9999와 본문100여명 불일치; 본문 및 첨부공고 우선",
+        "공고번호 연도·작성일 표기에 불일치 있음",
+        "주소변동 이력·기준일·추천·중복 수혜 및 첨부 서류"
+      ],
+      "requirements": [
+        "39세 이하",
+        "학부2~4학년",
+        "지원3구간 이내(복지사각 우선4구간)",
+        "직전2학기 평균3.0/4.5 이상, 직전10학점 이상"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "학생 및 보호자 경남 주민등록 그리고 경남고 졸업 그리고 경남대학 재학 / 100만원. 해당 연도 유형별 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요.",
+      "sources": [
+        {
+          "url": "https://baro.gyeongnam.go.kr/baro/serviceView.es?mid=a10202000000&service_no=577",
+          "label": "경남바로서비스 2026 모집공고"
+        }
+      ]
+    },
+    {
+      "id": "busan-local-talent",
+      "title": "부산지역인재 생활장학금",
+      "organization": "부산광역시·부산테크노파크",
+      "category": "지역",
+      "type": "생활비",
+      "amount": "150만원",
+      "description": "부산 소재 대학교 IT 또는 상경 분야 재학",
+      "sourceUrl": "https://young.busan.go.kr/index.nm?menuCd=164",
+      "applicationUrl": "https://young.busan.go.kr/index.nm?menuCd=164",
+      "regions": [
+        "부산"
+      ],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad",
+            "associate"
+          ],
+          "label": "대상 학위과정",
+          "evidence": "학부·대학원 포함 여부는 해당 유형의 세부 공고를 확인합니다."
+        },
+        {
+          "field": "schoolRegion",
+          "allowed": [
+            "부산"
+          ],
+          "label": "지역·거주 조건",
+          "evidence": "부산 소재 대학교 IT 또는 상경 분야 재학"
+        }
+      ],
+      "unknowns": [
+        "지역거주 요건은 확인한 발췌에서 미확인",
+        "학년·성적·지원구간 전체 요건과 정확마감은 원공고 추가확인; 자동 자격확정 금지",
+        "주소변동 이력·기준일·추천·중복 수혜 및 첨부 서류"
+      ],
+      "requirements": [
+        "2026 하반기230명",
+        "직전학기(2026-1)12학점 이상"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "부산 소재 대학교 IT 또는 상경 분야 재학 / 150만원. 해당 연도 유형별 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요.",
+      "sources": [
+        {
+          "url": "https://young.busan.go.kr/index.nm?menuCd=164",
+          "label": "부산청년플랫폼 2026 하반기 안내"
+        }
+      ]
+    },
+    {
+      "id": "daejeon-achievement",
+      "title": "대전 인재육성 성취 장학금(대학생)",
+      "organization": "대전청년내일재단",
+      "category": "지역",
+      "type": "생활비",
+      "amount": "150만원",
+      "description": "본인 대전 연속주소1년 이상 그리고 대전 소재 대학교 재학",
+      "sourceUrl": "https://www.daejeonyouthportal.kr/content/CT_000000000501/cntPage.do?commonMenuNo=497_499",
+      "applicationUrl": "https://www.daejeonyouthportal.kr/content/CT_000000000501/cntPage.do?commonMenuNo=497_499",
+      "regions": [
+        "대전"
+      ],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad",
+            "associate"
+          ],
+          "label": "대상 학위과정",
+          "evidence": "학부·대학원 포함 여부는 해당 유형의 세부 공고를 확인합니다."
+        },
+        {
+          "all": [
+            {
+              "field": "residence",
+              "allowed": [
+                "대전"
+              ]
+            },
+            {
+              "field": "residenceMonths",
+              "min": 12
+            },
+            {
+              "field": "schoolRegion",
+              "allowed": [
+                "대전"
+              ]
+            }
+          ],
+          "label": "지역·거주 조건",
+          "evidence": "본인 대전 연속주소1년 이상 그리고 대전 소재 대학교 재학"
+        },
+        {
+          "any": [
+            {
+              "all": [
+                {
+                  "field": "gpaScale",
+                  "allowed": [
+                    "4.5"
+                  ]
+                },
+                {
+                  "field": "cumulativeGpa",
+                  "min": 3.5
+                }
+              ]
+            },
+            {
+              "all": [
+                {
+                  "field": "gpaScale",
+                  "allowed": [
+                    "4.3"
+                  ]
+                },
+                {
+                  "field": "cumulativeGpa",
+                  "min": 3.3
+                }
+              ]
+            }
+          ],
+          "label": "전체학기 평점",
+          "evidence": "4.5 만점 3.5 또는 4.3 만점 3.3 이상."
+        }
+      ],
+      "unknowns": [
+        "연장모집 안내 존재, 정확 최신마감 미확인",
+        "주소변동 이력·기준일·추천·중복 수혜 및 첨부 서류"
+      ],
+      "requirements": [
+        "대한민국 국적,2학년 이상",
+        "학교(총)장 또는 단과대학장 추천",
+        "직전학기까지 전체평점3.5/4.5 또는3.3/4.3 이상",
+        "직전12학점 이상",
+        "휴학·초과학기·수료·대학원·원격대학 등 제외"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "본인 대전 연속주소1년 이상 그리고 대전 소재 대학교 재학 / 150만원. 해당 연도 유형별 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요.",
+      "sources": [
+        {
+          "url": "https://www.daejeonyouthportal.kr/content/CT_000000000501/cntPage.do?commonMenuNo=497_499",
+          "label": "대전청년포털 2026 공식 계획"
+        },
+        {
+          "url": "https://www.inu.ac.kr/bbs/inu/249/430272/artclView.do",
+          "label": "2026 하반기 대학 공식 공고"
+        }
+      ]
+    },
+    {
+      "id": "gyeonggi-resident",
+      "title": "경기도민회장학회 대학생 장학금",
+      "organization": "경기도민회장학회",
+      "category": "지역",
+      "type": "등록금",
+      "amount": "4년제400만원 / 전문대300만원 / 사이버·방통대60만원 한도, 등록금 본인부담 범위",
+      "description": "부 또는 모 경기도 연속주소3년 이상(2023-06-13부터 접수현재); 기혼자는 본인 기준, 국내 소재 대학",
+      "sourceUrl": "https://www.swwu.ac.kr/download/1778053988650/index.html",
+      "applicationUrl": "https://www.swwu.ac.kr/download/1778053988650/index.html",
+      "regions": [
+        "경기"
+      ],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": false,
+      "start": null,
+      "deadline": "2026-06-12",
+      "deadlineTime": "18:00",
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad",
+            "associate"
+          ],
+          "label": "대상 학위과정",
+          "evidence": "학부·대학원 포함 여부는 해당 유형의 세부 공고를 확인합니다."
+        },
+        {
+          "all": [
+            {
+              "field": "parentRegion",
+              "allowed": [
+                "경기"
+              ]
+            },
+            {
+              "field": "parentMonths",
+              "min": 36
+            }
+          ],
+          "soft": true,
+          "label": "지역·거주 조건",
+          "evidence": "부 또는 모 경기도 연속주소3년 이상(2023-06-13부터 접수현재); 기혼자는 본인 기준, 국내 소재 대학"
+        }
+      ],
+      "unknowns": [
+        "다른요약자료의300만원 표시는2026의4년제400만원과 다름",
+        "주소변동 이력·기준일·추천·중복 수혜 및 첨부 서류"
+      ],
+      "requirements": [
+        "성적·소득 유형",
+        "재학생: 2025-2 12학점 이상 및 B0(3.0) 이상; 신입: 수능백분위 평균80 또는 고3 선택학기 전과목80 이상",
+        "부모가 모두 사망한 경우 본인주소 기준 신청가능",
+        "등록금 전액 지원받으면 등록금성 중복지원 제한"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "부 또는 모 경기도 연속주소3년 이상(2023-06-13부터 접수현재); 기혼자는 본인 기준, 국내 소재 대학 / 4년제400만원 / 전문대300만원 / 사이버·방통대60만원 한도, 등록금 본인부담 범위. 해당 연도 유형별 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요.",
+      "sources": [
+        {
+          "url": "https://www.swwu.ac.kr/download/1778053988650/index.html",
+          "label": "재단 2026 공고문 대학 공식 게시본"
+        }
+      ]
+    },
+    {
+      "id": "jeju-achievement",
+      "title": "제주인재육성 성취장학금",
+      "organization": "제주평생교육장학진흥원",
+      "category": "지역",
+      "type": "등록금",
+      "amount": "최대200만원, 등록금범위",
+      "description": "학생 제주 누적주소5년 이상 그리고 (학생 또는 부모 현재 제주주소); 국내대학(석사 포함 일부)",
+      "sourceUrl": "https://www.jiles.or.kr/community/notice/notice.htm?act=download&no=1&page=1&seq=11305",
+      "applicationUrl": "https://www.jiles.or.kr/community/notice/notice.htm?act=download&no=1&page=1&seq=11305",
+      "regions": [
+        "제주"
+      ],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": false,
+      "start": null,
+      "deadline": "2026-06-19",
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad",
+            "associate"
+          ],
+          "label": "대상 학위과정",
+          "evidence": "학부·대학원 포함 여부는 해당 유형의 세부 공고를 확인합니다."
+        },
+        {
+          "label": "지역·거주 조건",
+          "evidence": "학생 제주 누적주소5년 이상 그리고 (학생 또는 부모 현재 제주주소); 국내대학(석사 포함 일부)",
+          "any": [
+            {
+              "all": [
+                {
+                  "field": "residence",
+                  "allowed": [
+                    "제주"
+                  ]
+                },
+                {
+                  "field": "residenceMonths",
+                  "min": 60
+                }
+              ]
+            },
+            {
+              "all": [
+                {
+                  "field": "parentRegion",
+                  "allowed": [
+                    "제주"
+                  ]
+                },
+                {
+                  "field": "jejuCumulativeMonths",
+                  "min": 60
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "등록금 중복지원 잔액 이내",
+        "학부신입·석사세부 제외조건 원문우선",
+        "주소변동 이력·기준일·추천·중복 수혜 및 첨부 서류"
+      ],
+      "requirements": [
+        "39세 이하, 정규재학",
+        "학부재학생 직전B+이상(4.5기준,다른만점 공식환산표)",
+        "직전12학점(4학년9)",
+        "석사 성적B+이상,박사 제외; 학부신입 수능2과목합6등급"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "학생 제주 누적주소5년 이상 그리고 (학생 또는 부모 현재 제주주소); 국내대학(석사 포함 일부) / 최대200만원, 등록금범위. 해당 연도 유형별 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요.",
+      "sources": [
+        {
+          "url": "https://www.jiles.or.kr/community/notice/notice.htm?act=download&no=1&page=1&seq=11305",
+          "evidenceDate": "2026-05-11",
+          "label": "2026 원공고 PDF"
+        }
+      ]
+    },
+    {
+      "id": "jeju-hope",
+      "title": "제주인재육성 희망장학금(대학생)",
+      "organization": "제주평생교육장학진흥원",
+      "category": "지역",
+      "type": "생활비",
+      "amount": "200만원 생활비",
+      "description": "학생 제주 누적주소5년 이상 그리고 (학생 또는 부모 현재 제주주소); 국내대학생",
+      "sourceUrl": "https://www.jiles.or.kr/community/notice/notice.htm?act=download&no=1&page=1&seq=11305",
+      "applicationUrl": "https://www.jiles.or.kr/community/notice/notice.htm?act=download&no=1&page=1&seq=11305",
+      "regions": [
+        "제주"
+      ],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": false,
+      "start": null,
+      "deadline": "2026-06-19",
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad",
+            "associate"
+          ],
+          "label": "대상 학위과정",
+          "evidence": "학부·대학원 포함 여부는 해당 유형의 세부 공고를 확인합니다."
+        },
+        {
+          "label": "지역·거주 조건",
+          "evidence": "학생 제주 누적주소5년 이상 그리고 (학생 또는 부모 현재 제주주소); 국내대학생",
+          "any": [
+            {
+              "all": [
+                {
+                  "field": "residence",
+                  "allowed": [
+                    "제주"
+                  ]
+                },
+                {
+                  "field": "residenceMonths",
+                  "min": 60
+                }
+              ]
+            },
+            {
+              "all": [
+                {
+                  "field": "parentRegion",
+                  "allowed": [
+                    "제주"
+                  ]
+                },
+                {
+                  "field": "jejuCumulativeMonths",
+                  "min": 60
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "경제곤란 증빙 및 선발평가 세부 원문확인",
+        "소득구간 숫자 기준 임의부여 금지",
+        "주소변동 이력·기준일·추천·중복 수혜 및 첨부 서류"
+      ],
+      "requirements": [
+        "39세 이하,정규재학",
+        "기초·차상위자녀 또는 한부모·조손·다문화 등 저소득/보호자 실직·파산·질병 등 경제곤란",
+        "직전12학점(4학년9)"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "학생 제주 누적주소5년 이상 그리고 (학생 또는 부모 현재 제주주소); 국내대학생 / 200만원 생활비. 해당 연도 유형별 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요.",
+      "sources": [
+        {
+          "url": "https://www.jiles.or.kr/community/notice/notice.htm?act=download&no=1&page=1&seq=11305",
+          "evidenceDate": "2026-05-11",
+          "label": "2026 원공고 PDF"
+        }
+      ]
+    },
+    {
+      "id": "jeju-strategy-graduate",
+      "title": "제주인재육성 전략산업 트랙장학금",
+      "organization": "제주평생교육장학진흥원",
+      "category": "지역",
+      "type": "생활비",
+      "amount": "300만원 생활비",
+      "description": "학생 제주 누적주소5년 이상 그리고 (학생 또는 부모 현재 제주주소); 국내대학원",
+      "sourceUrl": "https://www.jiles.or.kr/community/notice/notice.htm?act=download&no=1&page=1&seq=11305",
+      "applicationUrl": "https://www.jiles.or.kr/community/notice/notice.htm?act=download&no=1&page=1&seq=11305",
+      "regions": [
+        "제주"
+      ],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": false,
+      "start": null,
+      "deadline": "2026-06-19",
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "master",
+            "doctor",
+            "integrated"
+          ],
+          "label": "대상 학위과정",
+          "evidence": "학부·대학원 포함 여부는 해당 유형의 세부 공고를 확인합니다."
+        },
+        {
+          "label": "지역·거주 조건",
+          "evidence": "학생 제주 누적주소5년 이상 그리고 (학생 또는 부모 현재 제주주소); 국내대학원",
+          "any": [
+            {
+              "all": [
+                {
+                  "field": "residence",
+                  "allowed": [
+                    "제주"
+                  ]
+                },
+                {
+                  "field": "residenceMonths",
+                  "min": 60
+                }
+              ]
+            },
+            {
+              "all": [
+                {
+                  "field": "parentRegion",
+                  "allowed": [
+                    "제주"
+                  ]
+                },
+                {
+                  "field": "jejuCumulativeMonths",
+                  "min": 60
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "공통학점요건은 대학생 기준이므로 대학원에 자동적용 금지",
+        "석사·박사 평가항목 및 이전전공 연계 인정 심사",
+        "주소변동 이력·기준일·추천·중복 수혜 및 첨부 서류"
+      ],
+      "requirements": [
+        "39세 이하,정규재학",
+        "전략산업 관련 전공학과 졸업+연계 석·박사 재학·신입",
+        "청정에너지/미래모빌리티/첨단우주항공",
+        "석사평가A-이상 등 세부유형 평가확인"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "학생 제주 누적주소5년 이상 그리고 (학생 또는 부모 현재 제주주소); 국내대학원 / 300만원 생활비. 해당 연도 유형별 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요.",
+      "sources": [
+        {
+          "url": "https://www.jiles.or.kr/community/notice/notice.htm?act=download&no=1&page=1&seq=11305",
+          "evidenceDate": "2026-05-11",
+          "label": "2026 원공고 PDF"
+        }
+      ]
+    },
+    {
+      "id": "cces-language-2026",
+      "title": "이슬람권 언어연수 지원",
+      "organization": "서울대 중앙유라시아연구소",
+      "type": "해외연수",
+      "published": "2026-10-01",
+      "start": "2026-10-01",
+      "deadline": "2026-10-20",
+      "deadlineTime": null,
+      "amount": "200–350만 원",
+      "audience": "서울대 학부·대학원",
+      "description": "왕복 항공료와 체재비 일부를 지원하는 어학연수 장학금. 최소 4주 연수 대상입니다.",
+      "sourceUrl": "https://newkaku.snu.ac.kr/snunow/events?bbsidx=176795&md=v",
+      "applicationUrl": "https://cces.snu.ac.kr/",
+      "method": "연구소 이메일 제출 · 원문 참조",
+      "rules": [
+        {
+          "field": "institution",
+          "allowed": [
+            "서울대학교"
+          ],
+          "label": "서울대학교 소속",
+          "evidence": "서울대학교 교내 학생 대상 안내입니다."
+        },
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad",
+            "master",
+            "doctor",
+            "integrated"
+          ],
+          "label": "서울대 학부·대학원생",
+          "evidence": "교내 학부 및 대학원 재학생이 지원 대상이며 수료생도 가능합니다."
+        },
+        {
+          "field": "training",
+          "allowed": [
+            "yes"
+          ],
+          "label": "이슬람권 언어 학습 및 연수 계획",
+          "evidence": "아랍어·페르시아어·튀르크어 등을 대상으로 언어 학습 경력과 연수 목적을 심사합니다."
+        }
+      ],
+      "unknowns": [
+        "최소 4주 연수 계획, 언어 학습 경력 및 수준",
+        "휴학생의 휴학 사유와 수혜 횟수 제한",
+        "연수 후 발표 의무와 반납 조건",
+        "마감일의 정확한 접수 시각"
+      ],
+      "steps": [
+        "원문에서 지원 조건·반납 조건 확인",
+        "연구소 공지에서 신청서 내려받기",
+        "성적증명서 준비",
+        "학업계획서 작성 (A4 1매 이내)",
+        "연구소 이메일로 신청 서류 제출"
+      ],
+      "note": "선발 인원 3–4명. 중복 수혜 가능 여부는 담당 기관에 확인하세요. 날짜만 공개되어 마감 시각은 표시하지 않습니다.",
+      "category": "교내",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "requirements": [],
+      "overlap": "등록금성 여부와 재단의 별도 중복 수혜 제한 확인"
+    },
+    {
+      "id": "snu-custom-guide",
+      "title": "서울대 교내 맞춤형장학금",
+      "organization": "서울대 · 소속 단과대학",
+      "type": "등록금",
+      "published": null,
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "amount": "소속 대학별 확인",
+      "audience": "학부·대학원 등록대상자",
+      "description": "성적과 경제상황 등을 고려하는 교내 장학 제도. 실제 선발 기준과 추가 서류는 소속 대학에 확인해야 합니다.",
+      "sourceUrl": "https://student.snu.ac.kr/소식·알림/faq/장학/",
+      "applicationUrl": "https://my.snu.ac.kr/",
+      "method": "마이스누 신청 + 소속별 추가 절차",
+      "rules": [
+        {
+          "field": "institution",
+          "allowed": [
+            "서울대학교"
+          ],
+          "label": "서울대학교 소속",
+          "evidence": "서울대학교 교내 학생 대상 안내입니다."
+        },
+        {
+          "field": "status",
+          "allowed": [
+            "enrolled",
+            "returning"
+          ],
+          "blocked": [
+            "freshman"
+          ],
+          "label": "재학·복학 예정 등록대상자",
+          "evidence": "복학예정자도 기간 내 신청이 필요합니다. 학부 신입생은 맞춤형장학금 선발 대상이 아닙니다."
+        }
+      ],
+      "unknowns": [
+        "해당 학기 신청 기간과 소속 대학별 선발 기준",
+        "성적·경제상황 및 지원 금액",
+        "소속 학과 추가 서류와 제출 마감"
+      ],
+      "steps": [
+        "소속 대학·학과의 해당 학기 공지 확인",
+        "마이스누에서 교내장학금 신청",
+        "마이스누 신청 완료 상태 확인",
+        "학과에서 요구한 추가 서류 제출"
+      ],
+      "note": "이 항목은 제도 안내입니다. 현재 모집 중이라는 뜻이 아닙니다. 다음 학기 일정이 확정되기 전에는 과거 일정을 마감일로 사용하지 않습니다.",
+      "category": "교내",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "requirements": [],
+      "overlap": "등록금성 여부와 재단의 별도 중복 수혜 제한 확인"
+    },
+    {
+      "id": "munju-ai-2026-fall",
+      "title": "문주장학재단 AI·ICT 인재 장학금",
+      "organization": "문주장학재단 · 서울대 학생처 안내",
+      "type": "요강 확인",
+      "published": "2026-09-21",
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "amount": "선발 요강 확인",
+      "audience": "AI·ICT 분야 · 세부 요강 확인",
+      "description": "서울대 학생처에 게시된 AI·ICT 분야 인재 장학생 선발 공고. 조건과 일정은 첨부 선발 요강 확인이 필요합니다.",
+      "sourceUrl": "https://student.snu.ac.kr/?kboard_content_redirect=390",
+      "applicationUrl": null,
+      "method": "첨부 공고문·지원서식 확인",
+      "rules": [],
+      "unknowns": [
+        "학위과정·전공 및 성적·소득 기준",
+        "접수 기간과 현재 모집 여부",
+        "장학금액·지급 성격과 중복 수혜 제한",
+        "신청서식 및 제출 방법"
+      ],
+      "steps": [
+        "원문에서 첨부 선발 공고문 열기",
+        "신청 기간·자격·지원 성격 확인",
+        "장학생 지원서식 작성",
+        "공고문에 명시된 방법으로 제출"
+      ],
+      "note": "공개 웹 본문만 확인한 항목입니다. 첨부 요강의 세부 조건은 아직 구조화하지 않았으며, 현재 접수 가능한 공고로 분류하지 않습니다. 지급 성격도 첨부 요강에서 확인해야 합니다.",
+      "category": "민간",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "requirements": [],
+      "overlap": "등록금성 여부와 재단의 별도 중복 수혜 제한 확인"
+    },
+    {
+      "id": "ilun-2026-fall",
+      "title": "일운과학기술재단 희망·나눔 장학생",
+      "organization": "일운과학기술재단",
+      "type": "학업·생활",
+      "published": "2026-09-22",
+      "start": "2026-09-16",
+      "deadline": "2026-09-27",
+      "deadlineTime": null,
+      "amount": "최대 2,000만 원 / 3년 총합",
+      "audience": "석사과정 이상 재학생",
+      "description": "전공 제한 없이 석사과정 이상 재학생을 모집한 희망·나눔 장학생 선발 공고입니다.",
+      "sourceUrl": "https://student.snu.ac.kr/?kboard_content_redirect=392",
+      "applicationUrl": "https://www.ilun.or.kr/",
+      "method": "재단 홈페이지의 선발 공고 확인",
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "master",
+            "doctor",
+            "integrated"
+          ],
+          "label": "석사과정 이상",
+          "evidence": "국내·외 석사과정 이상 재학생 (전공 무관)."
+        },
+        {
+          "field": "status",
+          "allowed": [
+            "enrolled"
+          ],
+          "blocked": [
+            "leave",
+            "completed"
+          ],
+          "label": "재학생",
+          "evidence": "지원 자격에 재학생으로 명시되어 있습니다."
+        }
+      ],
+      "unknowns": [
+        "통합과정의 세부 인정 기준",
+        "희망·나눔 부문별 선발 요건과 지급 조건",
+        "중복 수혜 제한 및 정확한 접수 시각"
+      ],
+      "steps": [
+        "재단 선발 공고와 부문별 요건 확인",
+        "재단에서 요구하는 서류 준비",
+        "재단이 안내한 방법으로 신청"
+      ],
+      "note": "초기 확인 당시 접수가 끝난 공고입니다. 최대 2,000만 원은 연간 지급액이 아닌 3년 총합입니다.",
+      "category": "민간",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "requirements": [],
+      "overlap": "등록금성 여부와 재단의 별도 중복 수혜 제한 확인"
+    },
+    {
+      "id": "mirae-36-2027",
+      "title": "제36기 미래에셋 해외교환 장학생",
+      "organization": "미래에셋박현주재단",
+      "type": "해외연수",
+      "published": "2026-09-08",
+      "start": "2026-09-30",
+      "deadline": "2026-10-06",
+      "deadlineTime": "15:00",
+      "amount": "650만 원 또는 850만 원",
+      "audience": "2027년 봄 해외파견 학부생",
+      "description": "2027년 봄학기 해외파견 예정 학부생 대상. 지역별 지원 금액과 재단 선발 기준이 적용됩니다.",
+      "sourceUrl": "https://student.snu.ac.kr/?kboard_content_redirect=365",
+      "applicationUrl": "https://foundation.miraeasset.com/ko/news/notice/view.do?listCnt=6&pageIndex=1&ctgry=&detailsKey=547&tq=&q=",
+      "method": "재단 선발 요강에 따라 신청",
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad"
+          ],
+          "label": "국내 4년제 정규대학 학부생",
+          "evidence": "대한민국 국적의 국내 정규대학 재학 학부생이 대상입니다."
+        },
+        {
+          "field": "exchange",
+          "allowed": [
+            "yes"
+          ],
+          "label": "2027년 봄학기 해외파견 예정",
+          "evidence": "2027년 봄학기 해외파견 예정자로 명시되어 있습니다."
+        }
+      ],
+      "unknowns": [
+        "대한민국 국적과 세부 학적 요건",
+        "성적·경제적 기준과 파견 유형",
+        "재단 첨부 요강의 서류 및 중복 수혜 조건"
+      ],
+      "steps": [
+        "재단 원문·선발 요강 확인",
+        "파견 예정 및 성적·경제 요건 확인",
+        "재단 요구 서류 준비",
+        "재단 접수 완료 확인"
+      ],
+      "note": "미주·유럽·기타 지역 850만 원, 아시아 650만 원. 2026년 10월 6일 15시에 접수가 마감된 공고입니다.",
+      "category": "민간",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "requirements": [],
+      "overlap": "등록금성 여부와 재단의 별도 중복 수혜 제한 확인"
+    },
+    {
+      "id": "bomnae-2026-fall",
+      "title": "춘천인재육성장학재단 봄내장학생",
+      "organization": "춘천인재육성장학재단",
+      "type": "등록금",
+      "published": "2026-09-21",
+      "start": "2026-09-28",
+      "deadline": "2026-10-07",
+      "deadlineTime": null,
+      "amount": "일반 대학생 최대 100만 원",
+      "audience": "춘천 거주 요건 등 해당 대학생",
+      "description": "춘천 거주 요건과 유형별 선발 기준이 있는 지역 장학금. 서울대 재학 여부만으로는 지원 자격을 판단할 수 없습니다.",
+      "sourceUrl": "https://student.snu.ac.kr/?kboard_content_redirect=391",
+      "applicationUrl": null,
+      "method": "유형별 방문·우편 등 절차 상이",
+      "rules": [
+        {
+          "field": "status",
+          "allowed": [
+            "enrolled"
+          ],
+          "blocked": [
+            "leave"
+          ],
+          "label": "재학생 (휴학생 제외)",
+          "evidence": "대학생은 휴학생과 정규학기 초과등록 학생이 신청할 수 없습니다."
+        }
+      ],
+      "unknowns": [
+        "신청 유형과 춘천 거주 기간·가족 요건",
+        "유형별 성적·이수학점·추천 요건",
+        "등록금 실납부액·기존 수혜 및 중복신청 제한",
+        "시·군 단위 춘천 거주 요건은 도 단위 주소 입력만으로 충족 여부를 판단하지 않습니다."
+      ],
+      "steps": [
+        "해당 유형과 거주 요건 확인",
+        "유형별 성적·추천 서류 준비",
+        "방문·우편 등 유형에 맞는 접수 절차 이행",
+        "우편 도착 및 추가 제출 여부 확인"
+      ],
+      "note": "일반 대학생은 등록금 실납부액 범위에서 지급됩니다. 유형별 온라인 신청 여부가 다르며 우편은 마감일까지 도착해야 합니다.",
+      "category": "지역",
+      "regions": [
+        "강원"
+      ],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "requirements": [],
+      "overlap": "등록금성 여부와 재단의 별도 중복 수혜 제한 확인"
+    },
+    {
+      "id": "samsung-university",
+      "title": "삼성꿈장학재단 대학희망장학",
+      "organization": "삼성꿈장학재단",
+      "category": "민간",
+      "type": "등록금·생활비",
+      "amount": "학기별 학습보조비 350만원 원칙, 등록금 초과 시 원문 기준",
+      "description": "재단 꿈장학생 출신의 대학 진학 학생을 위한 맞춤형 지원.",
+      "sourceUrl": "https://www.sdream.or.kr/portal/apply/leadership",
+      "applicationUrl": "https://www.sdream.or.kr/portal/apply/leadership",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": false,
+      "start": null,
+      "deadline": "2026-01-05",
+      "deadlineTime": "17:00",
+      "published": null,
+      "rules": [],
+      "unknowns": [
+        "재단 꿈장학생 출신 여부·평가·계속지원 조건"
+      ],
+      "requirements": [
+        "2025 꿈장학생(SOS 포함) 출신",
+        "2026년 3월 대학 진학 확정·예정 및 지정 대학 등록"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "제도 안내입니다. 현재 모집 중이라는 의미가 아니며 해당 연도 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "samsung-global",
+      "title": "삼성꿈장학재단 글로벌 희망장학",
+      "organization": "삼성꿈장학재단",
+      "category": "민간",
+      "type": "등록금·생활비",
+      "amount": "학기당 480만원 · 과정별 지원기간",
+      "description": "개발도상국에서 한국으로 유학 온 대학(원)생 대상 대학 추천형 지원.",
+      "sourceUrl": "https://www.sdream.or.kr/portal/apply/global",
+      "applicationUrl": "https://www.sdream.or.kr/portal/apply/global",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "nationality",
+          "allowed": [
+            "other"
+          ],
+          "label": "외국인 유학생",
+          "evidence": "개발도상국 출신 여부와 추천협력대학 자격을 별도로 확인합니다."
+        }
+      ],
+      "unknowns": [
+        "국가·경제요건·GKS 중복 및 제외대상·추천협력대학 확인"
+      ],
+      "requirements": [
+        "추천협력대학의 추천을 받은 개발도상국 출신 대학(원)생"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "제도 안내입니다. 현재 모집 중이라는 의미가 아니며 해당 연도 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "asan-bio-graduate",
+      "title": "아산 의생명과학분야 국내 대학원 장학",
+      "organization": "아산사회복지재단",
+      "category": "민간",
+      "type": "요강 확인",
+      "amount": "연 2,000만원 · 사업개요 기준",
+      "description": "국내 의생명과학분야 석·박사 재학 또는 진학 예정자를 위한 장학.",
+      "sourceUrl": "https://www.asanfoundation.or.kr/af/bsns.supervision.scholarship0.sp",
+      "applicationUrl": "https://www.asanfoundation.or.kr/af/bsns.supervision.scholarship0.sp",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "master",
+            "doctor",
+            "integrated"
+          ],
+          "label": "대학원 과정",
+          "evidence": "의생명과학분야 국내 석·박사 재학 또는 진학 예정"
+        }
+      ],
+      "unknowns": [
+        "연도별 요강·진학예정·성적 환산·수혜기간 확인"
+      ],
+      "requirements": [
+        "의생명과학분야 국내 석·박사 재학 또는 진학 예정",
+        "최종학교 평점 4.0/4.5 이상"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "제도 안내입니다. 현재 모집 중이라는 의미가 아니며 해당 연도 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "asan-health-graduate",
+      "title": "아산 보건의료정책분야 국내 대학원 장학",
+      "organization": "아산사회복지재단",
+      "category": "민간",
+      "type": "요강 확인",
+      "amount": "연 1,000만원 · 사업개요 기준",
+      "description": "국내 보건의료정책분야 석·박사 재학 또는 진학 예정자 지원.",
+      "sourceUrl": "https://www.asanfoundation.or.kr/af/bsns.supervision.scholarship0.sp",
+      "applicationUrl": "https://www.asanfoundation.or.kr/af/bsns.supervision.scholarship0.sp",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "master",
+            "doctor",
+            "integrated"
+          ],
+          "label": "대학원 과정",
+          "evidence": "보건의료정책분야 국내 석·박사 재학 또는 진학 예정"
+        }
+      ],
+      "unknowns": [
+        "연도별 요강·전공 인정·성적 환산·지급 성격 확인"
+      ],
+      "requirements": [
+        "보건의료정책분야 국내 석·박사 재학 또는 진학 예정",
+        "최종학교 평점 4.0/4.5 이상"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "제도 안내입니다. 현재 모집 중이라는 의미가 아니며 해당 연도 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "asan-bio-undergrad",
+      "title": "아산 의생명과학분야 대학 장학",
+      "organization": "아산사회복지재단",
+      "category": "민간",
+      "type": "요강 확인",
+      "amount": "연 600만원 · 사업개요 기준",
+      "description": "의생명과학 연구자가 되고자 대학원 진학을 목표로 하는 대학생 지원.",
+      "sourceUrl": "https://www.asanfoundation.or.kr/af/bsns.supervision.scholarship0.sp",
+      "applicationUrl": "https://www.asanfoundation.or.kr/af/bsns.supervision.scholarship0.sp",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad"
+          ],
+          "label": "학부 과정",
+          "evidence": "재단 지원 대학 2·3·4학년"
+        },
+        {
+          "field": "year",
+          "min": 2,
+          "max": 4,
+          "label": "학부 2~4학년",
+          "evidence": "재단 지원 대학 2·3·4학년"
+        }
+      ],
+      "unknowns": [
+        "해당 학교 추천·연도별 선발 요강·생활비 또는 등록금 구분"
+      ],
+      "requirements": [
+        "재단 지원 대학 2·3·4학년",
+        "평점 3.7/4.5 이상 및 대학원 진학 목표"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "제도 안내입니다. 현재 모집 중이라는 의미가 아니며 해당 연도 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "asan-miu",
+      "title": "아산 MIU 자녀 장학",
+      "organization": "아산사회복지재단",
+      "category": "민간",
+      "type": "요강 확인",
+      "amount": "연 400만원 · 사업개요 기준",
+      "description": "군인·소방·경찰공무원 자녀 중 해당 기관 추천 학생 지원.",
+      "sourceUrl": "https://www.asanfoundation.or.kr/af/bsns.supervision.scholarship0.sp",
+      "applicationUrl": "https://www.asanfoundation.or.kr/af/bsns.supervision.scholarship0.sp",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": true,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad"
+          ],
+          "label": "학부 과정",
+          "evidence": "군인·소방·경찰공무원 자녀 및 해당 기관 추천"
+        },
+        {
+          "field": "year",
+          "min": 2,
+          "max": 4,
+          "label": "학부 2~4학년",
+          "evidence": "군인·소방·경찰공무원 자녀 및 해당 기관 추천"
+        }
+      ],
+      "unknowns": [
+        "부모 직군·추천 경로·만점 환산·지급 성격 확인"
+      ],
+      "requirements": [
+        "군인·소방·경찰공무원 자녀 및 해당 기관 추천",
+        "2·3·4학년, 평점 3.5/4.5 이상"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "제도 안내입니다. 현재 모집 중이라는 의미가 아니며 해당 연도 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "kfas-talent-7",
+      "title": "한국고등교육재단 인재림 제7기",
+      "organization": "한국고등교육재단",
+      "category": "민간",
+      "type": "생활비",
+      "amount": "장학금 800만원 · 팀 활동비 별도",
+      "description": "사회적 가치 프로젝트와 역량 교육에 참여하는 학부생 장학 프로그램.",
+      "sourceUrl": "https://apply.kfas.or.kr/cvt_program/view.php?kind_seq=2&seq=29&service_type=1",
+      "applicationUrl": "https://apply.kfas.or.kr/cvt_program/view.php?kind_seq=2&seq=29&service_type=1",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": false,
+      "start": null,
+      "deadline": null,
+      "deadlineTime": null,
+      "published": null,
+      "rules": [
+        {
+          "field": "nationality",
+          "allowed": [
+            "kr"
+          ],
+          "label": "대한민국 국적",
+          "evidence": "대한민국 국적 국내 4년제 대학 재학생·휴학생"
+        },
+        {
+          "field": "degree",
+          "allowed": [
+            "undergrad"
+          ],
+          "label": "학부 과정",
+          "evidence": "대한민국 국적 국내 4년제 대학 재학생·휴학생"
+        },
+        {
+          "field": "year",
+          "min": 2,
+          "max": 3,
+          "label": "FAQ 기준 2~3학년",
+          "evidence": "모집 FAQ: 2~3학년 및 2개 정규학기 이상 이수"
+        }
+      ],
+      "unknowns": [
+        "공식 페이지의 서류일자(10/30)와 문의기간(10/29 15시)이 달라 실제 지원 마감은 원문·담당자 확인",
+        "교육 참여 의무와 환수·지급 성격·중복 제한 확인"
+      ],
+      "requirements": [
+        "대한민국 국적 국내 4년제 대학 재학생·휴학생",
+        "모집 FAQ: 2~3학년 및 2개 정규학기 이상 이수"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "공식 페이지 내부 일정이 서로 달라 마감일을 확정하지 않았습니다. 연수 프로그램 미참여 등 의무 불이행 시 환수·지급 중단 가능.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    },
+    {
+      "id": "wooyang-law-2026",
+      "title": "우양재단 꿈꾸는법(法) 장학",
+      "organization": "우양재단",
+      "category": "민간",
+      "type": "요강 확인",
+      "amount": "세부 선발 요강 확인",
+      "description": "법조인을 꿈꾸는 한부모 또는 저소득 가정 대학생을 위한 장학.",
+      "sourceUrl": "https://www.wooyang.org/News/?bmode=view&idx=170506563",
+      "applicationUrl": "https://www.wooyang.org/News/?bmode=view&idx=170506563",
+      "regions": [],
+      "basisYear": 2026,
+      "verifiedAt": "2026-10-18",
+      "guide": false,
+      "start": null,
+      "deadline": "2026-04-09",
+      "deadlineTime": null,
+      "published": null,
+      "rules": [],
+      "unknowns": [
+        "정확한 성적·학년·금액과 최종합격 후 원본서류 제출"
+      ],
+      "requirements": [
+        "한부모 또는 저소득 가정의 법조인 지망 대학생",
+        "사회환원 의지·한 가정 1명 지원"
+      ],
+      "steps": [
+        "최신 모집 공고와 지원 자격 확인",
+        "기관에서 요구하는 신청서·증빙 서류 준비",
+        "추천·별도 제출 절차 및 마감 확인",
+        "공식 신청 경로에서 제출 완료 확인"
+      ],
+      "note": "제도 안내입니다. 현재 모집 중이라는 의미가 아니며 해당 연도 공고가 우선합니다.",
+      "method": "운영기관 공식 안내에 따라 신청",
+      "overlap": "지급 목적과 운영기관별 중복 수혜 규정을 별도로 확인하세요."
+    }
+  ],
+  "referenceSources": [
+    {
+      "title": "2026 지원구간·2027 개편",
+      "url": "https://www.kosaf.go.kr/ko/tuition.do?pg=tuition04_09_07"
+    },
+    {
+      "title": "중복지원 방지제도",
+      "url": "https://www.kosaf.go.kr/ko/tuition.do?pg=tuition11_01_01"
     }
   ]
 }
