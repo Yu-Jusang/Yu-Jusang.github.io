@@ -3,79 +3,68 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jusang Yu · Lecture Notes</title>
+<title>Jusang Yu – Lecture Notes</title>
 <meta name="description" content="Jusang Yu – lecture notes in statistics">
 <link rel="icon" href="https://avatars.githubusercontent.com/u/223135430?v=4">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="shell">
-  <aside class="side">
-    <a href="" class="brand">
-      <img src="https://avatars.githubusercontent.com/u/223135430?v=4" alt="">
-      <span><strong>Jusang Yu</strong><em>Lecture Notes</em></span>
-    </a>
-    <p class="side-desc">Statistics · Seoul National University</p>
-    <nav class="side-nav"><a href="" aria-current="page">Notes</a><a href="about/">About</a></nav>
-    <a href="https://github.com/Yu-Jusang" class="side-gh"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>Yu-Jusang</span></a>
-  </aside>
-  <main class="main">
-    <header class="hero">
-      <p class="eyebrow">Lecture Notes</p>
-      <h1>Notes on statistics,<br>written while learning it.</h1>
-      <p class="lede">대학원 통계학 과목을 들으며 정리한 강의노트, 증명 보충, 문제은행입니다. 과목을 고르면 장별 PDF를 바로 열 수 있습니다.</p>
-      <ul class="stats"><li><b>6</b> courses</li><li><b>93</b> PDFs</li><li><b>EN</b> written in English</li></ul>
+<div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead">
+      <a href="" class="site-avatar"><img src="https://avatars.githubusercontent.com/u/223135430?v=4" alt=""></a>
+      <div class="site-info">
+        <h1 class="site-name"><a href="">Jusang Yu</a></h1>
+        <p class="site-description">Statistics · Seoul National University</p>
+      </div>
+      <nav><a href="" class="active">Notes</a><a href="about/">About</a></nav>
     </header>
-    <div class="grid">
-      <a class="card" href="notes/survival-analysis/" style="--h:12">
-        <span class="idx">01</span>
-        <span class="card-ko">생존자료분석</span>
-        <span class="card-en">Survival Analysis</span>
-        <span class="card-intro">Klein & Moeschberger 흐름을 따라 생존함수·위험함수의 기본량, 중도절단과 절단, Kaplan–Meier와 Nelson–Aalen 추정, 로그순위 검정까지 정리한 강의노트입니다. 각 장마다 증명 보충과 예제를 넣었습니다.</span>
-        <span class="card-meta"><span class="chips"><span>생존분석</span></span><span>10 ch.</span></span>
-      </a>
-      <a class="card" href="notes/advanced-data-analysis/" style="--h:262">
-        <span class="idx">02</span>
-        <span class="card-ko">심화데이터분석</span>
-        <span class="card-en">Advanced Data Analysis</span>
-        <span class="card-intro">전반부는 예측 모델링(평가 설계, 로버스트 예측, 고차원 정규화, 트리·부스팅, 표 데이터용 신경망, AutoGluon), 후반부는 그래프 모형과 인과 발견(GGM, 선형 SEM, PC·GES·MMHC, LiNGAM)을 다룹니다.</span>
-        <span class="card-meta"><span class="chips"><span>머신러닝</span><span>인과발견</span></span><span>13 ch.</span></span>
-      </a>
-      <a class="card" href="notes/data-mining/" style="--h:200">
-        <span class="idx">03</span>
-        <span class="card-ko">데이터마이닝</span>
-        <span class="card-en">Data Mining</span>
-        <span class="card-intro">ISLR 수준의 통계적 학습 전반을 다룹니다. 모형 평가와 재표본, 선형회귀와 그 진단, 축소 추정, 비선형 회귀, 분류(로지스틱·생성모형), 트리와 앙상블, SVM까지 12개 장입니다.</span>
-        <span class="card-meta"><span class="chips"><span>통계적학습</span></span><span>12 ch.</span></span>
-      </a>
-      <a class="card" href="notes/multivariate-analysis/" style="--h:150">
-        <span class="idx">04</span>
-        <span class="card-ko">다변량자료분석</span>
-        <span class="card-en">Multivariate Data Analysis</span>
-        <span class="card-intro">다변량정규분포와 표본분포, 평균벡터 추론과 MANOVA, 주성분·정준상관·인자분석, 판별과 군집분석까지 11개 장의 강의노트와 증명 보충, 46문항 문제은행(해설 포함)입니다.</span>
-        <span class="card-meta"><span class="chips"><span>다변량분석</span><span>문제은행</span></span><span>11 ch.</span></span>
-      </a>
-      <a class="card" href="notes/design-of-experiments/" style="--h:40">
-        <span class="idx">05</span>
-        <span class="card-ko">실험계획법</span>
-        <span class="card-en">Design and Analysis of Experiments</span>
-        <span class="card-intro">Montgomery 교재를 기반으로 분산분석, 블록·라틴방격, 요인설계와 2<sup>k</sup> 설계, 교락, 랜덤요인, 지분·분할구 설계, 공분산분석을 정리했습니다. 40문항 문제은행과 상세 해설을 함께 제공합니다.</span>
-        <span class="card-meta"><span class="chips"><span>실험계획법</span><span>문제은행</span></span><span>11 ch.</span></span>
-      </a>
-      <a class="card" href="notes/causal-inference/" style="--h:330">
-        <span class="idx">06</span>
-        <span class="card-ko">인과추론</span>
-        <span class="card-en">Causal Inference</span>
-        <span class="card-intro">구조적 인과모형과 do-calculus 기반 식별부터 잠재결과 프레임워크, IPW·이중강건 추정, CATE, 매칭과 도구변수, RDD·DiD·합성통제, 인과 발견, 매개효과, SWIG와 G-방법까지 27편의 노트입니다.</span>
-        <span class="card-meta"><span class="chips"><span>인과추론</span></span><span>26 ch.</span></span>
-      </a>
-    </div>
-    <footer class="foot">© 2026 Jusang Yu · Notes are written in English.</footer>
-  </main>
+  </div>
+</div>
+<main class="container">
+<p class="intro">대학원 통계학 과목을 들으며 정리한 강의노트, 증명 보충, 문제은행을 모아 둡니다. 노트 본문은 영어로 작성되어 있습니다.</p>
+<div class="posts">
+<article class="post">
+  <h1><a href="notes/survival-analysis/">생존자료분석 <small>Survival Analysis</small></a></h1>
+  <div class="meta"><span class="date">2026-10-24</span><span class="dot">·</span><span class="date">10개 장</span><ul class="tag"><li>생존분석</li></ul></div>
+  <div class="entry"><p>Klein & Moeschberger 흐름을 따라 생존함수·위험함수의 기본량, 중도절단과 절단, Kaplan–Meier와 Nelson–Aalen 추정, 로그순위 검정까지 정리한 강의노트입니다. 각 장마다 증명 보충과 예제를 넣었습니다.</p></div>
+  <a href="notes/survival-analysis/" class="read-more">노트 보기 →</a>
+</article><article class="post">
+  <h1><a href="notes/advanced-data-analysis/">심화데이터분석 <small>Advanced Data Analysis</small></a></h1>
+  <div class="meta"><span class="date">2026-10-24</span><span class="dot">·</span><span class="date">13개 장</span><ul class="tag"><li>머신러닝</li><li>인과발견</li></ul></div>
+  <div class="entry"><p>전반부는 예측 모델링(평가 설계, 로버스트 예측, 고차원 정규화, 트리·부스팅, 표 데이터용 신경망, AutoGluon), 후반부는 그래프 모형과 인과 발견(GGM, 선형 SEM, PC·GES·MMHC, LiNGAM)을 다룹니다.</p></div>
+  <a href="notes/advanced-data-analysis/" class="read-more">노트 보기 →</a>
+</article><article class="post">
+  <h1><a href="notes/data-mining/">데이터마이닝 <small>Data Mining</small></a></h1>
+  <div class="meta"><span class="date">2026-10-24</span><span class="dot">·</span><span class="date">12개 장</span><ul class="tag"><li>통계적학습</li></ul></div>
+  <div class="entry"><p>ISLR 수준의 통계적 학습 전반을 다룹니다. 모형 평가와 재표본, 선형회귀와 그 진단, 축소 추정, 비선형 회귀, 분류(로지스틱·생성모형), 트리와 앙상블, SVM까지 12개 장입니다.</p></div>
+  <a href="notes/data-mining/" class="read-more">노트 보기 →</a>
+</article><article class="post">
+  <h1><a href="notes/multivariate-analysis/">다변량자료분석 <small>Multivariate Data Analysis</small></a></h1>
+  <div class="meta"><span class="date">2026-10-23</span><span class="dot">·</span><span class="date">11개 장 · 문제은행</span><ul class="tag"><li>다변량분석</li><li>문제은행</li></ul></div>
+  <div class="entry"><p>다변량정규분포와 표본분포, 평균벡터 추론과 MANOVA, 주성분·정준상관·인자분석, 판별과 군집분석까지 11개 장의 강의노트와 증명 보충, 46문항 문제은행(해설 포함)입니다.</p></div>
+  <a href="notes/multivariate-analysis/" class="read-more">노트 보기 →</a>
+</article><article class="post">
+  <h1><a href="notes/design-of-experiments/">실험계획법 <small>Design and Analysis of Experiments</small></a></h1>
+  <div class="meta"><span class="date">2026-10-20</span><span class="dot">·</span><span class="date">11개 장 · 문제은행</span><ul class="tag"><li>실험계획법</li><li>문제은행</li></ul></div>
+  <div class="entry"><p>Montgomery 교재를 기반으로 분산분석, 블록·라틴방격, 요인설계와 2<sup>k</sup> 설계, 교락, 랜덤요인, 지분·분할구 설계, 공분산분석을 정리했습니다. 40문항 문제은행과 상세 해설을 함께 제공합니다.</p></div>
+  <a href="notes/design-of-experiments/" class="read-more">노트 보기 →</a>
+</article><article class="post">
+  <h1><a href="notes/causal-inference/">인과추론 <small>Causal Inference</small></a></h1>
+  <div class="meta"><span class="date">2026-10-19</span><span class="dot">·</span><span class="date">26개 장</span><ul class="tag"><li>인과추론</li></ul></div>
+  <div class="entry"><p>구조적 인과모형과 do-calculus 기반 식별부터 잠재결과 프레임워크, IPW·이중강건 추정, CATE, 매칭과 도구변수, RDD·DiD·합성통제, 인과 발견, 매개효과, SWIG와 G-방법까지 27편의 노트입니다.</p></div>
+  <a href="notes/causal-inference/" class="read-more">노트 보기 →</a>
+</article>
+</div>
+</main>
+<div class="wrapper-footer">
+  <div class="container">
+    <footer class="footer">
+      <p>© 2026 Jusang Yu</p>
+      <a href="https://github.com/Yu-Jusang" class="icon" title="GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+    </footer>
+  </div>
 </div>
 </body>
 </html>
