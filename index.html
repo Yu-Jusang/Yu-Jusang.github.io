@@ -1,95 +1,89 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#17231f">
-  <meta name="description" content="GitHub Pages로 공개하는 첫 번째 웹 실험">
-  <title>첫 번째 웹 실험 · Yu-Jusang</title>
-  <style>
-    :root { color-scheme: light; --ink:#17231f; --muted:#52635b; --paper:#f5f3e9; --card:#fffef8; --line:#d5dcd0; --accent:#b9ed72; --accent-ink:#21380f; --spot:#d6e9db; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; background:var(--paper); color:var(--ink); font-family:system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.55; }
-    button { font:inherit; cursor:pointer; }
-    a { color:inherit; }
-    .wrap { max-width:1120px; padding:0 24px; margin:auto; }
-    header { border-bottom:1px solid var(--line); }
-    .topbar { min-height:74px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
-    .brand { font-weight:800; letter-spacing:-.04em; font-size:1.15rem; text-decoration:none; }
-    .topbar nav { display:flex; gap:24px; font-size:.92rem; font-weight:650; }
-    .topbar nav a { text-decoration:none; }
-    .topbar nav a:hover { text-decoration:underline; }
-    .hero { padding:92px 0 76px; display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center; }
-    .eyebrow { display:inline-flex; border:1px solid #93ab88; border-radius:99px; padding:6px 13px; color:#39522f; font-size:.75rem; font-weight:800; letter-spacing:.11em; text-transform:uppercase; }
-    h1 { margin:23px 0 20px; font-size:clamp(3rem,7vw,6.3rem); letter-spacing:-.08em; line-height:1.04; }
-    .hero p { max-width:570px; color:var(--muted); font-size:1.15rem; }
-    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
-    .button { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:0 21px; border-radius:12px; border:1px solid var(--ink); background:var(--ink); color:white; text-decoration:none; font-weight:750; }
-    .button.secondary { background:transparent; color:var(--ink); }
-    .art { aspect-ratio:1; border-radius:35px; background:var(--spot); position:relative; overflow:hidden; box-shadow:inset 0 0 0 1px #bcd2c2; }
-    .orbit { position:absolute; width:72%; aspect-ratio:1; border:2px solid #678c77; border-radius:50%; left:14%; top:14%; }
-    .orbit.two { width:52%; left:24%; top:24%; border-style:dashed; opacity:.7; }
-    .planet { position:absolute; width:40%; aspect-ratio:1; left:30%; top:30%; border-radius:50%; background:var(--accent); box-shadow:inset -16px -18px 0 #94c953, 0 20px 45px #5c806c70; }
-    .spark { position:absolute; background:var(--ink); border-radius:50%; }
-    .spark.a { width:14px; height:14px; top:18%; left:17%; }.spark.b { width:10px; height:10px; right:18%; bottom:18%; }
-    .art-label { position:absolute; right:23px; bottom:22px; font-weight:850; font-size:.8rem; letter-spacing:.1em; }
-    section { padding:70px 0; }
-    .section-head { max-width:680px; margin-bottom:28px; }
-    .kicker { margin:0 0 10px; color:#638347; font-weight:850; letter-spacing:.13em; font-size:.76rem; }
-    h2 { margin:0 0 12px; font-size:clamp(2rem,4vw,3rem); letter-spacing:-.055em; line-height:1.14; }
-    .section-head p { margin:0; color:var(--muted); }
-    .demo { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
-    .panel { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:30px; }
-    .panel h3 { margin:0 0 8px; font-size:1.3rem; letter-spacing:-.03em; }
-    .panel p { color:var(--muted); margin:0 0 22px; }
-    .counter { font-size:clamp(4rem,9vw,7rem); line-height:1; font-weight:850; letter-spacing:-.08em; margin:20px 0 25px; font-variant-numeric:tabular-nums; }
-    .panel button { border:0; background:var(--accent); color:var(--accent-ink); padding:13px 19px; border-radius:11px; font-weight:800; }
-    .panel button:hover { filter:brightness(.94); }
-    .panel button:focus-visible, a:focus-visible { outline:3px solid #487d2d; outline-offset:3px; }
-    .color-stage { height:180px; border-radius:15px; background:#e4eecd; display:grid; place-items:center; margin:22px 0 20px; transition:background .25s ease; }
-    .color-stage span { font-weight:800; color:#21380f; }
-    .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; counter-reset:step; }
-    .step { border-top:2px solid var(--ink); padding-top:20px; }
-    .step::before { counter-increment:step; content:"0" counter(step); display:block; color:#638347; font-weight:850; margin-bottom:22px; }
-    .step h3 { margin:0 0 7px; font-size:1.18rem; }
-    .step p { margin:0; color:var(--muted); }
-    footer { border-top:1px solid var(--line); padding:30px 0 38px; color:var(--muted); font-size:.9rem; }
-    footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; }
-    @media (max-width:760px) { .hero { grid-template-columns:1fr; padding:64px 0 48px; } .art { max-width:450px; width:100%; } .demo { grid-template-columns:1fr; } .steps { grid-template-columns:1fr; } .topbar nav { gap:12px; font-size:.82rem; } section { padding:52px 0; } }
-    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .color-stage { transition:none; } }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jusang Yu – Lecture Notes</title>
+<meta name="description" content="Jusang Yu – lecture notes in statistics">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/223135430?v=4">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header><div class="wrap topbar"><a class="brand" href="#top">Yu-Jusang / 첫 웹 실험</a><nav aria-label="페이지 메뉴"><a href="#try">직접 해보기</a><a href="#how">어떻게 공개되나요?</a></nav></div></header>
-  <main id="top">
-    <div class="wrap hero">
-      <div><span class="eyebrow">My first GitHub Pages site</span><h1>아이디어가<br>웹이 되는 순간.</h1><p>이 페이지는 GitHub에 파일을 올려 누구나 열 수 있는 웹사이트로 공개하는 작은 실험입니다. 아래 버튼을 눌러 직접 움직여 보세요.</p><div class="hero-actions"><a class="button" href="#try">사이트 체험하기 ↘</a><a class="button secondary" href="#how">만드는 과정 보기</a></div></div>
-      <div class="art" role="img" aria-label="연두색 행성과 원형 궤도로 그린 첫 웹 실험 일러스트"><div class="orbit"></div><div class="orbit two"></div><div class="planet"></div><div class="spark a"></div><div class="spark b"></div><div class="art-label">HELLO, WEB ✳</div></div>
-    </div>
-    <section id="try"><div class="wrap"><div class="section-head"><p class="kicker">01 / 직접 해보기</p><h2>코드를 몰라도, 작동하는 페이지부터.</h2><p>이 버튼들은 HTML, CSS, JavaScript라는 웹의 기본 재료만으로 만들었습니다.</p></div><div class="demo"><article class="panel"><h3>클릭 카운터</h3><p>버튼을 누르면 숫자가 올라갑니다.</p><div class="counter" id="count" aria-live="polite">0</div><button id="count-button" type="button">한 번 눌러보기 +</button></article><article class="panel"><h3>색 바꾸기</h3><p>웹사이트의 색과 분위기도 바꿀 수 있어요.</p><div class="color-stage" id="color-stage"><span id="color-name">라임 그린</span></div><button id="color-button" type="button">다른 색 보기 ↗</button></article></div></div></section>
-    <section id="how"><div class="wrap"><div class="section-head"><p class="kicker">02 / 공개 과정</p><h2>GitHub는 파일을 보관하고,<br>Pages는 웹주소를 만듭니다.</h2><p>내용을 고치고 다시 올리면 같은 주소에서 새 버전을 볼 수 있습니다.</p></div><div class="steps"><div class="step"><h3>페이지 만들기</h3><p>문구, 디자인, 버튼 동작을 웹 파일로 작성합니다.</p></div><div class="step"><h3>GitHub에 올리기</h3><p>저장소에 파일을 넣으면 변경 기록도 함께 남습니다.</p></div><div class="step"><h3>Pages 켜기</h3><p>공개 주소가 생겨 휴대폰이나 친구의 컴퓨터에서도 볼 수 있습니다.</p></div></div></div></section>
-  </main>
-  <footer><div class="wrap"><span>© 2026 Yu-Jusang · 첫 번째 웹 실험</span><span>Made with GPT, published with GitHub Pages</span></div></footer>
-  <script>
-    const count = document.querySelector('#count');
-    document.querySelector('#count-button').addEventListener('click', () => { count.textContent = String(Number(count.textContent) + 1); });
-    const colors = [
-      { name:'라임 그린', background:'#e4eecd', foreground:'#21380f' },
-      { name:'코랄 핑크', background:'#f7cfca', foreground:'#6e2c29' },
-      { name:'스카이 블루', background:'#cce8f5', foreground:'#173d54' },
-      { name:'라벤더', background:'#e6dcfa', foreground:'#49306d' }
-    ];
-    let colorIndex = 0;
-    document.querySelector('#color-button').addEventListener('click', () => {
-      colorIndex = (colorIndex + 1) % colors.length;
-      const color = colors[colorIndex];
-      document.querySelector('#color-stage').style.background = color.background;
-      const label = document.querySelector('#color-name');
-      label.textContent = color.name;
-      label.style.color = color.foreground;
-    });
-  </script>
+<div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead">
+      <a href="" class="site-avatar"><img src="https://avatars.githubusercontent.com/u/223135430?v=4" alt=""></a>
+      <div class="site-info">
+        <h1 class="site-name"><a href="">Jusang Yu</a></h1>
+        <p class="site-description">Statistics · Seoul National University</p>
+      </div>
+      <nav><a href="" class="active">Notes</a><a href="about/">About</a></nav>
+    </header>
+  </div>
+</div>
+<main class="container">
+<h1 class="notice">Notice</h1>
+<p>공부하면서 정리한 대학원 통계학 과목의 강의노트, 증명 보충, 문제은행을 모아 둡니다. 노트 본문은 영어로 작성되어 있습니다.</p>
+<div class="posts">
+<article class="post">
+  <h1><a href="notes/survival-analysis/">노트: 생존자료분석 (Survival Analysis)</a></h1>
+  <div class="meta"><span class="date">2026-10-24</span><ul class="tag"><li>노트</li><li>생존분석</li></ul></div>
+  <div class="entry">
+    <h2 class="first">소개</h2>
+    <p>Klein & Moeschberger 흐름을 따라 생존함수·위험함수의 기본량, 중도절단과 절단, Kaplan–Meier와 Nelson–Aalen 추정, 로그순위 검정까지 정리한 강의노트입니다. 각 장마다 증명 보충과 예제를 넣었습니다.</p>
+  </div>
+  <a href="notes/survival-analysis/" class="read-more">Read More · 10개 장</a>
+</article><article class="post">
+  <h1><a href="notes/advanced-data-analysis/">노트: 심화데이터분석 (Advanced Data Analysis)</a></h1>
+  <div class="meta"><span class="date">2026-10-24</span><ul class="tag"><li>노트</li><li>머신러닝</li><li>인과발견</li></ul></div>
+  <div class="entry">
+    <h2 class="first">소개</h2>
+    <p>전반부는 예측 모델링(평가 설계, 로버스트 예측, 고차원 정규화, 트리·부스팅, 표 데이터용 신경망, AutoGluon), 후반부는 그래프 모형과 인과 발견(GGM, 선형 SEM, PC·GES·MMHC, LiNGAM)을 다룹니다.</p>
+  </div>
+  <a href="notes/advanced-data-analysis/" class="read-more">Read More · 13개 장</a>
+</article><article class="post">
+  <h1><a href="notes/data-mining/">노트: 데이터마이닝 (Data Mining)</a></h1>
+  <div class="meta"><span class="date">2026-10-24</span><ul class="tag"><li>노트</li><li>통계적학습</li></ul></div>
+  <div class="entry">
+    <h2 class="first">소개</h2>
+    <p>ISLR 수준의 통계적 학습 전반을 다룹니다. 모형 평가와 재표본, 선형회귀와 그 진단, 축소 추정, 비선형 회귀, 분류(로지스틱·생성모형), 트리와 앙상블, SVM까지 12개 장입니다.</p>
+  </div>
+  <a href="notes/data-mining/" class="read-more">Read More · 12개 장</a>
+</article><article class="post">
+  <h1><a href="notes/multivariate-analysis/">노트: 다변량자료분석 (Multivariate Data Analysis)</a></h1>
+  <div class="meta"><span class="date">2026-10-23</span><ul class="tag"><li>노트</li><li>다변량분석</li><li>문제은행</li></ul></div>
+  <div class="entry">
+    <h2 class="first">소개</h2>
+    <p>다변량정규분포와 표본분포, 평균벡터 추론과 MANOVA, 주성분·정준상관·인자분석, 판별과 군집분석까지 11개 장의 강의노트와 증명 보충, 46문항 문제은행(해설 포함)입니다.</p>
+  </div>
+  <a href="notes/multivariate-analysis/" class="read-more">Read More · 11개 장</a>
+</article><article class="post">
+  <h1><a href="notes/design-of-experiments/">노트: 실험계획법 (Design and Analysis of Experiments)</a></h1>
+  <div class="meta"><span class="date">2026-10-20</span><ul class="tag"><li>노트</li><li>실험계획법</li><li>문제은행</li></ul></div>
+  <div class="entry">
+    <h2 class="first">소개</h2>
+    <p>Montgomery 교재를 기반으로 분산분석, 블록·라틴방격, 요인설계와 2<sup>k</sup> 설계, 교락, 랜덤요인, 지분·분할구 설계, 공분산분석을 정리했습니다. 40문항 문제은행과 상세 해설을 함께 제공합니다.</p>
+  </div>
+  <a href="notes/design-of-experiments/" class="read-more">Read More · 11개 장</a>
+</article><article class="post">
+  <h1><a href="notes/causal-inference/">노트: 인과추론 (Causal Inference)</a></h1>
+  <div class="meta"><span class="date">2026-10-19</span><ul class="tag"><li>노트</li><li>인과추론</li></ul></div>
+  <div class="entry">
+    <h2 class="first">소개</h2>
+    <p>구조적 인과모형과 do-calculus 기반 식별부터 잠재결과 프레임워크, IPW·이중강건 추정, CATE, 매칭과 도구변수, RDD·DiD·합성통제, 인과 발견, 매개효과, SWIG와 G-방법까지 27편의 노트입니다.</p>
+  </div>
+  <a href="notes/causal-inference/" class="read-more">Read More · 26개 장</a>
+</article>
+</div>
+</main>
+<div class="wrapper-footer">
+  <div class="container">
+    <footer class="footer">
+      <a href="https://github.com/Yu-Jusang" class="icon" title="GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+      <p>© 2026 Jusang Yu</p>
+    </footer>
+  </div>
+</div>
 </body>
 </html>
-

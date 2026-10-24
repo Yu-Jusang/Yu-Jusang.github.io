@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>데이터마이닝 (Data Mining) – Jusang Yu</title>
+<meta name="description" content="Jusang Yu – lecture notes in statistics">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/223135430?v=4">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead">
+      <a href="../../" class="site-avatar"><img src="https://avatars.githubusercontent.com/u/223135430?v=4" alt=""></a>
+      <div class="site-info">
+        <h1 class="site-name"><a href="../../">Jusang Yu</a></h1>
+        <p class="site-description">Statistics · Seoul National University</p>
+      </div>
+      <nav><a href="../../">Notes</a><a href="../../about/">About</a></nav>
+    </header>
+  </div>
+</div>
+<main class="container">
+<article class="post">
+  <h1>노트: 데이터마이닝 (Data Mining)</h1>
+  <div class="meta"><span class="date">2026-10-24</span><ul class="tag"><li>노트</li><li>통계적학습</li></ul></div>
+  <div class="entry">
+    <h2 class="first">소개</h2>
+    <p>ISLR 수준의 통계적 학습 전반을 다룹니다. 모형 평가와 재표본, 선형회귀와 그 진단, 축소 추정, 비선형 회귀, 분류(로지스틱·생성모형), 트리와 앙상블, SVM까지 12개 장입니다.</p>
+    <p class="muted">노트 본문은 영어로 작성되어 있습니다. 제목을 누르면 PDF가 열립니다.</p>
+    <h2>Chapters</h2>
+<ul class="files"><li><a href="ch01.pdf"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 0h5.5L14 4.5V14a2 2 0 01-2 2H4a2 2 0 01-2-2V2a2 2 0 012-2zm5 1.5V5h3.5L9 1.5zM4.5 9v4h1v-1.3h.7a1.35 1.35 0 000-2.7H4.5zm1 1h.7a.35.35 0 010 .7h-.7V10zm2.5-1v4h1.2a2 2 0 000-4H8zm1 1h.2a1 1 0 010 2H9v-2zm2.5-1v4h1v-1.5h1.3v-1h-1.3V10h1.5V9h-2.5z"/></svg><span>Chapter 1. Statistical Learning, Data and Exploration</span></a><span class="size">247 KB</span></li><li><a href="ch02.pdf"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 0h5.5L14 4.5V14a2 2 0 01-2 2H4a2 2 0 01-2-2V2a2 2 0 012-2zm5 1.5V5h3.5L9 1.5zM4.5 9v4h1v-1.3h.7a1.35 1.35 0 000-2.7H4.5zm1 1h.7a.35.35 0 010 .7h-.7V10zm2.5-1v4h1.2a2 2 0 000-4H8zm1 1h.2a1 1 0 010 2H9v-2zm2.5-1v4h1v-1.5h1.3v-1h-1.3V10h1.5V9h-2.5z"/></svg><span>Chapter 2. Supervised Learning and Model Assessment</span></a><span class="size">271 KB</span></li><li><a href="ch03.pdf"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 0h5.5L14 4.5V14a2 2 0 01-2 2H4a2 2 0 01-2-2V2a2 2 0 012-2zm5 1.5V5h3.5L9 1.5zM4.5 9v4h1v-1.3h.7a1.35 1.35 0 000-2.7H4.5zm1 1h.7a.35.35 0 010 .7h-.7V10zm2.5-1v4h1.2a2 2 0 000-4H8zm1 1h.2a1 1 0 010 2H9v-2zm2.5-1v4h1v-1.5h1.3v-1h-1.3V10h1.5V9h-2.5z"/></svg><span>Chapter 3. Resampling: Cross-Validation and the Bootstrap</span></a><span class="size">241 KB</span></li><li><a href="ch04.pdf"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 0h5.5L14 4.5V14a2 2 0 01-2 2H4a2 2 0 01-2-2V2a2 2 0 012-2zm5 1.5V5h3.5L9 1.5zM4.5 9v4h1v-1.3h.7a1.35 1.35 0 000-2.7H4.5zm1 1h.7a.35.35 0 010 .7h-.7V10zm2.5-1v4h1.2a2 2 0 000-4H8zm1 1h.2a1 1 0 010 2H9v-2zm2.5-1v4h1v-1.5h1.3v-1h-1.3V10h1.5V9h-2.5z"/></svg><span>Chapter 4. Linear Regression</span></a><span class="size">269 KB</span></li><li><a href="ch05.pdf"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 0h5.5L14 4.5V14a2 2 0 01-2 2H4a2 2 0 01-2-2V2a2 2 0 012-2zm5 1.5V5h3.5L9 1.5zM4.5 9v4h1v-1.3h.7a1.35 1.35 0 000-2.7H4.5zm1 1h.7a.35.35 0 010 .7h-.7V10zm2.5-1v4h1.2a2 2 0 000-4H8zm1 1h.2a1 1 0 010 2H9v-2zm2.5-1v4h1v-1.5h1.3v-1h-1.3V10h1.5V9h-2.5z"/></svg><span>Chapter 5. Potential Problems in Regression</span></a><span class="size">218 KB</span></li><li><a href="ch06.pdf"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 0h5.5L14 4.5V14a2 2 0 01-2 2H4a2 2 0 01-2-2V2a2 2 0 012-2zm5 1.5V5h3.5L9 1.5zM4.5 9v4h1v-1.3h.7a1.35 1.35 0 000-2.7H4.5zm1 1h.7a.35.35 0 010 .7h-.7V10zm2.5-1v4h1.2a2 2 0 000-4H8zm1 1h.2a1 1 0 010 2H9v-2zm2.5-1v4h1v-1.5h1.3v-1h-1.3V10h1.5V9h-2.5z"/></svg><span>Chapter 6. Explainable Models: Subset Selection, Shrinkage and Dimension Reduction</span></a><span class="size">291 KB</span></li><li><a href="ch07.pdf"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 0h5.5L14 4.5V14a2 2 0 01-2 2H4a2 2 0 01-2-2V2a2 2 0 012-2zm5 1.5V5h3.5L9 1.5zM4.5 9v4h1v-1.3h.7a1.35 1.35 0 000-2.7H4.5zm1 1h.7a.35.35 0 010 .7h-.7V10zm2.5-1v4h1.2a2 2 0 000-4H8zm1 1h.2a1 1 0 010 2H9v-2zm2.5-1v4h1v-1.5h1.3v-1h-1.3V10h1.5V9h-2.5z"/></svg><span>Chapter 7. Nonlinear Regression</span></a><span class="size">266 KB</span></li><li><a href="ch08.pdf"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 0h5.5L14 4.5V14a2 2 0 01-2 2H4a2 2 0 01-2-2V2a2 2 0 012-2zm5 1.5V5h3.5L9 1.5zM4.5 9v4h1v-1.3h.7a1.35 1.35 0 000-2.7H4.5zm1 1h.7a.35.35 0 010 .7h-.7V10zm2.5-1v4h1.2a2 2 0 000-4H8zm1 1h.2a1 1 0 010 2H9v-2zm2.5-1v4h1v-1.5h1.3v-1h-1.3V10h1.5V9h-2.5z"/></svg><span>Chapter 8. Classification Errors and the Bayes Classifier</span></a><span class="size">208 KB</span></li><li><a href="ch09.pdf"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 0h5.5L14 4.5V14a2 2 0 01-2 2H4a2 2 0 01-2-2V2a2 2 0 012-2zm5 1.5V5h3.5L9 1.5zM4.5 9v4h1v-1.3h.7a1.35 1.35 0 000-2.7H4.5zm1 1h.7a.35.35 0 010 .7h-.7V10zm2.5-1v4h1.2a2 2 0 000-4H8zm1 1h.2a1 1 0 010 2H9v-2zm2.5-1v4h1v-1.5h1.3v-1h-1.3V10h1.5V9h-2.5z"/></svg><span>Chapter 9. Discriminative Methods: Logistic Regression</span></a><span class="size">277 KB</span></li><li><a href="ch10.pdf"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 0h5.5L14 4.5V14a2 2 0 01-2 2H4a2 2 0 01-2-2V2a2 2 0 012-2zm5 1.5V5h3.5L9 1.5zM4.5 9v4h1v-1.3h.7a1.35 1.35 0 000-2.7H4.5zm1 1h.7a.35.35 0 010 .7h-.7V10zm2.5-1v4h1.2a2 2 0 000-4H8zm1 1h.2a1 1 0 010 2H9v-2zm2.5-1v4h1v-1.5h1.3v-1h-1.3V10h1.5V9h-2.5z"/></svg><span>Chapter 10. Generative Models for Classification</span></a><span class="size">274 KB</span></li><li><a href="ch11.pdf"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 0h5.5L14 4.5V14a2 2 0 01-2 2H4a2 2 0 01-2-2V2a2 2 0 012-2zm5 1.5V5h3.5L9 1.5zM4.5 9v4h1v-1.3h.7a1.35 1.35 0 000-2.7H4.5zm1 1h.7a.35.35 0 010 .7h-.7V10zm2.5-1v4h1.2a2 2 0 000-4H8zm1 1h.2a1 1 0 010 2H9v-2zm2.5-1v4h1v-1.5h1.3v-1h-1.3V10h1.5V9h-2.5z"/></svg><span>Chapter 11. Tree-Based Methods and Ensembles</span></a><span class="size">308 KB</span></li><li><a href="ch12.pdf"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 0h5.5L14 4.5V14a2 2 0 01-2 2H4a2 2 0 01-2-2V2a2 2 0 012-2zm5 1.5V5h3.5L9 1.5zM4.5 9v4h1v-1.3h.7a1.35 1.35 0 000-2.7H4.5zm1 1h.7a.35.35 0 010 .7h-.7V10zm2.5-1v4h1.2a2 2 0 000-4H8zm1 1h.2a1 1 0 010 2H9v-2zm2.5-1v4h1v-1.5h1.3v-1h-1.3V10h1.5V9h-2.5z"/></svg><span>Chapter 12. Support Vector Machines</span></a><span class="size">236 KB</span></li></ul><h2>Combined volumes</h2>
+<ul class="files"><li><a href="DataMining_LectureNotes_ch01-12.pdf"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 0h5.5L14 4.5V14a2 2 0 01-2 2H4a2 2 0 01-2-2V2a2 2 0 012-2zm5 1.5V5h3.5L9 1.5zM4.5 9v4h1v-1.3h.7a1.35 1.35 0 000-2.7H4.5zm1 1h.7a.35.35 0 010 .7h-.7V10zm2.5-1v4h1.2a2 2 0 000-4H8zm1 1h.2a1 1 0 010 2H9v-2zm2.5-1v4h1v-1.5h1.3v-1h-1.3V10h1.5V9h-2.5z"/></svg><span>Full lecture notes (Ch. 1–12), combined</span></a><span class="size">3.2 MB</span></li></ul>
+  </div>
+  <p><a href="../../" class="back">← 전체 노트 목록</a></p>
+</article>
+</main>
+<div class="wrapper-footer">
+  <div class="container">
+    <footer class="footer">
+      <a href="https://github.com/Yu-Jusang" class="icon" title="GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+      <p>© 2026 Jusang Yu</p>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
