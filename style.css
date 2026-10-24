@@ -99,3 +99,11 @@ p { margin: 10px 0; }
   h1 small { display: block; margin: 0; font-size: 15px; }
   .wrapper-masthead { margin-bottom: 30px; }
 }
+
+/* about */
+.about h2 { margin-top: 1.8em; }
+.about .who { font-size: 18px; font-weight: 600; margin: 0 0 4px; }
+.about .who span { font-weight: 400; color: var(--muted); margin-left: 6px; }
+.about ul { padding-left: 1.2em; margin: 6px 0; }
+.about li { margin: 4px 0; }
+.about li ul { margin: 2px 0 6px; color: var(--muted); }
