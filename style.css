@@ -107,3 +107,12 @@ p { margin: 10px 0; }
 .about ul { padding-left: 1.2em; margin: 6px 0; }
 .about li { margin: 4px 0; }
 .about li ul { margin: 2px 0 6px; color: var(--muted); }
+
+/* categories */
+.category { margin-bottom: 48px; }
+.cat-head {
+  margin: 0 0 24px; padding-bottom: 10px; border-bottom: 2px solid var(--text);
+  font-size: 15px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+}
+.cat-head a { color: var(--text); }
+.cat-head small { font-size: 13px; font-weight: 400; letter-spacing: 0; text-transform: none; color: var(--muted); margin-left: 6px; }
