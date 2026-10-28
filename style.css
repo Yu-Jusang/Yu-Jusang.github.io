@@ -167,3 +167,6 @@ p { margin: 10px 0; }
 }
 .entry p.muted { color: var(--muted); }
 .entry p.intro { color: var(--text); margin: 14px 0 6px; }
+
+.year-head { font-size: 14px; font-weight: 600; color: var(--muted); margin: 28px 0 10px; }
+.year-head:first-of-type { margin-top: 8px; }
